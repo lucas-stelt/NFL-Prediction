@@ -6,7 +6,16 @@ output: html_document
 ---
 
 ```{r}
+library(tidyverse)
+```
+
+
+```{r}
 # Andrew Code
+combine <- read.csv("nfl.combine.csv")
+combine <- combine %>% filter(Position=="QB")
+
+career.stats <- read.csv("Career_Stats_Passing.csv")
 
 ```
 
