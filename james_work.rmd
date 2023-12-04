@@ -121,7 +121,32 @@ qbCombined = rbind(qb09, qb10, qb11, qb12, qb13, qb14, qb15, qb16)
 ```
 
 
+# Joining combine and qbdata
 
+```{r}
+#Make name format same
+combine2000 = combine_qb2000
+combine2000$`Player` = sub("-.*", "", combine2000$`Player`) #combine players
+
+results = combine2000 %>%
+  filter(combine2000$Player %in% qbCombined$qb)
+
+
+
+qbCombined$qb = sub("[A-Z]\\..*", "", qbCombined$qb) #nfl players
+
+qbTotal = qbCombined %>%
+  select(-year) %>%
+  group_by(qb) %>%
+  summarize(att = sum(att),  cmp = sum(cmp), yds = sum(yds), ypa = sum(ypa), td = sum(td), int = sum(as.numeric(int)), sack = sum(sack), loss = sum(loss), game_points = sum(game_points)) %>%
+  na.omit()
+
+names(results)[names(results) == "Player"] <- "qb"
+
+combineQBCombined = merge(qbTotal, results, by = "qb")
+
+#write.csv(combineQBCombined, "/Users/jamesspalding/Desktop/totalCombinedQB.csv")
+```
 
 
 
