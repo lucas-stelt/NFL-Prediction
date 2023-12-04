@@ -11,6 +11,7 @@ library(tidyverse)
 library(MASS)
 library(ggplot2)
 library(stringr)
+library(rvest)
 ```
 
 
@@ -19,12 +20,37 @@ combine <- read_csv("nfl.combine.csv")
 combine.rnd <- str_split_fixed(combine$Drafted..tm.rnd.yr.,'/',4)
 combine1 <- bind_cols(combine,combine.rnd)
 combine2 <- combine1[,-c(13,16,22)]
-write.csv(filter.qb,file = "combine.qb")
+
+
 names(combine2) <- c("Year Drafted", "Player Name", "Age", "School", "Height", "Weight", "40 Yd Dash", "Vertical Jump", " Bench Press(Reps)", "Broad Jump", "3 Cone Agility", "20 Yd Shuttle", "BMI", "Player Type", "Position", "Drafted", "Team", "Round Drafted","Pick Number")
 attach(combine2)
 filter.qb <- combine2 %>% filter(Position == "QB")
+write.csv(filter.qb,file = "combine.qb")
 combine.full <- read.csv("combine.2000.2018.csv")
 combine.qb <- combine.full %>% filter(Pos== "QB")
 write.csv(combine.qb, file = "combine.qb2000.csv")
 ```
+
+```{r}
+#Passing stats by season
+qb.stats <- read.csv("qbStats.csv")
+
+
+
+```
+
+
+```{r}
+#Years Pro dataset
+link <- "https://www.pro-football-reference.com/players/qbindex.htm"
+link.read <- read_html(link)
+nodes <- html_nodes(link.read, "table")
+link.table <- html_table(nodes, fill=TRUE)
+years.pro.raw <-as.data.frame(link.table)
+years.pro <- years.pro.raw %>% mutate(YearsPro = To - From)
+years.pro2 <- years.pro[,-3]
+years.pro3 <- years.pro2 %>% filter(From >= 1996)
+years.pro3 <- years.pro3 %>% filter(From <= 2016)
+```
+
 
