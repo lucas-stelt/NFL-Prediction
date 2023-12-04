@@ -1,0 +1,351 @@
+"","Player","Pos","Ht","Wt","Forty","Vertical","BenchReps","BroadJump","Cone","Shuttle","Year","Pfr_ID","AV","Team","Round","Pick"
+"1","Tom Brady","QB",76,211,5.28,24.5,NA,99,7.2,4.38,2000,"BradTo00",25,"New England Patriots",6,199
+"2","Travis Brown-01","QB",75,218,5.01,29,NA,101,7.54,4.87,2000,"BrowTr01",1,"",NA,NA
+"3","Marc Bulger","QB",74,208,4.97,NA,NA,100,7.46,4.34,2000,"BulgMa00",31,"New Orleans Saints",6,168
+"4","Bill Burke","QB",76,206,5.03,28.5,NA,107,7.46,4.42,2000,"",0,"",NA,NA
+"5","Giovanni Carmazzi","QB",75,224,4.74,36.5,NA,119,6.94,4.23,2000,"",0,"",NA,NA
+"6","Chris Chaloupka","QB",74,216,4.96,NA,NA,NA,NA,NA,2000,"",0,"",NA,NA
+"7","Kevin Feterik","QB",71,207,4.92,31,NA,106,7.3,4.45,2000,"",0,"",NA,NA
+"8","Joe Hamilton","QB",70,192,4.81,NA,NA,106,NA,NA,2000,"HamiJo20",0,"Tampa Bay Buccaneers",7,234
+"9","Todd Husak","QB",75,216,5.2,27.5,NA,99,7.17,4.41,2000,"HusaTo20",0,"Washington Redskins",6,202
+"10","Jarious Jackson","QB",72,226,4.68,NA,NA,109,NA,NA,2000,"JackJa01",0,"Denver Broncos",7,214
+"11","Doug Johnson","QB",74,226,4.95,29.5,NA,96,NA,NA,2000,"JohnDo00",3,"",NA,NA
+"12","Tim Lester","QB",72,202,5.02,27,NA,97,7.28,4.24,2000,"",0,"",NA,NA
+"13","Tee Martin","QB",74,227,4.58,34.5,NA,113,NA,NA,2000,"MartTe00",0,"Pittsburgh Steelers",5,163
+"14","Leon Murray","QB",74,207,4.75,NA,NA,NA,NA,NA,2000,"",0,"",NA,NA
+"15","Chad Pennington","QB",75,229,4.81,33.5,NA,111,7.12,4.16,2000,"PennCh01",12,"New York Jets",1,18
+"16","Tim Rattay","QB",72,215,4.91,25.5,NA,100,7.34,4.21,2000,"RattTi00",1,"San Francisco 49ers",7,212
+"17","Chris Redman","QB",75,222,5.37,26.5,NA,98,7.8,4.78,2000,"RedmCh00",3,"Baltimore Ravens",3,75
+"18","Spergon Wynn","QB",75,229,4.91,34,NA,108,7.71,4.59,2000,"WynnSp00",2,"Cleveland Browns",6,183
+"19","Jonathan Beasley","QB",72,227,4.85,29.5,NA,102,7.55,4.38,2001,"",0,"",NA,NA
+"20","Josh Booty","QB",74,221,4.9,29.5,NA,105,7.54,4.48,2001,"",0,"Seattle Seahawks",6,172
+"21","Drew Brees","QB",72,213,4.83,32,NA,105,7.09,4.21,2001,"BreeDr00",17,"San Diego Chargers",2,32
+"22","Quincy Carter","QB",74,225,4.58,35.5,NA,113,7.12,4.12,2001,"CartQu00",16,"Dallas Cowboys",2,53
+"23","Justin Coleman-01","QB",76,238,5.22,29.5,NA,101,7.78,4.62,2001,"",0,"",NA,NA
+"24","Shane Griggs","QB",76,199,4.83,NA,NA,NA,NA,NA,2001,"",0,"",NA,NA
+"25","Tim Hasselbeck","QB",73,211,4.83,33,NA,113,7.27,4.4,2001,"HassTi00",1,"",NA,NA
+"26","Josh Heupel","QB",74,215,4.85,37.5,NA,114,7.18,4.15,2001,"",0,"Miami Dolphins",6,177
+"27","Ortege Jenkins","QB",73,234,4.82,34.5,NA,108,7.32,4.4,2001,"",0,"",NA,NA
+"28","Cleo Lemon","QB",74,226,4.87,35.5,NA,106,7.33,4.27,2001,"LemoCl00",6,"",NA,NA
+"29","Mike McMahon","QB",74,207,4.57,37.5,NA,124,7.12,4.12,2001,"McMaMi00",5,"Detroit Lions",5,149
+"30","Romaro Miller","QB",72,205,4.61,35,NA,110,7.4,4.51,2001,"",0,"",NA,NA
+"31","Jesse Palmer","QB",74,231,4.78,35.5,NA,112,7.13,4.29,2001,"PalmJe00",1,"New York Giants",4,125
+"32","David Rivers","QB",75,223,4.73,31.5,NA,115,7.37,4.2,2001,"",0,"",NA,NA
+"33","Sage Rosenfels","QB",76,228,4.74,34,NA,107,7.07,4.29,2001,"RoseSa00",1,"Washington Redskins",4,109
+"34","Marques Tuiasosopo","QB",73,223,4.71,35.5,NA,115,7.36,4.35,2001,"TuiaMa00",1,"Oakland Raiders",2,59
+"35","Michael Vick","QB",72,210,4.33,NA,NA,NA,NA,NA,2001,"VickMi00",25,"Atlanta Falcons",1,1
+"36","Chris Weinke","QB",76,226,5.2,NA,NA,NA,NA,NA,2001,"WeinCh00",7,"Carolina Panthers",4,106
+"37","David Carr","QB",75,223,4.67,35,NA,108,7.05,4.28,2002,"CarrDa00",25,"Houston Texans",1,1
+"38","Ronald Curry","QB",74,220,4.59,35,NA,115,7.06,4.11,2002,"CurrRo01",6,"Oakland Raiders",7,235
+"39","Woody Dantzler","QB",70,207,4.59,NA,NA,NA,NA,NA,2002,"",0,"",NA,NA
+"40","Rohan Davey","QB",74,245,4.74,NA,NA,NA,NA,NA,2002,"DaveRo01",0,"New England Patriots",4,117
+"41","Brandon Doman","QB",74,210,4.81,32.5,NA,106,6.9,4.08,2002,"",0,"San Francisco 49ers",5,163
+"42","Randy Fasani","QB",75,224,4.77,31.5,NA,106,6.75,3.87,2002,"FasaRa00",1,"Carolina Panthers",5,137
+"43","David Garrard","QB",74,235,4.82,33.5,NA,111,7.35,4.26,2002,"GarrDa00",3,"Jacksonville Jaguars",4,108
+"44","Joey Harrington","QB",76,215,4.89,32,NA,112,7,4.21,2002,"HarrJo00",19,"Detroit Lions",1,3
+"45","Kurt Kittner","QB",74,221,4.86,27,NA,100,7.34,4.5,2002,"KittKu00",1,"Atlanta Falcons",5,158
+"46","Josh McCown","QB",76,221,4.59,38.5,NA,120,6.85,3.9,2002,"McCoJo01",10,"Arizona Cardinals",3,81
+"47","David Neill","QB",75,206,4.95,30,NA,108,7.28,4.44,2002,"",0,"",NA,NA
+"48","J.T. O'Sullivan","QB",74,223,4.88,29,NA,107,7.46,4.28,2002,"OSulJ.00",6,"New Orleans Saints",6,186
+"49","Patrick Ramsey","QB",74,219,5.24,33.5,NA,112,7.12,4.09,2002,"RamsPa00",13,"Washington Redskins",1,32
+"50","Greg Zolman","QB",74,220,4.93,34,NA,112,7.08,4.14,2002,"",0,"",NA,NA
+"51","Brad Banks","QB",71,201,4.67,33.5,NA,112,NA,NA,2003,"",0,"",NA,NA
+"52","Josh Blankenship","QB",74,211,5.16,28.5,NA,103,7.59,4.42,2003,"",0,"",NA,NA
+"53","Kyle Boller","QB",75,234,4.61,35.5,NA,117,7.2,4.02,2003,"BollKy00",13,"Baltimore Ravens",1,19
+"54","D. Bryant","QB",74,218,4.73,35.5,NA,114,7.36,4.4,2003,"",0,"",NA,NA
+"55","Ken Dorsey","QB",77,208,4.7,NA,NA,NA,NA,NA,2003,"DorsKe00",0,"San Francisco 49ers",7,241
+"56","Jason Gesser","QB",73,205,4.87,NA,NA,NA,NA,NA,2003,"",0,"",NA,NA
+"57","Rex Grossman","QB",73,217,5.06,NA,NA,NA,NA,NA,2003,"GrosRe00",3,"Chicago Bears",1,22
+"58","Kliff Kingsbury","QB",75,213,4.77,30,NA,101,6.92,4.1,2003,"KingKl00",0,"New England Patriots",6,201
+"59","Byron Leftwich","QB",77,241,4.85,NA,NA,NA,NA,NA,2003,"LeftBy00",27,"Jacksonville Jaguars",1,7
+"60","Carson Palmer","QB",77,232,4.65,NA,NA,NA,NA,NA,2003,"PalmCa00",40,"Cincinnati Bengals",1,1
+"61","Brian Saint Pierre","QB",75,218,4.82,30,NA,106,NA,NA,2003,"",0,"",NA,NA
+"62","Dave Ragone","QB",76,249,4.99,30.5,NA,101,7.42,4.36,2003,"RagoDa00",1,"Houston Texans",3,88
+"63","Tony Romo","QB",74,230,5.01,30,NA,105,7.11,4.2,2003,"RomoTo00",12,"",NA,NA
+"64","Chris Simms","QB",76,220,4.84,31,NA,103,7.38,4.21,2003,"SimmCh00",8,"Tampa Bay Buccaneers",3,97
+"65","Seneca Wallace","QB",71,196,4.56,38,NA,127,6.98,4.14,2003,"WallSe00",5,"Seattle Seahawks",4,110
+"66","Juston Wood","QB",73,207,4.78,32.5,NA,113,7.14,4.16,2003,"",0,"",NA,NA
+"67","Casey Clausen","QB",75,223,4.95,NA,NA,NA,NA,NA,2004,"",0,"",NA,NA
+"68","Jason Fife","QB",76,226,4.83,30.5,NA,113,7.28,4.18,2004,"",0,"",NA,NA
+"69","Josh Harris-01","QB",73,238,4.78,31,NA,115,NA,NA,2004,"",0,"Baltimore Ravens",6,187
+"70","Robert Kent","QB",76,222,4.87,26.5,NA,110,7.69,4.22,2004,"",0,"",NA,NA
+"71","Craig Krenzel","QB",75,228,4.84,28,NA,112,7.22,4.08,2004,"KrenCr00",1,"Chicago Bears",5,148
+"72","Jared Lorenzen","QB",75,288,5.28,NA,NA,NA,NA,NA,2004,"LoreJa00",0,"",NA,NA
+"73","J.P. Losman","QB",74,224,4.73,33,NA,116,NA,NA,2004,"LosmJ.00",14,"Buffalo Bills",1,22
+"74","Eli Manning","QB",77,221,4.9,NA,NA,NA,NA,NA,2004,"MannEl00",24,"San Diego Chargers",1,1
+"75","Matt Mauck","QB",74,228,4.79,NA,NA,NA,NA,NA,2004,"MaucMa00",1,"Denver Broncos",7,225
+"76","Luke McCown","QB",76,208,4.71,37.5,NA,125,6.74,4.21,2004,"McCoLu00",6,"Cleveland Browns",4,106
+"77","John Navarre","QB",78,246,5.19,26.5,NA,100,7.73,4.46,2004,"NavaJo00",0,"Arizona Cardinals",7,202
+"78","Bradlee Van Pelt","QB",74,231,4.98,33.5,NA,115,6.89,4.11,2004,"VanPBr00",0,"Denver Broncos",7,250
+"79","Cody Pickett","QB",75,233,4.79,30.5,NA,109,7.19,4.3,2004,"PickCo00",1,"San Francisco 49ers",7,217
+"80","Scott Rislov","QB",73,224,4.95,30,NA,119,7.44,4.34,2004,"",0,"",NA,NA
+"81","Philip Rivers","QB",77,229,5.08,NA,NA,NA,NA,NA,2004,"RivePh00",18,"New York Giants",1,4
+"82","Ell Roberson","QB",71,194,4.6,NA,NA,NA,NA,NA,2004,"",0,"",NA,NA
+"83","Ben Roethlisberger","QB",77,241,4.75,NA,NA,NA,NA,NA,2004,"RoetBe00",33,"Pittsburgh Steelers",1,11
+"84","Rod Rutherford","QB",74,240,4.79,30.5,NA,110,7.66,4.41,2004,"",0,"",NA,NA
+"85","Matt Schaub","QB",78,243,5.04,30.5,NA,110,7.65,4.62,2004,"SchaMa00",4,"Atlanta Falcons",3,90
+"86","Jeff Smoker","QB",75,223,4.95,26.5,NA,101,7.65,4.36,2004,"",0,"St. Louis Rams",6,201
+"87","B.J. Symons","QB",72,210,4.9,NA,NA,NA,NA,NA,2004,"",0,"Houston Texans",7,248
+"88","Jared Allen-02","QB",74,218,4.93,27.5,NA,106,7.29,4.39,2005,"",0,"",NA,NA
+"89","Derek Anderson","QB",78,242,5.03,29,NA,103,7.67,4.62,2005,"AndeDe00",19,"Baltimore Ravens",6,213
+"90","Brock Berlin","QB",73,221,4.83,29,NA,109,7.49,4.54,2005,"BerlBr00",0,"",NA,NA
+"91","Jason Campbell","QB",77,230,4.71,NA,NA,NA,NA,NA,2005,"CampJa00",24,"Washington Redskins",1,25
+"92","Timmy Chang","QB",73,211,5.08,29,NA,111,7.24,4.2,2005,"",0,"",NA,NA
+"93","Ben Dougherty","QB",74,222,4.72,33,NA,108,7.41,4.34,2005,"",0,"",NA,NA
+"94","Ryan Fitzpatrick","QB",74,232,4.86,30.5,NA,105,7.09,4.07,2005,"FitzRy00",3,"St. Louis Rams",7,250
+"95","Charlie Frye","QB",76,225,4.79,33,NA,113,6.94,4.08,2005,"FryeCh00",7,"Cleveland Browns",3,67
+"96","David Greene-02","QB",75,226,4.78,31.5,NA,115,7,4.1,2005,"",0,"Seattle Seahawks",3,85
+"97","Gino Guidugli","QB",76,229,5,29,NA,103,7.41,4.52,2005,"",0,"",NA,NA
+"98","Josh Haldi","QB",74,215,4.64,33,NA,113,6.89,4.07,2005,"",0,"",NA,NA
+"99","Stefan LeFors","QB",72,208,4.56,31,NA,111,7.03,4.09,2005,"",0,"Carolina Panthers",4,121
+"100","Dustin Long","QB",74,208,4.67,30.5,NA,108,6.77,4.08,2005,"",0,"",NA,NA
+"101","Adrian McPherson","QB",75,218,4.71,34.5,22,128,6.93,4.08,2005,"",0,"",NA,NA
+"102","Craig Ochs","QB",74,218,4.87,28.5,NA,104,7.03,4.13,2005,"",0,"",NA,NA
+"103","Dan Orlovsky","QB",77,225,4.93,29.5,NA,107,7.33,4.39,2005,"OrloDa00",4,"Detroit Lions",5,145
+"104","Kyle Orton","QB",76,233,5.06,26.5,NA,NA,7.38,4.52,2005,"OrtoKy00",12,"Chicago Bears",4,106
+"105","Bryan Randall","QB",72,225,4.71,33,NA,113,6.97,4.08,2005,"",0,"",NA,NA
+"106","Chris Rix","QB",74,214,4.7,33.5,NA,116,7.53,4.53,2005,"",0,"",NA,NA
+"107","Aaron Rodgers","QB",74,223,4.71,34.5,NA,110,7.38,NA,2005,"RodgAa00",1,"Green Bay Packers",1,24
+"108","Alex Smith-01","QB",76,217,4.71,32,NA,113,6.82,3.96,2005,"SmitAl03",7,"San Francisco 49ers",1,1
+"109","Andrew Walter","QB",78,233,4.86,NA,NA,NA,NA,NA,2005,"WaltAn00",1,"Oakland Raiders",3,69
+"110","Jason White","QB",74,223,4.9,31,NA,108,7.28,4.19,2005,"",0,"",NA,NA
+"111","Brett Basanez","QB",73,220,4.76,34,NA,114,6.75,4.22,2006,"BasaBr00",0,"",NA,NA
+"112","Kellen Clemens","QB",74,224,4.89,NA,NA,NA,NA,NA,2006,"ClemKe00",3,"New York Jets",2,49
+"113","Brodie Croyle","QB",74,205,4.88,30.5,NA,104,7.34,4.25,2006,"CroyBr00",1,"Kansas City Chiefs",3,85
+"114","Jay Cutler","QB",75,226,4.77,NA,23,NA,7.1,4.26,2006,"CutlJa00",30,"Denver Broncos",1,11
+"115","Bruce Eugene","QB",72,260,5.12,27.5,NA,94,7.97,4.76,2006,"",0,"",NA,NA
+"116","Bruce Gradkowski","QB",73,217,4.59,34,NA,107,7.12,4.16,2006,"GradBr00",3,"Tampa Bay Buccaneers",6,194
+"117","Darrell Hackney","QB",72,239,4.82,33,NA,110,7.62,4.69,2006,"",0,"",NA,NA
+"118","Tarvaris Jackson","QB",74,226,4.69,31.5,22,107,7.4,4.38,2006,"JackTa00",11,"Minnesota Vikings",2,64
+"119","Omar Jacobs","QB",76,232,4.84,32.5,NA,108,7.47,4.29,2006,"",0,"Pittsburgh Steelers",5,164
+"120","Matt Leinart","QB",77,223,4.9,NA,NA,NA,NA,NA,2006,"LeinMa00",11,"Arizona Cardinals",1,10
+"121","Travis Lulay","QB",74,216,4.71,35,NA,111,6.93,4.07,2006,"",0,"",NA,NA
+"122","Ingle Martin","QB",74,220,4.71,36,NA,111,7.13,4.17,2006,"MartIn00",0,"Green Bay Packers",5,148
+"123","Reggie McNeal","QB",74,198,4.4,32,NA,121,6.96,4.25,2006,"McNeRe00",0,"Cincinnati Bengals",6,193
+"124","Erik Meyer","QB",73,210,4.67,32.5,NA,112,6.83,4.12,2006,"",0,"",NA,NA
+"125","Barrick Nealy","QB",76,226,4.57,32.5,NA,114,6.94,4.26,2006,"",0,"",NA,NA
+"126","Drew Olson","QB",74,222,5.09,23,NA,97,NA,4.42,2006,"",0,"",NA,NA
+"127","Paul Pinegar","QB",77,232,5.1,29,NA,110,7.36,4.49,2006,"",0,"",NA,NA
+"128","Quinton Porter","QB",77,233,4.67,33.5,NA,116,6.76,4.1,2006,"",0,"",NA,NA
+"129","D.J. Shockley","QB",73,214,4.56,37.5,NA,121,7.07,4.17,2006,"",0,"Atlanta Falcons",7,223
+"130","Kent Smith","QB",77,216,4.57,35,NA,122,7.41,4.47,2006,"",0,"",NA,NA
+"131","Marcus Vick","QB",72,200,4.47,36,NA,117,6.94,4.08,2006,"VickMa20",0,"",NA,NA
+"132","Charlie Whitehurst","QB",77,223,4.75,33,NA,112,7,4.11,2006,"WhitCh02",3,"San Diego Chargers",3,81
+"133","Vince Young","QB",77,229,4.48,NA,NA,NA,NA,NA,2006,"YounVi00",19,"Tennessee Titans",1,3
+"134","John Beck","QB",74,215,4.75,29.5,NA,111,6.81,4.17,2007,"BeckJo00",4,"Miami Dolphins",2,40
+"135","Trent Edwards","QB",76,231,4.76,NA,19,NA,7.14,4.46,2007,"EdwaTr01",16,"Buffalo Bills",3,92
+"136","Luke Getsy","QB",74,222,4.96,32.5,NA,106,6.95,4.46,2007,"",0,"",NA,NA
+"137","Matt Gutierrez","QB",76,232,5,29.5,NA,108,6.99,4.28,2007,"GutiMa00",0,"",NA,NA
+"138","Kevin Kolb","QB",75,218,4.85,32.5,NA,112,6.94,4.44,2007,"KolbKe00",2,"Philadelphia Eagles",2,36
+"139","Toby Korrodi","QB",75,234,5.37,25,NA,91,7.77,4.64,2007,"",0,"",NA,NA
+"140","Chris Leak","QB",72,209,4.74,32.5,NA,113,7.03,4.41,2007,"",0,"",NA,NA
+"141","Tyler Palko","QB",73,215,4.83,31.5,NA,112,7.05,4.36,2007,"PalkTy00",2,"",NA,NA
+"142","Jordan Palmer","QB",78,231,4.98,30.5,NA,104,7.32,4.58,2007,"PalmJo20",0,"Washington Redskins",6,205
+"143","James Pinkney","QB",74,208,4.79,34,NA,112,7.35,4.49,2007,"",0,"",NA,NA
+"144","Brady Quinn","QB",76,232,4.73,NA,24,NA,NA,NA,2007,"QuinBr00",3,"Cleveland Browns",1,22
+"145","Jeff Rowe","QB",77,226,4.91,29.5,NA,114,7.16,4.42,2007,"RoweJe00",0,"Cincinnati Bengals",5,151
+"146","JaMarcus Russell","QB",77,265,4.83,NA,NA,NA,NA,NA,2007,"RussJa00",6,"Oakland Raiders",1,1
+"147","Troy Smith","QB",72,225,4.72,NA,NA,NA,NA,NA,2007,"SmitTr02",2,"Baltimore Ravens",5,174
+"148","Isaiah Stanback","QB",74,216,4.6,NA,22,NA,NA,NA,2007,"StanIs00",0,"Dallas Cowboys",4,103
+"149","Drew Stanton","QB",75,226,4.75,30.5,NA,108,6.77,4.41,2007,"StanDr00",4,"Detroit Lions",2,43
+"150","John Stocco","QB",74,207,5.08,27,NA,104,7.29,4.6,2007,"",0,"",NA,NA
+"151","Josh Swogger","QB",76,237,5.12,28.5,NA,107,7.25,4.76,2007,"",0,"",NA,NA
+"152","Zac Taylor","QB",74,216,5.06,30.5,NA,110,7.39,4.6,2007,"",0,"",NA,NA
+"153","Jared Zabransky","QB",74,219,4.56,35.5,NA,111,6.78,4.08,2007,"",0,"",NA,NA
+"154","Erik Ainge","QB",77,225,4.98,21.5,NA,108,7.51,4.6,2008,"AingEr00",0,"New York Jets",5,162
+"155","John David Booty","QB",74,218,4.82,22.5,NA,99,NA,4.58,2008,"BootJo00",0,"",NA,NA
+"156","Colt Brennan","QB",74,207,4.79,NA,NA,NA,NA,NA,2008,"BrenCo00",0,"Washington Redskins",6,186
+"157","Alex Brink","QB",74,211,4.96,28,NA,112,7.22,4.19,2008,"BrinAl00",0,"Houston Texans",7,223
+"158","Brian Brohm","QB",75,230,4.81,30,NA,115,7.13,4.55,2008,"BrohBr00",0,"Green Bay Packers",2,56
+"159","Dennis Dixon","QB",75,195,4.58,NA,NA,NA,NA,NA,2008,"DixoDe00",2,"Pittsburgh Steelers",5,156
+"160","Joe Flacco","QB",78,236,4.84,28.5,NA,110,6.82,4.27,2008,"FlacJo00",36,"Baltimore Ravens",1,18
+"161","Matt Flynn","QB",74,231,4.79,28,NA,109,7.21,4.34,2008,"FlynMa00",1,"Green Bay Packers",7,209
+"162","Chad Henne","QB",75,230,4.92,25.5,NA,106,7.17,4.4,2008,"HennCh01",15,"Miami Dolphins",2,57
+"163","Josh Johnson-01","QB",75,213,4.53,33.5,NA,110,7.56,4.42,2008,"JohnJo05",4,"Tampa Bay Buccaneers",5,160
+"164","Sam Keller","QB",76,241,4.99,24,NA,107,7.07,4.35,2008,"",0,"",NA,NA
+"165","Anthony Morelli","QB",76,231,5.07,26.5,16,108,7.43,4.6,2008,"",0,"",NA,NA
+"166","Bernard Morris","QB",75,223,4.68,24.5,18,109,NA,NA,2008,"",0,"",NA,NA
+"167","Kevin O'Connell","QB",77,225,4.61,31,NA,113,7.01,4.38,2008,"OConKe00",0,"New England Patriots",3,94
+"168","T.C. Ostrander","QB",74,227,4.92,NA,NA,NA,NA,NA,2008,"",0,"",NA,NA
+"169","Matt Ryan","QB",77,228,4.89,NA,NA,NA,7.4,4.51,2008,"RyanMa00",40,"Atlanta Falcons",1,3
+"170","Paul Smith-02","QB",73,208,4.95,26.5,NA,111,7.02,4.29,2008,"",0,"",NA,NA
+"171","Adam Tafralis","QB",73,221,4.78,32,NA,108,7.14,4.33,2008,"",0,"",NA,NA
+"172","Andre Woodson","QB",76,229,4.85,NA,NA,NA,NA,NA,2008,"WoodAn00",0,"New York Giants",6,198
+"173","Kyle Wright","QB",75,218,4.85,25.5,NA,105,7.34,4.32,2008,"",0,"",NA,NA
+"174","Jason Boltus","QB",75,225,4.82,31.5,26,111,7,4.47,2009,"",0,"",NA,NA
+"175","Rhett Bomar","QB",74,225,4.7,NA,25,106,6.91,4.06,2009,"BomaRh00",0,"New York Giants",5,151
+"176","Tom Brandstater","QB",77,220,4.87,28.5,NA,106,6.93,4.37,2009,"BranTo00",0,"Denver Broncos",6,174
+"177","Nathan Brown","QB",73,219,4.86,30.5,NA,106,7.43,4.44,2009,"",0,"",NA,NA
+"178","Hunter Cantwell","QB",76,235,5.22,26,NA,99,7.4,4.59,2009,"CantHu00",0,"",NA,NA
+"179","Rudy Carpenter","QB",74,218,4.89,29,11,100,7.25,4.47,2009,"CarpRu00",0,"",NA,NA
+"180","Chase Daniel","QB",72,218,4.79,33,NA,NA,7.28,4.31,2009,"DaniCh00",0,"",NA,NA
+"181","Nate Davis","QB",73,226,4.95,26.5,NA,99,NA,NA,2009,"DaviNa00",0,"San Francisco 49ers",5,171
+"182","Josh Freeman","QB",78,248,4.9,33.5,NA,119,7.11,4.43,2009,"FreeJo00",24,"Tampa Bay Buccaneers",1,17
+"183","Cullen Harper","QB",75,225,4.86,30,19,105,7.43,4.49,2009,"",0,"",NA,NA
+"184","Graham Harrell","QB",74,223,4.95,29.5,NA,98,7.45,4.56,2009,"HarrGr00",0,"",NA,NA
+"185","Chase Holbrook","QB",76,242,5.12,27,NA,108,7.93,4.65,2009,"",0,"",NA,NA
+"186","Brian Hoyer","QB",74,215,5.02,32,NA,109,7.1,4.42,2009,"HoyeBr00",1,"",NA,NA
+"187","Stephen McGee","QB",75,225,4.61,33,NA,112,7.34,4.49,2009,"McGeSt00",2,"Dallas Cowboys",4,101
+"188","Curtis Painter","QB",75,225,4.87,29,NA,102,7,4.48,2009,"PainCu00",2,"Indianapolis Colts",6,201
+"189","Mike Reilly","QB",75,214,4.74,30.5,NA,109,6.76,4.11,2009,"",0,"",NA,NA
+"190","Mark Sanchez","QB",74,227,4.93,32.5,NA,116,7.06,4.21,2009,"SancMa00",24,"New York Jets",1,5
+"191","Matthew Stafford","QB",74,225,4.81,30.5,NA,107,7.06,4.47,2009,"StafMa00",21,"Detroit Lions",1,1
+"192","Pat White","QB",72,197,4.55,35,NA,117,7.06,4.42,2009,"WhitPa01",1,"Miami Dolphins",2,44
+"193","Drew Willy","QB",75,215,4.9,30.5,NA,109,7.18,4.45,2009,"WillDr00",0,"",NA,NA
+"194","John Parker Wilson","QB",73,219,4.75,29.5,NA,105,7.53,4.59,2009,"WilsJo01",0,"",NA,NA
+"195","Sam Bradford","QB",76,236,4.79,NA,NA,NA,NA,NA,2010,"BradSa00",21,"St. Louis Rams",1,1
+"196","Levi Brown-02","QB",75,229,4.93,31.5,20,106,7.07,4.43,2010,"BrowLe00",0,"Buffalo Bills",7,209
+"197","Jarrett Brown","QB",75,224,4.5,34.5,NA,114,7.24,4.39,2010,"BrowJa01",0,"",NA,NA
+"198","Sean Canfield","QB",76,223,4.93,29.5,NA,100,7.26,4.39,2010,"CanfSe00",0,"New Orleans Saints",7,239
+"199","Daryll Clark","QB",74,235,4.72,NA,21,NA,NA,NA,2010,"",0,"",NA,NA
+"200","Jimmy Clausen","QB",75,222,4.76,NA,NA,NA,NA,NA,2010,"ClauJi00",1,"Carolina Panthers",2,48
+"201","Max Hall","QB",73,209,4.84,32,NA,102,7.07,4.35,2010,"HallMa00",1,"",NA,NA
+"202","Tim Hiller","QB",76,229,4.97,32.5,18,118,7.1,4.54,2010,"",0,"",NA,NA
+"203","Mike Kafka","QB",75,225,4.93,32,NA,110,6.96,4.37,2010,"KafkMi00",0,"Philadelphia Eagles",4,122
+"204","Dan LeFevour","QB",75,230,4.6,29.5,NA,110,6.93,4.22,2010,"LeFeDa00",0,"Chicago Bears",6,181
+"205","Thaddeus Lewis","QB",72,215,4.84,28,NA,107,NA,NA,2010,"LewiTh01",4,"",NA,NA
+"206","Colt McCoy","QB",73,216,4.79,NA,NA,114,NA,NA,2010,"McCoCo00",10,"Cleveland Browns",3,85
+"207","Tony Pike","QB",78,223,4.9,28.5,NA,108,7.06,4.53,2010,"PikeTo00",0,"Carolina Panthers",6,204
+"208","Zac Robinson","QB",74,214,4.68,35,NA,110,7.24,4.4,2010,"RobiZa00",0,"New England Patriots",7,250
+"209","John Skelton","QB",77,243,4.85,33.5,NA,108,7.17,4.33,2010,"SkelJo00",4,"Arizona Cardinals",5,155
+"210","Riley Skinner","QB",72,214,5.05,30,NA,101,7.04,4.29,2010,"",0,"",NA,NA
+"211","Jevan Snead","QB",75,219,5.04,33,NA,106,7.08,4.33,2010,"",0,"",NA,NA
+"212","Tim Tebow","QB",75,236,4.71,38.5,NA,115,6.66,4.17,2010,"TeboTi00",12,"Denver Broncos",1,25
+"213","Jeff Van Camp","QB",77,218,4.83,31,NA,114,6.87,4.16,2011,"",0,"",NA,NA
+"214","Ryan Colburn","QB",75,233,5.12,NA,NA,NA,6.84,4.28,2011,"",0,"",NA,NA
+"215","Andy Dalton","QB",74,215,4.83,29.5,NA,106,6.93,4.27,2011,"DaltAn00",37,"Cincinnati Bengals",2,35
+"216","Pat Devlin","QB",75,225,4.81,33,NA,116,7.08,4.32,2011,"DevlPa00",0,"",NA,NA
+"217","Nathan Enderle","QB",76,240,5.12,25.5,NA,102,7.13,4.46,2011,"EndeNa00",0,"Chicago Bears",5,160
+"218","Blaine Gabbert","QB",76,234,4.61,33.5,NA,120,6.84,4.26,2011,"GabbBl00",8,"Jacksonville Jaguars",1,10
+"219","Jerrod Johnson","QB",77,251,4.75,29,NA,119,7.28,4.31,2011,"JohnJe03",0,"",NA,NA
+"220","Colin Kaepernick","QB",77,233,4.53,32.5,NA,115,6.85,4.18,2011,"KaepCo00",24,"San Francisco 49ers",2,36
+"221","Jake Locker","QB",74,231,4.51,35,NA,120,6.77,4.12,2011,"LockJa00",13,"Tennessee Titans",1,8
+"222","Ryan Mallett","QB",79,253,5.37,24,NA,103,NA,NA,2011,"MallRy00",4,"New England Patriots",3,74
+"223","Greg McElroy","QB",74,220,4.84,33,NA,107,7.11,4.45,2011,"McElGr00",1,"New York Jets",7,208
+"224","Cam Newton","QB",77,248,4.56,35,NA,126,6.92,4.18,2011,"NewtCa00",51,"Carolina Panthers",1,1
+"225","Christian Ponder","QB",74,229,4.63,34,NA,116,6.85,4.09,2011,"PondCh00",22,"Minnesota Vikings",1,12
+"226","Josh Portis","QB",75,211,4.59,40,NA,126,6.84,4.12,2011,"PortJo01",0,"",NA,NA
+"227","Ricky Stanzi","QB",76,223,4.87,32.5,NA,110,6.95,4.43,2011,"StanRi00",0,"Kansas City Chiefs",5,135
+"228","Tyrod Taylor","QB",73,217,4.47,37.5,NA,126,6.78,4.09,2011,"TaylTy00",1,"Baltimore Ravens",6,180
+"229","Scott Tolzien","QB",74,212,4.92,29.5,NA,116,6.84,4.12,2011,"TolzSc00",2,"",NA,NA
+"230","T.J. Yates","QB",75,219,5.06,29.5,NA,104,6.96,4.12,2011,"YateT.00",3,"Houston Texans",5,152
+"231","B.J. Coleman","QB",75,233,4.94,NA,NA,109,7.07,4.38,2012,"ColeB.00",0,"Green Bay Packers",7,243
+"232","Aaron Corp","QB",75,215,4.61,31.5,NA,106,7.03,4.3,2012,"",0,"",NA,NA
+"233","Kirk Cousins","QB",75,214,4.84,28.5,NA,109,7.05,4.5,2012,"CousKi00",4,"Washington Redskins",4,102
+"234","Austin Davis","QB",74,219,4.69,31,NA,109,6.73,4.11,2012,"DaviAu00",6,"",NA,NA
+"235","Nick Foles","QB",77,243,5.03,30.5,NA,112,NA,NA,2012,"FoleNi00",20,"Philadelphia Eagles",3,88
+"236","Robert Griffin","QB",74,223,4.33,39,NA,120,NA,NA,2012,"GrifRo01",33,"Washington Redskins",1,2
+"237","Chandler Harnish","QB",74,219,4.68,32.5,NA,112,6.78,4.15,2012,"HarnCh00",0,"Indianapolis Colts",7,253
+"238","Jacory Harris","QB",75,203,4.65,37,NA,113,7.1,4.4,2012,"",0,"",NA,NA
+"239","Jordan Jefferson","QB",76,223,4.58,36.5,14,116,6.81,4.06,2012,"",0,"",NA,NA
+"240","Case Keenum","QB",73,208,4.72,32.5,NA,103,NA,NA,2012,"KeenCa00",5,"",NA,NA
+"241","Ryan Lindley","QB",76,229,4.86,29.5,NA,108,7.52,4.45,2012,"LindRy00",-4,"Arizona Cardinals",6,185
+"242","Andrew Luck","QB",76,234,4.59,36,NA,124,6.8,4.28,2012,"LuckAn00",44,"Indianapolis Colts",1,1
+"243","Kellen Moore","QB",72,197,4.82,27,NA,99,7.41,4.56,2012,"MoorKe02",2,"",NA,NA
+"244","Brock Osweiler","QB",79,242,4.83,NA,NA,NA,NA,NA,2012,"OsweBr00",0,"Denver Broncos",2,57
+"245","Ryan Tannehill","QB",76,221,4.65,NA,NA,NA,NA,NA,2012,"TannRy00",34,"Miami Dolphins",1,8
+"246","Darron Thomas","QB",75,220,4.77,36,14,121,7.17,4.28,2012,"",0,"",NA,NA
+"247","Brandon Weeden","QB",75,221,4.89,NA,NA,NA,NA,NA,2012,"WeedBr00",12,"Cleveland Browns",1,22
+"248","Russell Wilson","QB",71,204,4.53,34,NA,118,6.97,4.09,2012,"WilsRu00",51,"Seattle Seahawks",3,75
+"249","Patrick Witt","QB",75,225,5.06,31.5,NA,101,7.14,4.37,2012,"",0,"",NA,NA
+"250","Matt Barkley","QB",74,227,4.91,NA,NA,NA,NA,NA,2013,"BarkMa00",2,"Philadelphia Eagles",4,98
+"251","Tyler Bray","QB",78,232,5.05,NA,NA,100,7.2,4.51,2013,"BrayTy00",0,"",NA,NA
+"252","Colby Cameron","QB",74,212,4.78,30.5,NA,112,6.98,4.28,2013,"CameCo00",0,"",NA,NA
+"253","Zac Dysert","QB",75,231,4.81,NA,NA,NA,NA,NA,2013,"DyseZa00",0,"Denver Broncos",7,234
+"254","Mike Glennon","QB",79,225,4.94,26.5,NA,102,7.49,4.52,2013,"GlenMi00",11,"Tampa Bay Buccaneers",3,73
+"255","MarQueis Gray","QB",75,240,4.65,30,15,111,7.25,4.3,2013,"GrayMa00",1,"",NA,NA
+"256","Landry Jones","QB",76,225,5.11,31,NA,115,7.12,4.3,2013,"JoneLa02",1,"Pittsburgh Steelers",4,115
+"257","Collin Klein","QB",77,226,4.78,29,NA,111,7.17,4.4,2013,"KleiCo00",0,"",NA,NA
+"258","E.J. Manuel","QB",77,237,4.65,34,NA,118,7.08,4.21,2013,"ManuEJ00",9,"Buffalo Bills",1,16
+"259","Ryan Nassib","QB",74,227,5.06,28.5,NA,105,7.34,4.53,2013,"NassRy00",0,"New York Giants",4,110
+"260","Sean Renfree","QB",75,219,4.76,NA,NA,NA,NA,NA,2013,"RenfSe00",0,"Atlanta Falcons",7,249
+"261","Matt Scott","QB",74,213,4.69,31,NA,118,6.69,3.99,2013,"ScotMa01",0,"",NA,NA
+"262","Geno Smith","QB",74,218,4.58,33.5,NA,124,NA,NA,2013,"SmitGe00",15,"New York Jets",2,39
+"263","Brad Sorensen","QB",76,229,4.97,29,NA,112,7.17,4.55,2013,"SoreBr00",0,"San Diego Chargers",7,221
+"264","James Vandenberg","QB",75,226,4.92,32,NA,116,6.95,4.52,2013,"",0,"",NA,NA
+"265","Tyler Wilson","QB",74,215,4.95,28.5,NA,112,7.22,4.39,2013,"WilsTy00",0,"Oakland Raiders",4,112
+"266","Blake Bortles","QB",77,232,4.93,32.5,NA,115,7.08,4.21,2014,"BortBl00",29,"Jacksonville Jaguars",1,3
+"267","Tajh Boyd","QB",73,222,4.84,30.5,NA,106,7.33,4.23,2014,"BoydTa00",0,"New York Jets",6,213
+"268","Teddy Bridgewater","QB",74,214,NA,30,NA,113,7.17,4.2,2014,"BridTe00",22,"Minnesota Vikings",1,32
+"269","Derek Carr","QB",74,214,4.69,34.5,NA,110,NA,4.2,2014,"CarrDe02",30,"Oakland Raiders",2,36
+"270","David Fales","QB",74,212,4.99,28,NA,103,7.55,4.5,2014,"FaleDa00",1,"Chicago Bears",6,183
+"271","Jimmy Garoppolo","QB",74,226,4.97,30.5,NA,110,7.04,4.26,2014,"GaroJi00",3,"New England Patriots",2,62
+"272","Jordan Lynch","QB",72,217,4.76,29.5,NA,109,6.55,4.2,2014,"LyncJo01",0,"",NA,NA
+"273","Johnny Manziel","QB",72,207,4.68,31.5,NA,113,6.75,4.03,2014,"ManzJo00",5,"Cleveland Browns",1,22
+"274","Jeff Mathews","QB",76,223,5.26,25.5,NA,105,7.14,4.36,2014,"",0,"",NA,NA
+"275","A.J. McCarron","QB",75,220,4.94,28,NA,99,7.18,4.34,2014,"McCaA.00",3,"Cincinnati Bengals",5,164
+"276","Zach Mettenberger","QB",77,224,NA,NA,NA,NA,NA,NA,2014,"MettZa00",1,"Tennessee Titans",6,178
+"277","Stephen Morris","QB",74,213,4.63,30,NA,111,7.36,4.49,2014,"MorrSt00",0,"",NA,NA
+"278","Aaron Murray","QB",72,207,4.84,NA,NA,NA,NA,NA,2014,"MurrAa00",0,"Kansas City Chiefs",5,163
+"279","Bryn Renner","QB",75,228,4.87,25.5,NA,108,7.22,4.3,2014,"RennBr01",0,"",NA,NA
+"280","Tom Savage","QB",76,228,4.97,27,NA,105,7.33,4.36,2014,"SavaTo00",4,"Houston Texans",4,135
+"281","Connor Shaw","QB",72,206,4.66,34,NA,116,7.07,4.33,2014,"ShawCo00",0,"",NA,NA
+"282","Logan Thomas","QB",78,248,4.61,35.5,NA,118,7.05,4.18,2014,"ThomLo00",1,"Arizona Cardinals",4,120
+"283","Dustin Vaughan","QB",77,235,4.95,29,NA,108,7.25,4.43,2014,"VaugDu00",0,"",NA,NA
+"284","Keith Wenning","QB",75,218,5,28,NA,100,7.07,4.25,2014,"WennKe00",0,"Baltimore Ravens",6,194
+"285","Bryan Bennett","QB",74,211,4.81,37,NA,125,7.13,4.2,2015,"",0,"",NA,NA
+"286","Anthony Boone","QB",72,231,5.03,26.5,NA,100,7.47,4.62,2015,"BoonAn00",0,"",NA,NA
+"287","Brandon Bridge","QB",76,229,4.72,33,NA,110,7.18,4.37,2015,"BridBr00",0,"",NA,NA
+"288","Shane Carden","QB",74,218,4.94,29.5,NA,104,7.17,4.45,2015,"CardSh00",0,"",NA,NA
+"289","Cody Fajardo","QB",73,223,4.63,32.5,NA,118,6.95,4.1,2015,"FajaCo00",0,"",NA,NA
+"290","Garrett Grayson","QB",74,213,4.75,NA,NA,NA,NA,NA,2015,"GrayGa00",0,"New Orleans Saints",3,75
+"291","Connor Halliday","QB",75,204,4.87,NA,NA,NA,NA,NA,2015,"HallCo00",0,"",NA,NA
+"292","Brett Hundley","QB",75,226,4.63,36,NA,120,6.93,3.98,2015,"HundBr00",5,"Green Bay Packers",5,147
+"293","Jerry Lovelocke","QB",76,248,4.99,31.5,NA,113,7.3,4.51,2015,"",0,"",NA,NA
+"294","Sean Mannion","QB",78,229,5.14,31,NA,105,7.29,4.39,2015,"MannSe00",1,"St. Louis Rams",3,89
+"295","Marcus Mariota","QB",76,222,4.52,36,NA,121,6.87,4.11,2015,"MariMa01",34,"Tennessee Titans",1,2
+"296","Bryce Petty","QB",75,230,4.87,34,NA,121,6.91,4.13,2015,"PettBr01",4,"New York Jets",4,103
+"297","Blake Sims","QB",71,218,4.57,30.5,NA,115,NA,NA,2015,"SimsBl01",0,"",NA,NA
+"298","Jameis Winston","QB",76,231,4.97,28.5,NA,103,7.16,4.36,2015,"WinsJa00",35,"Tampa Bay Buccaneers",1,1
+"299","Vernon Adams","QB",71,200,4.83,29.5,NA,114,6.82,4.2,2016,"",0,"",NA,NA
+"300","Brandon Allen","QB",73,217,4.84,28,NA,110,7.06,4.33,2016,"AlleBr00",0,"Jacksonville Jaguars",6,201
+"301","Trevone Boykin","QB",72,212,4.77,32,NA,110,NA,4.4,2016,"",0,"",NA,NA
+"302","Jacoby Brissett","QB",76,231,4.94,31,NA,113,7.17,4.53,2016,"BrisJa00",13,"New England Patriots",3,91
+"303","Connor Cook","QB",76,217,4.79,33,NA,113,7.21,4.28,2016,"CookCo00",0,"Oakland Raiders",4,100
+"304","Brandon Doughty","QB",75,213,5.22,27,NA,103,7.49,4.52,2016,"DougBr00",0,"Miami Dolphins",7,223
+"305","Jeff Driskel","QB",76,234,4.56,32,NA,122,7.19,4.25,2016,"DrisJe00",0,"San Francisco 49ers",6,207
+"306","Jared Goff","QB",76,215,4.82,27,NA,110,7.17,4.47,2016,"GoffJa00",13,"Los Angeles Rams",1,1
+"307","Christian Hackenberg","QB",76,223,4.78,31,NA,114,7.04,4.33,2016,"HackCh01",0,"New York Jets",2,51
+"308","Kevin Hogan","QB",75,218,4.78,32.5,NA,113,6.9,4.31,2016,"HogaKe00",2,"Kansas City Chiefs",5,162
+"309","Cardale Jones","QB",77,253,4.81,36,NA,NA,NA,NA,2016,"JoneCa01",0,"Buffalo Bills",4,139
+"310","Cody Kessler","QB",73,220,4.89,29.5,NA,104,7.32,4,2016,"KessCo00",3,"Cleveland Browns",3,93
+"311","Paxton Lynch","QB",79,244,4.86,36,NA,118,7.14,4.26,2016,"LyncPa00",2,"Denver Broncos",1,26
+"312","Dak Prescott","QB",74,226,4.79,32.5,NA,116,7.11,4.32,2016,"PresDa01",30,"Dallas Cowboys",4,135
+"313","Joel Stave","QB",77,236,4.8,33.5,NA,115,7.29,4.33,2016,"StavJo01",0,"",NA,NA
+"314","Nate Sudfeld","QB",78,234,5.02,29,NA,105,NA,NA,2016,"SudfNa00",1,"Washington Redskins",6,187
+"315","Carson Wentz","QB",77,237,4.77,30.5,NA,118,6.86,4.15,2016,"WentCa00",24,"Philadelphia Eagles",1,2
+"316","Josh Woodrum","QB",75,231,4.8,31,NA,116,6.74,4.31,2016,"",0,"",NA,NA
+"317","C.J. Beathard","QB",74,219,NA,31,NA,113,NA,NA,2017,"BeatC.00",4,"San Francisco 49ers",3,104
+"318","Joshua Dobbs","QB",75,216,4.64,33,NA,122,6.75,4.31,2017,"DobbJo00",0,"Pittsburgh Steelers",4,135
+"319","Jerod Evans","QB",75,232,4.8,26.5,NA,112,NA,4.41,2017,"EvanJe01",0,"",NA,NA
+"320","Brad Kaaya","QB",76,214,NA,NA,NA,NA,NA,NA,2017,"KaayBr00",0,"Detroit Lions",6,215
+"321","DeShone Kizer","QB",76,233,4.83,30.5,NA,107,7.4,4.53,2017,"KizeDe00",5,"Cleveland Browns",2,52
+"322","Trevor Knight","QB",73,219,4.54,35.5,NA,125,7.04,4.14,2017,"KnigTr00",0,"",NA,NA
+"323","Mitch Leidner","QB",75,226,4.93,34.5,NA,123,6.96,4.25,2017,"LeidMi00",0,"",NA,NA
+"324","Sefo Liufau","QB",75,232,5.08,27,NA,105,7.32,4.45,2017,"LiufSe00",0,"",NA,NA
+"325","Patrick Mahomes","QB",74,225,4.8,30,NA,114,6.88,4.08,2017,"MahoPa00",1,"Kansas City Chiefs",1,10
+"326","Nathan Peterman","QB",74,226,4.82,31,NA,110,7.14,4.31,2017,"PeteNa00",1,"Buffalo Bills",5,171
+"327","Cooper Rush","QB",75,228,4.93,27,NA,105,7.23,4.47,2017,"RushCo00",0,"",NA,NA
+"328","Seth Russell","QB",75,213,NA,NA,NA,NA,NA,NA,2017,"RussSe00",0,"",NA,NA
+"329","Mitchell Trubisky","QB",74,222,4.67,27.5,NA,116,6.87,4.25,2017,"TrubMi00",7,"Chicago Bears",1,2
+"330","Deshaun Watson","QB",74,221,4.66,32.5,NA,119,6.95,4.31,2017,"WatsDe00",7,"Houston Texans",1,12
+"331","Davis Webb","QB",77,229,4.79,33,NA,118,6.92,4.21,2017,"WebbDa00",0,"New York Giants",3,87
+"332","Austin Allen","QB",72,210,4.81,29.5,NA,112,7.18,4.48,2018,"",0,"",NA,NA
+"333","Josh Allen","QB",77,237,4.75,33.5,NA,119,6.9,4.4,2018,"AlleJo02",0,"",NA,NA
+"334","J.T. Barrett","QB",73,224,4.7,30,NA,108,7.38,4.44,2018,"BarrJ.00",0,"",NA,NA
+"335","Kurt Benkert","QB",75,218,4.95,31,16,112,7.15,4.33,2018,"BenkKu00",0,"",NA,NA
+"336","Sam Darnold","QB",75,221,4.85,26.5,NA,105,6.96,4.4,2018,"DarnSa00",0,"",NA,NA
+"337","Danny Etling","QB",74,222,4.76,30.5,NA,114,7.09,4.37,2018,"",0,"",NA,NA
+"338","Luke Falk","QB",76,215,NA,26.5,NA,103,NA,NA,2018,"FalkLu00",0,"",NA,NA
+"339","Riley Ferguson","QB",75,212,4.98,29,NA,110,6.96,4.4,2018,"FergRi00",0,"",NA,NA
+"340","Quinton Flowers","QB",70,214,4.63,NA,NA,112,6.81,4.57,2018,"",0,"",NA,NA
+"341","Lamar Jackson","QB",74,216,NA,NA,NA,NA,NA,NA,2018,"JackLa00",0,"",NA,NA
+"342","Kyle Lauletta","QB",75,222,4.81,31,NA,113,6.95,4.07,2018,"",0,"",NA,NA
+"343","Tanner Lee","QB",76,218,4.98,32,NA,115,7,4.41,2018,"",0,"",NA,NA
+"344","Chase Litton","QB",77,230,4.9,29.5,NA,106,7.49,4.53,2018,"LittCh00",0,"",NA,NA
+"345","Baker Mayfield","QB",73,215,4.84,29,NA,111,7,4.28,2018,"MayfBa00",0,"",NA,NA
+"346","Josh Rosen","QB",76,226,4.92,31,NA,111,7.09,4.28,2018,"RoseJo01",0,"",NA,NA
+"347","Mason Rudolph","QB",77,235,4.9,26,NA,NA,NA,NA,2018,"RudoMa00",0,"",NA,NA
+"348","Nic Shimonek","QB",75,220,4.88,28.5,NA,101,7.28,4.32,2018,"",0,"",NA,NA
+"349","Mike White","QB",77,224,5.09,27,NA,96,7.4,4.4,2018,"",0,"",NA,NA
+"350","Logan Woodside","QB",73,213,4.79,31.5,NA,103,6.94,4.15,2018,"WoodLo00",0,"",NA,NA
