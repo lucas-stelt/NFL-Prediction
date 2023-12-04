@@ -23,4 +23,8 @@ names(combine2) <- c("Year", "Player Name", "Age", "School", "Height", "Weight",
 attach(combine2)
 filter.qb <- combine2 %>% filter(Position == "QB")
 ```
+```{r}
+qb.data <- read.csv("qbStats.csv")
+
+```
 
