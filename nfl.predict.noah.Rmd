@@ -23,5 +23,8 @@ write.csv(filter.qb,file = "combine.qb")
 names(combine2) <- c("Year Drafted", "Player Name", "Age", "School", "Height", "Weight", "40 Yd Dash", "Vertical Jump", " Bench Press(Reps)", "Broad Jump", "3 Cone Agility", "20 Yd Shuttle", "BMI", "Player Type", "Position", "Drafted", "Team", "Round Drafted","Pick Number")
 attach(combine2)
 filter.qb <- combine2 %>% filter(Position == "QB")
+combine.full <- read.csv("combine.2000.2018.csv")
+combine.qb <- combine.full %>% filter(Pos== "QB")
+write.csv(combine.qb, file = "combine.qb2000.csv")
 ```
 
