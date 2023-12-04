@@ -1,0 +1,140 @@
+---
+title: "Untitled"
+author: "James Spalding"
+date: "2023-12-01"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+```
+
+
+```{r}
+roster09 = read.csv("reg_roster_2009.csv")  %>%
+  filter(position == "QB")
+
+roster10 = read.csv("reg_roster_2010.csv")  %>%
+  filter(position == "QB")
+
+roster11 = read.csv("reg_roster_2011.csv")  %>%
+  filter(position == "QB")
+
+roster12 = read.csv("reg_roster_2012.csv")  %>%
+  filter(position == "QB")
+
+roster13 = read.csv("reg_roster_2013.csv")  %>%
+  filter(position == "QB")
+
+roster14 = read.csv("reg_roster_2014.csv")  %>%
+  filter(position == "QB")
+
+roster15 = read.csv("reg_roster_2015.csv")  %>%
+  filter(position == "QB")
+
+roster16 = read.csv("reg_roster_2016.csv")  %>%
+  filter(position == "QB")
+
+roster17 = read.csv("reg_roster_2017.csv")  %>%
+  filter(position == "QB")
+
+roster18 = read.csv("reg_roster_2018.csv")  %>%
+  filter(position == "QB")
+
+roster19 = read.csv("reg_roster_2019.csv")  %>%
+  filter(position == "QB")
+
+qbsCombined = rbind(roster09, roster10, roster11, roster12, roster13, roster14, roster15, roster16, roster17, roster18, roster19) %>%
+  select(-season_type)
+```
+
+
+```{r}
+qb09 = read.csv("QBStats_2009.csv") %>%
+  select(-lg) %>%
+  group_by(qb) %>%
+  summarize(att = sum(att),  cmp = sum(cmp), yds = sum(yds), ypa = sum(ypa), td = sum(td), int = sum(as.numeric(int)), sack = sum(sack), loss = sum(loss), game_points = sum(game_points)) %>%
+  na.omit()
+qb09$year = rep(2009, each = nrow(qb09)) #year column
+
+
+qb10 = read.csv("QBStats_2010.csv") %>%
+  select(-lg) %>%
+  group_by(qb) %>%
+  summarize(att = sum(att),  cmp = sum(cmp), yds = sum(yds), ypa = sum(ypa), td = sum(td), int = sum(as.numeric(int)), sack = sum(sack), loss = sum(loss), game_points = sum(game_points)) %>%
+  na.omit()
+qb10$year = rep(2010, each = nrow(qb10)) #year column
+
+
+qb11 = read.csv("QBStats_2011.csv") %>%
+  select(-lg) %>%
+  group_by(qb) %>%
+  summarize(att = sum(att),  cmp = sum(cmp), yds = sum(yds), ypa = sum(ypa), td = sum(td), int = sum(as.numeric(int)), sack = sum(sack), loss = sum(loss), game_points = sum(game_points)) %>%
+  na.omit()
+qb11$year = rep(2011, each = nrow(qb11)) #year column
+
+
+qb12 = read.csv("QBStats_2012.csv") %>%
+  select(-lg) %>%
+  group_by(qb) %>%
+  summarize(att = sum(att),  cmp = sum(cmp), yds = sum(yds), ypa = sum(ypa), td = sum(td), int = sum(as.numeric(int)), sack = sum(sack), loss = sum(loss), game_points = sum(game_points)) %>%
+  na.omit()
+qb12$year = rep(2012, each = nrow(qb12)) #year column
+
+
+qb13 = read.csv("QBStats_2013.csv") %>%
+  select(-lg) %>%
+  group_by(qb) %>%
+  summarize(att = sum(att),  cmp = sum(cmp), yds = sum(yds), ypa = sum(ypa), td = sum(td), int = sum(as.numeric(int)), sack = sum(sack), loss = sum(loss), game_points = sum(game_points)) %>%
+  na.omit()
+qb13$year = rep(2013, each = nrow(qb13)) #year column
+
+
+qb14 = read.csv("QBStats_2014.csv") %>%
+  select(-lg) %>%
+  group_by(qb) %>%
+  summarize(att = sum(att),  cmp = sum(cmp), yds = sum(yds), ypa = sum(ypa), td = sum(td), int = sum(as.numeric(int)), sack = sum(sack), loss = sum(loss), game_points = sum(game_points)) %>%
+  na.omit()
+qb14$year = rep(2014, each = nrow(qb14)) #year column
+
+
+qb15 = read.csv("QBStats_2015.csv") %>%
+  select(-lg) %>%
+  group_by(qb) %>%
+  summarize(att = sum(att),  cmp = sum(cmp), yds = sum(yds), ypa = sum(ypa), td = sum(td), int = sum(as.numeric(int)), sack = sum(sack), loss = sum(loss), game_points = sum(game_points)) %>%
+  na.omit()
+qb15$year = rep(2015, each = nrow(qb15)) #year column
+
+
+qb16 = read.csv("QBStats_2016.csv") %>%
+  select(-lg) %>%
+  group_by(qb) %>%
+  summarize(att = sum(att),  cmp = sum(cmp), yds = sum(yds), ypa = sum(ypa), td = sum(td), int = sum(as.numeric(int)), sack = sum(sack), loss = sum(loss), game_points = sum(game_points)) %>%
+  na.omit()
+qb16$year = rep(2016, each = nrow(qb16)) #year column
+
+
+qbCombined = rbind(qb09, qb10, qb11, qb12, qb13, qb14, qb15, qb16)
+
+#qbStats = write.csv(qbCombined, "/Users/jamesspalding/Desktop/qbStats.csv")
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
