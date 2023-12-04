@@ -1,771 +1,465 @@
-"","qb","att","cmp","yds","ypa","td","int","sack","loss","game_points","year"
-"1","Aaron RodgersA. Rodgers",541,350,4434,135.1,30,7,50,306,461,2009
-"2","Alex SmithA. Smith",372,225,2350,70.8,18,12,22,134,218,2009
-"3","Antwaan Randle ElA. Randle El",0,0,0,0,0,0,1,11,17,2009
-"4","Ben RoethlisbergerB. Roethlisberger",506,337,4328,128,26,12,50,348,351,2009
-"5","Billy VolekB. Volek",31,20,231,22.2,1,1,1,1,66,2009
-"6","Brad MaynardB. Maynard",1,1,0,0,0,0,0,0,17,2009
-"7","Brad SmithB. Smith",1,1,27,27,0,0,0,0,26,2009
-"8","Brady QuinnB. Quinn",256,136,1339,48.2,8,7,19,104,156,2009
-"9","Braylon EdwardsB. Edwards",1,0,0,0,0,0,0,0,22,2009
-"10","Brett FavreB. Favre",531,363,4202,128.4,33,7,34,247,470,2009
-"11","Brian BrohmB. Brohm",29,17,146,5,0,2,2,8,3,2009
-"12","Brian HoyerB. Hoyer",27,19,142,15.4,0,0,2,18,103,2009
-"13","Brian MoormanB. Moorman",1,1,25,25,1,0,0,0,7,2009
-"14","Brian St. PierreB. St. Pierre",4,2,12,3,1,1,0,0,7,2009
-"15","Brian WestbrookB. Westbrook",1,0,0,0,0,0,0,0,22,2009
-"16","Brodie CroyleB. Croyle",40,23,230,12.5,2,0,3,18,51,2009
-"17","Bruce GradkowskiB. Gradkowski",150,82,1007,47.9,6,3,11,71,97,2009
-"18","Byron LeftwichB. Leftwich",107,58,594,14,4,3,2,0,41,2009
-"19","Caleb HanieC. Hanie",7,3,11,3.1,0,1,0,0,17,2009
-"20","Carson PalmerC. Palmer",466,282,3094,102.9,21,13,26,213,305,2009
-"21","Chad HenneC. Henne",451,274,2878,88.5,12,14,26,176,330,2009
-"22","Chad PenningtonC. Pennington",74,51,413,16.1,1,2,6,32,43,2009
-"23","Charlie BatchC. Batch",2,1,17,8.5,0,0,0,0,24,2009
-"24","Charlie FryeC. Frye",87,53,581,18.6,1,4,5,40,42,2009
-"25","Chris BrownC. Brown",1,0,0,0,0,1,0,0,18,2009
-"26","Chris JohnsonC. Johnson",1,0,0,0,0,0,0,0,34,2009
-"27","Chris RedmanC. Redman",119,69,781,20.1,4,3,8,34,50,2009
-"28","Chris SimmsC. Simms",17,5,23,3.5,0,1,5,39,20,2009
-"29","Clinton PortisC. Portis",1,0,0,0,0,0,0,0,9,2009
-"30","Curtis PainterC. Painter",28,8,83,6.3,0,2,3,16,22,2009
-"31","Daunte CulpepperD. Culpepper",157,89,945,53.4,3,6,14,107,113,2009
-"32","David CarrD. Carr",33,21,225,36.1,1,0,2,11,174,2009
-"33","David GarrardD. Garrard",516,314,3597,111.8,15,10,42,236,290,2009
-"34","Dennis DixonD. Dixon",26,12,145,5.6,1,1,0,0,17,2009
-"35","Derek AndersonD. Anderson",182,81,888,39.7,3,10,11,75,98,2009
-"36","Dirk JohnsonD. Johnson",1,0,0,0,0,0,0,0,17,2009
-"37","Donovan McNabbD. McNabb",443,267,3553,114.2,22,10,35,264,373,2009
-"38","Drew BreesD. Brees",514,363,4388,130.9,34,11,20,135,500,2009
-"39","Drew StantonD. Stanton",51,26,259,15.2,0,6,5,27,30,2009
-"40","Eli ManningE. Manning",471,292,3691,124.7,25,14,30,216,369,2009
-"41","Fred JacksonF. Jackson",1,1,27,27,1,0,0,0,17,2009
-"42","Hunter SmithH. Smith",2,1,35,35,1,1,0,0,39,2009
-"43","J.P. LosmanJ. Losman",1,0,0,0,0,0,0,0,20,2009
-"44","J.T. O'SullivanJ. O'Sullivan",11,4,40,6.9,0,0,3,31,10,2009
-"45","JaMarcus RussellJ. Russell",246,120,1287,63.4,3,11,33,207,134,2009
-"46","Jake DelhommeJ. Delhomme",321,178,2015,67.3,8,18,23,187,199,2009
-"47","Jason CampbellJ. Campbell",507,327,3618,114.2,20,15,43,285,266,2009
-"48","Jay CutlerJ. Cutler",555,336,3666,106.7,27,26,35,204,327,2009
-"49","Joe FlaccoJ. Flacco",499,315,3613,117.5,21,12,36,218,391,2009
-"50","Jon RyanJ. Ryan",1,1,42,42,0,0,0,0,3,2009
-"51","Joseph AddaiJ. Addai",1,1,22,22,1,0,0,0,18,2009
-"52","Josh BrownJ. Brown",1,1,36,36,1,0,0,0,17,2009
-"53","Josh FreemanJ. Freeman",290,158,1855,62.2,10,18,20,102,155,2009
-"54","Josh JohnsonJ. Johnson",125,63,685,27.8,4,8,11,59,55,2009
-"55","Josh McCownJ. McCown",6,1,2,0.3,0,0,1,6,10,2009
-"56","Joshua CribbsJ. Cribbs",4,1,18,18,0,1,0,0,62,2009
-"57","Keith NullK. Null",119,73,566,19.1,3,9,13,82,36,2009
-"58","Kellen ClemensK. Clemens",26,13,125,11.8,0,0,4,21,62,2009
-"59","Kerry CollinsK. Collins",216,119,1225,36.6,6,8,6,37,131,2009
-"60","Kevin KolbK. Kolb",96,62,741,19.4,4,3,3,27,94,2009
-"61","Kurt WarnerK. Warner",513,339,3753,111,26,14,24,172,358,2009
-"62","Kyle BollerK. Boller",176,98,899,28.2,3,6,17,117,69,2009
-"63","Kyle OrtonK. Orton",541,336,3802,115.6,21,12,29,159,326,2009
-"64","LaDainian TomlinsonL. Tomlinson",1,0,0,0,0,0,0,0,42,2009
-"65","Legedu NaaneeL. Naanee",1,1,21,21,0,0,0,0,30,2009
-"66","Luke McCownL. McCown",3,1,2,2,0,0,2,7,13,2009
-"67","Marc BulgerM. Bulger",247,140,1469,58.2,5,6,14,85,113,2009
-"68","Mark BradleyM. Bradley",1,1,26,26,0,0,0,0,14,2009
-"69","Mark BrunellM. Brunell",30,15,102,3.5,0,1,0,0,36,2009
-"70","Mark ClaytonM. Clayton",1,1,0,0,0,0,0,0,31,2009
-"71","Mark SanchezM. Sanchez",364,196,2444,101,12,20,26,195,322,2009
-"72","Matt CasselM. Cassel",493,271,2924,88.3,16,16,42,243,270,2009
-"73","Matt FlynnM. Flynn",12,7,58,17.3,0,1,1,6,138,2009
-"74","Matt GutierrezM. Gutierrez",1,1,3,3,0,0,0,0,7,2009
-"75","Matt HasselbeckM. Hasselbeck",488,293,3029,86.8,17,17,32,209,244,2009
-"76","Matt LeinartM. Leinart",77,51,435,32.2,0,3,2,12,154,2009
-"77","Matt MooreM. Moore",138,85,1053,45.1,8,2,9,78,160,2009
-"78","Matt RyanM. Ryan",451,263,2916,90,22,14,19,92,333,2009
-"79","Matt SchaubM. Schaub",583,396,4770,132,29,15,25,149,388,2009
-"80","Matthew StaffordM. Stafford",377,201,2267,60.1,13,20,24,169,186,2009
-"81","Mewelde MooreM. Moore",1,1,6,6,1,0,0,0,38,2009
-"82","Michael BushM. Bush",1,0,0,0,0,0,0,0,27,2009
-"83","Michael ClaytonM. Clayton",1,0,0,0,0,0,0,0,21,2009
-"84","Michael VickM. Vick",13,6,86,45.3,1,0,0,0,247,2009
-"85","Micheal SpurlockM. Spurlock",1,0,0,0,0,0,0,0,23,2009
-"86","Pat WhiteP. White",5,0,0,0,0,0,1,9,73,2009
-"87","Peyton ManningP. Manning",571,393,4500,129.2,33,16,10,74,416,2009
-"88","Phil DawsonP. Dawson",1,1,10,10,0,0,0,0,37,2009
-"89","Philip RiversP. Rivers",486,317,4254,141,28,9,25,167,454,2009
-"90","Ray RiceR. Rice",1,0,0,0,0,0,0,0,16,2009
-"91","Reggie WayneR. Wayne",1,0,0,0,0,1,0,0,20,2009
-"92","Rex GrossmanR. Grossman",9,3,33,3.7,0,1,0,0,18,2009
-"93","Ricky WilliamsR. Williams",1,0,0,0,0,1,0,0,14,2009
-"94","Ronnie BrownR. Brown",6,2,22,11,1,0,1,9,112,2009
-"95","Ryan FitzpatrickR. Fitzpatrick",227,127,1422,57.2,9,10,21,127,178,2009
-"96","Santonio HolmesS. Holmes",1,0,0,0,0,1,0,0,30,2009
-"97","Seneca WallaceS. Wallace",120,78,700,72.1,3,2,9,59,147,2009
-"98","Shaun HillS. Hill",155,87,943,35.6,5,2,18,107,133,2009
-"99","Sidney RiceS. Rice",1,0,0,0,0,0,0,0,30,2009
-"100","Steve WeatherfordS. Weatherford",1,0,0,0,0,1,0,0,13,2009
-"101","Tarvaris JacksonT. Jackson",21,14,201,53.3,1,0,0,0,205,2009
-"102","Tim CastilleT. Castille",1,0,0,0,0,1,0,0,44,2009
-"103","Todd CollinsT. Collins",23,12,144,22,0,0,2,11,35,2009
-"104","Tom BradyT. Brady",565,371,4398,126.4,28,13,16,86,427,2009
-"105","Tony RomoT. Romo",521,334,4356,128.2,25,6,34,196,330,2009
-"106","Trent EdwardsT. Edwards",183,110,1169,47.4,6,7,23,139,120,2009
-"107","Troy SmithT. Smith",9,5,24,7.8,0,1,0,0,113,2009
-"108","Tyler ThigpenT. Thigpen",8,4,83,10.4,1,2,0,0,24,2009
-"109","Vince YoungV. Young",259,152,1879,79.8,10,7,9,36,279,2009
-"110","Aaron RodgersA. Rodgers",475,312,3922,123.3,28,11,31,193,361,2010
-"111","Alex SmithA. Smith",342,204,2370,78.2,14,10,25,140,215,2010
-"112","Anquan BoldinA. Boldin",1,1,-6,-6,0,0,0,0,24,2010
-"113","Antwaan Randle ElA. Randle El",2,2,42,42,2,0,0,0,68,2010
-"114","Armanti EdwardsA. Edwards",1,1,0,0,0,0,0,0,10,2010
-"115","Ben RoethlisbergerB. Roethlisberger",389,240,3200,101.8,17,5,32,220,289,2010
-"116","Billy VolekB. Volek",1,1,8,8,0,0,0,0,41,2010
-"117","Brad SmithB. Smith",3,2,6,6,1,0,0,0,110,2010
-"118","Brandon LaFellB. LaFell",1,0,0,0,0,0,0,0,10,2010
-"119","Brandon MarshallB. Marshall",1,0,0,0,0,0,0,0,29,2010
-"120","Brett FavreB. Favre",358,217,2509,84.8,11,19,22,139,241,2010
-"121","Brian BrohmB. Brohm",23,10,106,4.6,0,3,3,5,7,2010
-"122","Brian HoyerB. Hoyer",15,7,122,9.4,1,1,0,0,52,2010
-"123","Brian St. PierreB. St. Pierre",28,13,173,6.2,1,2,3,23,13,2010
-"124","Brodie CroyleB. Croyle",19,8,38,1.4,0,1,4,29,34,2010
-"125","Bruce GradkowskiB. Gradkowski",157,83,1059,36.3,5,7,10,77,118,2010
-"126","Byron LeftwichB. Leftwich",7,5,42,6,0,0,2,7,41,2010
-"127","Caleb HanieC. Hanie",7,5,55,15.3,0,0,2,15,26,2010
-"128","Carson PalmerC. Palmer",586,362,3970,111.5,26,20,26,201,322,2010
-"129","Chad HenneC. Henne",490,301,3301,99,15,19,30,178,273,2010
-"130","Chad JohnsonC. Johnson",1,0,0,0,0,0,0,0,10,2010
-"131","Chad PenningtonC. Pennington",2,1,19,9.5,0,0,0,0,29,2010
-"132","Charlie BatchC. Batch",49,29,352,19.9,3,3,4,21,71,2010
-"133","Charlie WhitehurstC. Whitehurst",99,57,507,27.9,2,3,5,13,92,2010
-"134","Chase DanielC. Daniel",3,2,16,5.3,0,0,1,10,47,2010
-"135","Chris RedmanC. Redman",6,4,20,3.3,0,0,0,0,31,2010
-"136","Colt McCoyC. McCoy",222,135,1576,57.4,6,9,23,132,150,2010
-"137","Darren McFaddenD. McFadden",1,0,0,0,0,0,0,0,23,2010
-"138","David CarrD. Carr",13,5,67,5.2,0,1,1,5,20,2010
-"139","David GarrardD. Garrard",366,236,2734,104.4,23,15,33,253,316,2010
-"140","Dennis DixonD. Dixon",32,22,254,12.1,0,1,5,41,34,2010
-"141","Derek AndersonD. Anderson",327,169,2065,70.9,7,10,25,176,200,2010
-"142","Donovan McNabbD. McNabb",472,275,3377,92.7,14,15,37,271,238,2010
-"143","Drew BreesD. Brees",658,448,4620,114.6,33,22,25,185,384,2010
-"144","Drew StantonD. Stanton",119,69,780,37,4,3,6,42,134,2010
-"145","Earnest GrahamE. Graham",1,1,2,2,1,0,0,0,24,2010
-"146","Eli ManningE. Manning",539,339,4002,118.9,31,25,16,117,394,2010
-"147","Jahvid BestJ. Best",1,0,0,0,0,0,0,0,44,2010
-"148","Jake DelhommeJ. Delhomme",149,93,872,28,2,7,6,49,67,2010
-"149","Jason CampbellJ. Campbell",329,194,2387,94.8,13,8,33,208,346,2010
-"150","Jay CutlerJ. Cutler",432,261,3274,113.5,23,16,52,352,311,2010
-"151","Jimmy ClausenJ. Clausen",299,157,1558,61.7,3,9,33,223,150,2010
-"152","Joe FlaccoJ. Flacco",489,306,3622,119.2,25,10,40,294,357,2010
-"153","Joe WebbJ. Webb",89,54,477,18.6,0,3,8,48,54,2010
-"154","John SkeltonJ. Skelton",126,60,662,28.3,2,2,9,65,95,2010
-"155","Jon KitnaJ. Kitna",318,209,2365,75.3,16,12,21,100,278,2010
-"156","Jordan PalmerJ. Palmer",3,3,18,6,0,0,2,20,31,2010
-"157","Josh FreemanJ. Freeman",474,291,3451,121.7,25,6,28,195,341,2010
-"158","Josh JohnsonJ. Johnson",16,14,111,32.9,0,0,2,8,122,2010
-"159","Joshua CribbsJ. Cribbs",3,2,19,19,0,0,1,0,43,2010
-"160","Kellen ClemensK. Clemens",2,1,6,3,0,0,0,0,38,2010
-"161","Kerry CollinsK. Collins",278,160,1823,63.4,14,8,13,91,219,2010
-"162","Kevin KolbK. Kolb",189,115,1197,36.8,7,7,15,99,122,2010
-"163","Kyle BollerK. Boller",4,2,25,11.7,0,1,1,6,62,2010
-"164","Kyle OrtonK. Orton",498,293,3653,94.4,20,9,34,243,269,2010
-"165","Leon WashingtonL. Washington",0,0,0,0,0,0,1,7,31,2010
-"166","Levi BrownL. Brown",3,2,24,8,0,1,0,0,7,2010
-"167","Luke McCownL. McCown",19,11,120,6.3,0,0,0,0,13,2010
-"168","Marion BarberM. Barber",1,0,0,0,0,0,0,0,7,2010
-"169","Mark BrunellM. Brunell",13,7,117,16.2,2,1,1,7,76,2010
-"170","Mark SanchezM. Sanchez",507,278,3291,96.9,17,13,27,171,329,2010
-"171","Matt CasselM. Cassel",450,262,3116,103.1,27,7,26,182,366,2010
-"172","Matt FlynnM. Flynn",66,40,433,18.6,3,2,7,38,134,2010
-"173","Matt HasselbeckM. Hasselbeck",444,266,3001,92.8,12,17,29,175,287,2010
-"174","Matt MooreM. Moore",143,79,857,31.7,5,10,13,90,67,2010
-"175","Matt RyanM. Ryan",571,357,3705,104.6,28,9,23,158,414,2010
-"176","Matt SchaubM. Schaub",574,365,4370,123.8,24,12,32,226,390,2010
-"177","Matthew StaffordM. Stafford",96,57,535,16.9,6,1,4,36,71,2010
-"178","Maurice Jones-DrewM. Jones-Drew",1,0,0,0,0,1,0,0,24,2010
-"179","Max HallM. Hall",78,39,370,23.5,1,6,14,90,98,2010
-"180","Michael RobinsonM. Robinson",1,1,28,28,0,0,0,0,3,2010
-"181","Michael VickM. Vick",372,233,3018,98.5,21,6,34,210,349,2010
-"182","Micheal SpurlockM. Spurlock",3,0,0,0,0,0,0,0,64,2010
-"183","Mike ScifresM. Scifres",1,1,28,28,0,0,0,0,35,2010
-"184","Mohamed MassaquoiM. Massaquoi",1,1,29,29,1,0,0,0,10,2010
-"185","Patrick CraytonP. Crayton",1,0,0,0,0,0,0,0,35,2010
-"186","Peyton HillisP. Hillis",2,1,13,13,0,0,0,0,54,2010
-"187","Peyton ManningP. Manning",679,450,4700,111.7,33,17,16,91,435,2010
-"188","Philip RiversP. Rivers",541,357,4710,144.9,30,13,38,227,441,2010
-"189","Rex GrossmanR. Grossman",133,74,884,26.1,7,4,9,77,89,2010
-"190","Richard BartelR. Bartel",28,16,150,5.4,0,1,2,12,7,2010
-"191","Ronnie BrownR. Brown",2,0,0,0,0,0,0,0,33,2010
-"192","Rusty SmithR. Smith",40,20,200,11.4,0,4,1,0,16,2010
-"193","Ryan FitzpatrickR. Fitzpatrick",441,255,3000,89.4,23,15,24,145,259,2010
-"194","Sam BradfordS. Bradford",590,354,3512,96.5,18,15,34,244,289,2010
-"195","Sam KochS. Koch",1,1,13,13,0,0,0,0,26,2010
-"196","Seneca WallaceS. Wallace",101,64,694,29.7,4,2,6,33,73,2010
-"197","Shaun HillS. Hill",416,257,2686,70.7,16,12,17,113,255,2010
-"198","Stefan LoganS. Logan",1,0,0,0,0,0,0,0,23,2010
-"199","Stephen McGeeS. McGee",44,22,238,11.2,2,0,3,25,40,2010
-"200","Steve BreastonS. Breaston",2,1,17,17,0,0,0,0,67,2010
-"201","Tarvaris JacksonT. Jackson",58,34,341,18.4,3,4,6,43,59,2010
-"202","Tim TebowT. Tebow",82,41,654,27.9,5,3,6,26,124,2010
-"203","Todd BoumanT. Bouman",34,18,222,6.5,2,2,1,6,20,2010
-"204","Todd CollinsT. Collins",27,10,68,5.3,0,5,2,15,26,2010
-"205","Tom BradyT. Brady",492,324,3900,129.6,36,4,25,175,518,2010
-"206","Tony PikeT. Pike",12,6,47,3.9,0,0,1,10,3,2010
-"207","Tony RomoT. Romo",213,148,1605,44.1,11,7,7,41,137,2010
-"208","Trent EdwardsT. Edwards",101,55,521,21.2,2,5,11,95,37,2010
-"209","Troy SmithT. Smith",145,73,1176,49.3,5,4,18,112,107,2010
-"210","Tyler PalkoT. Palko",6,4,35,11.7,0,0,2,10,10,2010
-"211","Tyler ThigpenT. Thigpen",62,33,435,27.6,2,2,8,50,50,2010
-"212","Vince YoungV. Young",156,93,1255,75.8,10,3,13,80,220,2010
-"213","A.J. FeeleyA. Feeley",97,53,548,21.9,1,2,10,72,51,2011
-"214","Aaron RodgersA. Rodgers",502,343,4643,139.8,45,6,36,219,515,2011
-"215","Adam PodleshA. Podlesh",1,0,0,0,0,0,0,0,31,2011
-"216","Alex SmithA. Smith",445,273,3144,115.2,17,5,44,263,380,2011
-"217","Andy DaltonA. Dalton",516,300,3398,104,20,13,24,160,344,2011
-"218","Armanti EdwardsA. Edwards",1,1,11,11,0,0,0,0,28,2011
-"219","Ben RoethlisbergerB. Roethlisberger",513,324,4077,121.9,21,14,40,269,298,2011
-"220","Bernard ScottB. Scott",1,0,0,0,0,0,0,0,24,2011
-"221","Blaine GabbertB. Gabbert",413,210,2214,83.8,12,11,40,293,227,2011
-"222","Brad SmithB. Smith",1,0,0,0,0,1,1,6,79,2011
-"223","Brandon BanksB. Banks",1,1,49,49,1,0,0,0,27,2011
-"224","Brandon LloydB. Lloyd",1,0,0,0,0,0,0,0,20,2011
-"225","Brian HoyerB. Hoyer",1,1,22,22,0,0,0,0,49,2011
-"226","Britton ColquittB. Colquitt",1,0,0,0,0,0,0,0,38,2011
-"227","Bruce GradkowskiB. Gradkowski",18,8,109,10.5,1,1,1,7,34,2011
-"228","Caleb HanieC. Hanie",102,51,613,23.5,3,9,19,133,47,2011
-"229","Cam NewtonC. Newton",517,310,4051,127,21,17,35,260,406,2011
-"230","Carson PalmerC. Palmer",328,199,2753,85.7,13,16,17,119,199,2011
-"231","Chad HenneC. Henne",112,64,868,29.8,4,4,11,67,69,2011
-"232","Charlie BatchC. Batch",24,15,208,9.5,0,1,2,10,76,2011
-"233","Charlie WhitehurstC. Whitehurst",56,27,298,18.4,1,1,8,46,51,2011
-"234","Chas HenryC. Henry",1,0,0,0,0,0,0,0,24,2011
-"235","Chase DanielC. Daniel",5,4,29,15.7,0,0,0,0,136,2011
-"236","Chris RedmanC. Redman",28,18,188,22,0,1,0,0,125,2011
-"237","Christian PonderC. Ponder",291,158,1853,65.9,13,13,30,164,229,2011
-"238","Colin KaepernickC. Kaepernick",5,3,35,11.7,0,0,0,0,74,2011
-"239","Colt McCoyC. McCoy",463,265,2733,78.9,14,11,32,173,178,2011
-"240","Curtis PainterC. Painter",243,132,1541,56,6,9,16,104,124,2011
-"241","Dan OrlovskyD. Orlovsky",193,122,1201,47.6,6,4,14,84,110,2011
-"242","Daniel SepulvedaD. Sepulveda",1,1,33,33,0,0,0,0,38,2011
-"243","David AkersD. Akers",1,1,14,14,1,0,0,0,34,2011
-"244","Demaryius ThomasD. Thomas",1,0,0,0,0,0,0,0,23,2011
-"245","Donovan McNabbD. McNabb",156,94,1026,38.2,4,2,16,113,121,2011
-"246","Drew BreesD. Brees",657,468,5476,134.5,46,14,24,158,547,2011
-"247","Eli ManningE. Manning",589,359,4933,135.2,29,16,28,199,394,2011
-"248","Emmanuel SandersE. Sanders",1,1,15,15,0,0,0,0,24,2011
-"249","Eric DeckerE. Decker",1,0,0,0,0,0,0,0,17,2011
-"250","J.P. LosmanJ. Losman",10,6,60,6,0,0,5,38,10,2011
-"251","Jake DelhommeJ. Delhomme",28,18,211,7.5,1,0,2,18,22,2011
-"252","Jake LockerJ. Locker",66,34,542,35.9,4,0,5,37,85,2011
-"253","Jason CampbellJ. Campbell",165,100,1170,40.4,6,4,5,19,160,2011
-"254","Jay CutlerJ. Cutler",314,182,2319,73.9,13,7,23,159,268,2011
-"255","Jeremy KerleyJ. Kerley",1,1,41,41,0,0,0,0,17,2011
-"256","Jerious NorwoodJ. Norwood",1,0,0,0,0,1,0,0,27,2011
-"257","Joe FlaccoJ. Flacco",542,312,3610,108.1,20,12,31,203,378,2011
-"258","Joe WebbJ. Webb",63,34,376,34.7,3,2,3,21,136,2011
-"259","John BeckJ. Beck",132,80,858,27,2,4,16,84,44,2011
-"260","John SkeltonJ. Skelton",275,151,1913,54.9,11,14,23,162,150,2011
-"261","Jon KitnaJ. Kitna",10,6,87,8.7,1,2,0,0,27,2011
-"262","Josh FreemanJ. Freeman",551,346,3592,97.7,16,22,29,164,268,2011
-"263","Josh JohnsonJ. Johnson",36,19,246,15.8,1,2,3,24,65,2011
-"264","Josh McCownJ. McCown",55,35,414,21,2,4,7,43,52,2011
-"265","Joshua CribbsJ. Cribbs",0,0,0,0,0,0,1,7,13,2011
-"266","Kellen ClemensK. Clemens",91,48,546,17.5,2,1,9,68,40,2011
-"267","Kerry CollinsK. Collins",98,48,481,14.6,2,1,5,40,46,2011
-"268","Kevin KolbK. Kolb",253,146,1955,66,9,8,30,219,183,2011
-"269","Kyle BollerK. Boller",28,15,161,11.5,0,3,3,19,24,2011
-"270","Kyle OrtonK. Orton",252,150,1758,54,9,9,10,54,154,2011
-"271","LaDainian TomlinsonL. Tomlinson",0,0,0,0,0,0,1,2,24,2011
-"272","Legedu NaaneeL. Naanee",1,1,27,27,0,0,0,0,38,2011
-"273","Luke McCownL. McCown",56,30,296,16,0,4,4,38,46,2011
-"274","Mark BrunellM. Brunell",3,1,27,9,0,0,0,0,19,2011
-"275","Mark SanchezM. Sanchez",543,308,3474,104.5,26,18,39,243,377,2011
-"276","Marshawn LynchM. Lynch",2,0,0,0,0,0,0,0,30,2011
-"277","Matt CasselM. Cassel",269,160,1713,57.9,10,9,22,120,141,2011
-"278","Matt FlynnM. Flynn",49,33,518,29.9,6,2,5,18,220,2011
-"279","Matt ForteM. Forte",1,0,0,0,0,0,0,0,37,2011
-"280","Matt HasselbeckM. Hasselbeck",518,319,3571,110.6,18,14,19,153,325,2011
-"281","Matt LeinartM. Leinart",13,10,57,4.4,1,0,0,0,20,2011
-"282","Matt MooreM. Moore",347,210,2497,94.8,16,9,36,229,276,2011
-"283","Matt RyanM. Ryan",566,347,4177,124.3,29,12,26,173,402,2011
-"284","Matt SchaubM. Schaub",292,178,2479,89.1,15,6,16,98,273,2011
-"285","Matthew StaffordM. Stafford",663,421,5038,123.8,41,16,36,257,474,2011
-"286","Michael VickM. Vick",423,253,3303,103.2,18,14,23,126,345,2011
-"287","Micheal SpurlockM. Spurlock",1,0,0,0,0,0,0,0,18,2011
-"288","Mike KafkaM. Kafka",16,11,107,13,0,2,1,6,47,2011
-"289","Philip RiversP. Rivers",582,366,4624,131.9,27,20,30,198,406,2011
-"290","Randall CobbR. Cobb",1,0,0,0,0,0,0,0,38,2011
-"291","Ray RiceR. Rice",1,1,1,1,1,0,0,0,17,2011
-"292","Rex GrossmanR. Grossman",458,265,3151,90.4,16,20,25,201,257,2011
-"293","Richard BartelR. Bartel",22,10,86,7.7,1,1,1,6,17,2011
-"294","Ryan FitzpatrickR. Fitzpatrick",569,353,3832,109.3,24,23,22,148,372,2011
-"295","Sam BradfordS. Bradford",357,191,2164,60.8,6,6,36,248,115,2011
-"296","Seneca WallaceS. Wallace",107,55,567,33.1,2,2,6,30,53,2011
-"297","Shane LechlerS. Lechler",3,1,35,35,1,0,0,0,64,2011
-"298","Shaun HillS. Hill",3,2,33,30.5,0,0,0,0,93,2011
-"299","Sidney RiceS. Rice",1,1,55,55,0,0,0,0,24,2011
-"300","Stephen McGeeS. McGee",38,24,182,4.8,1,0,3,25,7,2011
-"301","T.J. YatesT. Yates",134,82,949,46.1,3,3,15,74,108,2011
-"302","Tarvaris JacksonT. Jackson",450,271,3091,105,14,13,42,293,318,2011
-"303","Tim TebowT. Tebow",271,126,1729,83.2,12,6,33,225,228,2011
-"304","Tom BradyT. Brady",611,401,5235,137.5,39,12,32,173,513,2011
-"305","Tom BrandstaterT. Brandstater",2,0,0,0,0,0,0,0,27,2011
-"306","Tony RomoT. Romo",522,346,4184,122,31,10,36,227,369,2011
-"307","Tyler PalkoT. Palko",134,80,796,31.3,2,7,11,83,45,2011
-"308","Tyler ThigpenT. Thigpen",8,3,25,7.5,0,1,0,0,18,2011
-"309","Tyrod TaylorT. Taylor",1,1,18,18,0,0,2,3,14,2011
-"310","Vince YoungV. Young",114,66,866,22.7,4,9,8,34,116,2011
-"311","Aaron RodgersA. Rodgers",552,371,4295,124.5,39,8,51,293,433,2012
-"312","Alex SmithA. Smith",218,153,1737,80.6,13,5,24,137,240,2012
-"313","Andrew LuckA. Luck",627,339,4374,111.6,23,18,41,246,357,2012
-"314","Andy DaltonA. Dalton",528,329,3669,110.9,27,16,46,229,391,2012
-"315","Antonio BrownA. Brown",2,0,0,0,0,1,0,0,47,2012
-"316","Armanti EdwardsA. Edwards",1,0,0,0,0,0,0,0,28,2012
-"317","Ben RoethlisbergerB. Roethlisberger",449,284,3265,92.8,26,8,30,182,289,2012
-"318","Blaine GabbertB. Gabbert",278,162,1662,66.6,9,6,22,158,164,2012
-"319","Brad SmithB. Smith",1,0,0,0,0,1,0,0,19,2012
-"320","Brady QuinnB. Quinn",197,112,1141,63.7,2,8,21,123,97,2012
-"321","Brandon FieldsB. Fields",1,0,0,0,0,0,0,0,24,2012
-"322","Brandon WeedenB. Weeden",517,297,3385,98,14,17,28,186,292,2012
-"323","Brian HoyerB. Hoyer",53,30,330,12.1,1,2,4,30,26,2012
-"324","Brock OsweilerB. Osweiler",4,2,12,3,0,0,0,0,38,2012
-"325","Bruce GradkowskiB. Gradkowski",11,5,65,5.9,0,0,0,0,23,2012
-"326","Byron LeftwichB. Leftwich",53,25,272,10.3,0,1,3,24,26,2012
-"327","Cam NewtonC. Newton",485,280,3869,130.5,19,12,36,244,357,2012
-"328","Carson PalmerC. Palmer",565,345,4018,110.3,22,14,26,199,269,2012
-"329","Chad HenneC. Henne",308,166,2084,73,11,11,28,169,168,2012
-"330","Charlie BatchC. Batch",70,45,475,13.6,1,4,3,12,37,2012
-"331","Chase DanielC. Daniel",1,1,10,10,0,0,0,0,38,2012
-"332","Christian PonderC. Ponder",483,300,2935,95.2,18,12,32,184,379,2012
-"333","Colin KaepernickC. Kaepernick",218,136,1814,85.4,10,3,16,112,290,2012
-"334","Colt McCoyC. McCoy",17,9,79,4.6,1,0,4,25,12,2012
-"335","Dan OrlovskyD. Orlovsky",7,4,51,7.3,0,0,0,0,0,2012
-"336","Danario AlexanderD. Alexander",1,0,0,0,0,0,0,0,34,2012
-"337","David CarrD. Carr",3,2,19,17,0,0,1,6,78,2012
-"338","Derek AndersonD. Anderson",4,4,58,27.3,0,0,0,0,51,2012
-"339","Drew BreesD. Brees",670,422,5177,124.9,43,19,26,190,461,2012
-"340","Eli ManningE. Manning",536,321,3948,117,26,15,19,136,429,2012
-"341","Emmanuel SandersE. Sanders",0,0,0,0,0,0,1,7,27,2012
-"342","Golden TateG. Tate",1,1,23,23,1,0,0,0,28,2012
-"343","Graham HarrellG. Harrell",4,2,20,10,0,0,0,0,65,2012
-"344","Greg McElroyG. McElroy",31,19,214,11.8,1,1,11,71,24,2012
-"345","Jake LockerJ. Locker",314,177,2176,70.3,10,11,25,151,229,2012
-"346","Jason CampbellJ. Campbell",51,32,265,16.9,2,2,6,49,40,2012
-"347","Jay CutlerJ. Cutler",434,255,3033,103.5,19,14,38,250,368,2012
-"348","Jeremy KerleyJ. Kerley",1,1,42,42,0,0,0,0,17,2012
-"349","Joe FlaccoJ. Flacco",531,317,3817,114.7,22,10,35,227,398,2012
-"350","John SkeltonJ. Skelton",201,109,1132,33.7,2,9,15,98,89,2012
-"351","Johnny HekkerJ. Hekker",3,3,42,22,1,0,0,0,43,2012
-"352","Josh FreemanJ. Freeman",558,306,4065,119.5,27,17,26,161,389,2012
-"353","Josh JohnsonJ. Johnson",0,0,0,0,0,0,1,8,10,2012
-"354","Josh MorganJ. Morgan",1,0,0,0,0,0,0,0,12,2012
-"355","Kellen ClemensK. Clemens",3,1,39,19.5,0,1,0,0,38,2012
-"356","Kendall HunterK. Hunter",0,0,0,0,0,0,1,4,32,2012
-"357","Kevin KolbK. Kolb",183,109,1169,40.1,8,3,27,159,110,2012
-"358","Kirk CousinsK. Cousins",48,33,466,34.2,4,3,3,27,86,2012
-"359","Kyle OrtonK. Orton",10,9,89,8.9,1,0,0,0,18,2012
-"360","Mark SanchezM. Sanchez",453,246,2883,94.5,13,18,34,209,264,2012
-"361","Matt CasselM. Cassel",277,161,1796,57.9,6,12,19,101,142,2012
-"362","Matt FlynnM. Flynn",9,5,68,7.6,0,0,0,0,58,2012
-"363","Matt HasselbeckM. Hasselbeck",221,138,1367,42.9,7,5,14,103,165,2012
-"364","Matt LeinartM. Leinart",33,16,115,3.6,0,1,1,9,26,2012
-"365","Matt MooreM. Moore",19,11,131,6.9,1,0,2,9,33,2012
-"366","Matt PraterM. Prater",1,0,0,0,0,0,0,0,37,2012
-"367","Matt RyanM. Ryan",615,422,4719,125.3,32,14,28,210,419,2012
-"368","Matt SchaubM. Schaub",544,350,4008,117,22,12,27,216,416,2012
-"369","Matthew StaffordM. Stafford",727,435,4967,109.7,20,17,29,212,372,2012
-"370","Michael VickM. Vick",351,204,2362,69.3,12,10,28,153,163,2012
-"371","Mike WilliamsM. Williams",1,1,28,28,0,0,0,0,23,2012
-"372","Mohamed SanuM. Sanu",1,1,73,73,1,0,0,0,38,2012
-"373","Nick FolesN. Foles",265,161,1699,44.5,6,5,20,131,140,2012
-"374","Peyton HillisP. Hillis",1,0,0,0,0,0,0,0,9,2012
-"375","Peyton ManningP. Manning",583,400,4659,130.6,37,11,21,137,481,2012
-"376","Philip RiversP. Rivers",527,338,3606,113.7,26,15,49,311,350,2012
-"377","Robert Griffin IIIR. Griffin",393,258,3200,124.9,20,5,30,217,398,2012
-"378","Russell WilsonR. Wilson",393,252,3118,131.2,26,10,33,203,412,2012
-"379","Rusty SmithR. Smith",5,3,34,6.8,0,0,0,0,7,2012
-"380","Ryan FitzpatrickR. Fitzpatrick",505,306,3400,108.2,24,16,30,161,344,2012
-"381","Ryan LindleyR. Lindley",171,89,752,24.7,0,7,12,91,93,2012
-"382","Ryan MallettR. Mallett",4,1,17,5.7,0,1,0,0,87,2012
-"383","Ryan TannehillR. Tannehill",484,282,3294,105.9,12,13,35,234,288,2012
-"384","Sam BradfordS. Bradford",551,328,3702,112,21,13,35,233,299,2012
-"385","Shane LechlerS. Lechler",1,1,4,4,0,0,0,0,32,2012
-"386","Shaun HillS. Hill",13,10,172,13.2,2,0,0,0,41,2012
-"387","Sidney RiceS. Rice",2,1,25,25,0,0,0,0,72,2012
-"388","T.J. YatesT. Yates",10,4,38,8.4,0,1,1,0,44,2012
-"389","T.Y. HiltonT. Hilton",1,0,0,0,0,0,0,0,20,2012
-"390","Terrelle PryorT. Pryor",30,14,155,10.4,2,1,0,0,42,2012
-"391","Thaddeus LewisT. Lewis",32,22,204,6.4,1,1,3,14,10,2012
-"392","Tim MasthayT. Masthay",2,1,27,27,1,0,0,0,47,2012
-"393","Tim TebowT. Tebow",8,6,39,33.7,0,0,2,7,119,2012
-"394","Tom BradyT. Brady",637,401,4827,124.4,34,8,27,182,557,2012
-"395","Tony RomoT. Romo",648,425,4903,123.9,28,19,36,263,376,2012
-"396","Trent EdwardsT. Edwards",2,2,14,7,0,0,0,0,7,2012
-"397","Tyler ThigpenT. Thigpen",5,3,30,6,0,0,0,0,17,2012
-"398","Tyrod TaylorT. Taylor",29,17,179,16,0,1,3,30,116,2012
-"399","Aaron RodgersA. Rodgers",290,193,2536,83.7,17,6,21,117,265,2013
-"400","Ace SandersA. Sanders",1,1,21,21,1,0,0,0,27,2013
-"401","Alex SmithA. Smith",508,308,3313,100.5,23,7,39,210,406,2013
-"402","Andrew LuckA. Luck",570,343,3822,107.1,23,9,32,227,391,2013
-"403","Andy DaltonA. Dalton",586,363,4293,120,33,20,29,182,430,2013
-"404","Antonio BrownA. Brown",1,1,15,15,0,0,1,7,19,2013
-"405","Ben RoethlisbergerB. Roethlisberger",584,375,4261,115.7,28,14,42,282,379,2013
-"406","Bilal PowellB. Powell",1,1,30,30,0,0,0,0,20,2013
-"407","Blaine GabbertB. Gabbert",86,42,481,18.6,1,7,12,67,25,2013
-"408","Bobby RaineyB. Rainey",1,0,0,0,0,0,0,0,41,2013
-"409","Brad SmithB. Smith",1,0,0,0,0,0,0,0,24,2013
-"410","Brandon WeedenB. Weeden",267,141,1731,46.1,9,9,27,180,146,2013
-"411","Brian HoyerB. Hoyer",96,57,615,19.2,5,3,6,48,85,2013
-"412","Brock OsweilerB. Osweiler",16,11,95,9.8,0,0,2,8,86,2013
-"413","Cam NewtonC. Newton",473,292,3379,118.8,24,13,43,336,366,2013
-"414","Carson PalmerC. Palmer",572,362,4274,120.1,24,22,41,289,379,2013
-"415","Case KeenumC. Keenum",253,137,1760,57.4,9,6,19,201,147,2013
-"416","Chad HenneC. Henne",503,305,3241,97.1,13,14,38,243,244,2013
-"417","Chase DanielC. Daniel",38,25,248,18.6,1,1,2,11,125,2013
-"418","Christian PonderC. Ponder",239,152,1648,61.7,7,9,27,119,238,2013
-"419","Colin KaepernickC. Kaepernick",416,243,3197,123.2,21,8,39,231,406,2013
-"420","Colt McCoyC. McCoy",1,1,13,13,0,0,0,0,42,2013
-"421","Curtis PainterC. Painter",16,8,57,12.9,0,2,1,6,20,2013
-"422","Darren McFaddenD. McFadden",1,1,16,16,1,0,0,0,21,2013
-"423","Denard RobinsonD. Robinson",1,0,0,0,0,0,0,0,13,2013
-"424","Dominique DavisD. Davis",7,5,34,4.9,0,0,0,0,28,2013
-"425","Drew BreesD. Brees",650,446,5162,129.5,39,12,37,244,414,2013
-"426","E.J. ManuelE. Manuel",306,180,1972,66.1,11,9,28,159,223,2013
-"427","Eli ManningE. Manning",551,317,3818,110.3,18,27,39,281,294,2013
-"428","Geno SmithG. Smith",443,247,3046,107.9,12,21,43,315,290,2013
-"429","Jake LockerJ. Locker",183,111,1256,44.5,8,4,16,105,170,2013
-"430","Jason CampbellJ. Campbell",317,180,2015,53.4,11,8,16,97,155,2013
-"431","Jay CutlerJ. Cutler",355,224,2621,79,19,12,19,132,309,2013
-"432","Jeff TuelJ. Tuel",59,26,309,9.9,1,3,2,11,37,2013
-"433","Jeremy KerleyJ. Kerley",1,0,0,0,0,0,0,0,18,2013
-"434","Joe FlaccoJ. Flacco",576,342,3690,99.4,19,22,47,317,302,2013
-"435","Johnny HekkerJ. Hekker",1,0,0,0,0,0,0,0,7,2013
-"436","Josh BushJ. Bush",1,0,0,0,0,0,0,0,24,2013
-"437","Josh FreemanJ. Freeman",147,63,761,21.9,2,4,8,61,41,2013
-"438","Josh McCownJ. McCown",188,122,1481,53.1,9,1,10,30,162,2013
-"439","Joshua CribbsJ. Cribbs",3,2,38,31.5,0,0,0,0,29,2013
-"440","Kellen ClemensK. Clemens",242,142,1673,72.5,8,7,21,138,207,2013
-"441","Kirk CousinsK. Cousins",155,81,854,26.4,4,7,5,32,86,2013
-"442","Kyle OrtonK. Orton",46,30,358,7.8,2,2,0,0,22,2013
-"443","Larry FitzgeraldL. Fitzgerald",1,0,0,0,0,0,0,0,40,2013
-"444","Luke McCownL. McCown",1,0,0,0,0,0,0,0,13,2013
-"445","Marcel ReeceM. Reece",1,1,22,22,0,0,0,0,31,2013
-"446","Mat McBriarM. McBriar",1,1,30,30,0,0,0,0,38,2013
-"447","Matt BarkleyM. Barkley",49,30,300,16.9,0,4,3,24,59,2013
-"448","Matt CasselM. Cassel",254,153,1807,64.4,11,9,16,85,223,2013
-"449","Matt FlynnM. Flynn",200,124,1392,51.4,8,5,24,135,161,2013
-"450","Matt HasselbeckM. Hasselbeck",12,7,130,32.1,0,1,0,0,75,2013
-"451","Matt McGloinM. McGloin",211,118,1547,50.7,8,8,6,53,162,2013
-"452","Matt MooreM. Moore",6,2,53,8.8,0,2,0,0,0,2013
-"453","Matt RyanM. Ryan",651,439,4515,112.8,26,17,44,298,353,2013
-"454","Matt SchaubM. Schaub",358,219,2310,64.9,10,14,21,162,172,2013
-"455","Matt SimmsM. Simms",31,16,156,16.8,1,1,4,23,26,2013
-"456","Matthew StaffordM. Stafford",600,353,4415,109.6,28,16,22,163,379,2013
-"457","Maurice Jones-DrewM. Jones-Drew",1,1,8,8,1,0,0,0,32,2013
-"458","Michael KoenenM. Koenen",2,0,0,0,0,0,0,0,58,2013
-"459","Michael VickM. Vick",141,77,1215,46.7,5,3,15,99,142,2013
-"460","Mike GlennonM. Glennon",416,247,2608,86.6,19,9,40,314,254,2013
-"461","Mike JamesM. James",1,1,2,2,1,0,0,0,24,2013
-"462","Mohamed SanuM. Sanu",1,1,25,25,0,0,0,0,41,2013
-"463","Nick FolesN. Foles",317,203,2891,114.4,27,2,28,173,386,2013
-"464","Patrick PetersonP. Peterson",1,1,17,17,0,0,0,0,25,2013
-"465","Peyton ManningP. Manning",659,450,5477,134.6,55,10,18,120,606,2013
-"466","Philip RiversP. Rivers",544,378,4478,131.2,32,11,30,150,396,2013
-"467","Robert Griffin IIIR. Griffin",456,274,3203,91,16,12,38,274,279,2013
-"468","Russell WilsonR. Wilson",407,257,3357,132.5,26,9,44,272,417,2013
-"469","Ryan FitzpatrickR. Fitzpatrick",350,217,2454,82.3,14,12,21,109,257,2013
-"470","Ryan TannehillR. Tannehill",588,355,3913,106.2,24,17,58,399,317,2013
-"471","Sam BradfordS. Bradford",262,159,1687,46.5,14,4,15,97,156,2013
-"472","Scott TolzienS. Tolzien",90,55,717,23,1,5,3,26,52,2013
-"473","Seneca WallaceS. Wallace",24,16,139,11,0,1,4,25,33,2013
-"474","Shann SchillingerS. Schillinger",1,1,-8,-8,0,0,0,0,28,2013
-"475","Spencer LanningS. Lanning",1,1,11,11,1,0,0,0,31,2013
-"476","T.J. YatesT. Yates",22,15,113,8.8,0,2,2,7,16,2013
-"477","Tarvaris JacksonT. Jackson",13,10,151,26.1,1,0,0,0,109,2013
-"478","Tavon AustinT. Austin",1,0,0,0,0,0,0,0,13,2013
-"479","Terrelle PryorT. Pryor",272,156,1798,66.8,7,11,31,203,224,2013
-"480","Thaddeus LewisT. Lewis",157,93,1092,35.3,4,3,18,100,103,2013
-"481","Tom BradyT. Brady",628,380,4343,111.1,25,11,40,256,444,2013
-"482","Tony RomoT. Romo",515,331,3724,102.3,28,10,33,258,389,2013
-"483","Tyrod TaylorT. Taylor",5,1,2,0.5,0,1,0,0,26,2013
-"484","Aaron RodgersA. Rodgers",520,341,4381,138.4,38,5,28,174,486,2014
-"485","Alex SmithA. Smith",464,303,3265,106.5,18,6,45,229,334,2014
-"486","Andrew LuckA. Luck",616,380,4761,126.2,40,16,27,161,458,2014
-"487","Andy DaltonA. Dalton",481,309,3398,115.8,19,17,21,124,365,2014
-"488","Andy LeeA. Lee",1,0,0,0,0,0,0,0,16,2014
-"489","Anquan BoldinA. Boldin",1,0,0,0,0,0,0,0,22,2014
-"490","Antonio BrownA. Brown",2,2,20,20,1,0,0,0,54,2014
-"491","Arian FosterA. Foster",1,1,5,5,1,0,0,0,25,2014
-"492","Austin DavisA. Davis",284,180,2001,63.3,12,9,29,179,163,2014
-"493","Ben RoethlisbergerB. Roethlisberger",608,408,4952,130.2,32,9,33,172,436,2014
-"494","Blaine GabbertB. Gabbert",7,3,38,5.4,1,0,0,0,17,2014
-"495","Blake BortlesB. Bortles",475,280,2908,85.5,11,17,55,345,222,2014
-"496","Bobby RaineyB. Rainey",1,0,0,0,0,0,0,0,27,2014
-"497","Brad WingB. Wing",1,0,0,0,0,1,0,0,27,2014
-"498","Brandon WeedenB. Weeden",41,24,303,68,3,2,1,9,107,2014
-"499","Brian HoyerB. Hoyer",438,242,3326,113.1,12,13,24,160,289,2014
-"500","Brock OsweilerB. Osweiler",10,4,52,22.1,1,0,0,0,152,2014
-"501","Bryan AngerB. Anger",1,1,19,19,0,0,0,0,12,2014
-"502","Cam NewtonC. Newton",448,262,3127,98.1,18,12,38,300,300,2014
-"503","Carson PalmerC. Palmer",224,141,1626,43.9,11,3,9,59,155,2014
-"504","Case KeenumC. Keenum",77,45,435,11.5,2,2,3,15,48,2014
-"505","Cecil ShortsC. Shorts",2,2,32,32,1,0,0,0,38,2014
-"506","Chad HenneC. Henne",78,42,492,17.8,3,1,16,105,44,2014
-"507","Charlie WhitehurstC. Whitehurst",185,105,1326,50.7,7,2,18,103,112,2014
-"508","Chase DanielC. Daniel",28,16,157,5.8,0,0,4,17,50,2014
-"509","Christian PonderC. Ponder",44,22,222,5,0,2,6,34,10,2014
-"510","Colin KaepernickC. Kaepernick",478,289,3369,112.9,19,10,52,344,306,2014
-"511","Colt McCoyC. McCoy",128,91,1057,40.8,4,3,17,117,79,2014
-"512","Connor ShawC. Shaw",28,14,177,6.3,0,1,4,27,10,2014
-"513","Darren McFaddenD. McFadden",1,0,0,0,0,0,0,0,13,2014
-"514","Denard RobinsonD. Robinson",1,0,0,0,0,0,0,0,13,2014
-"515","Derek AndersonD. Anderson",97,65,701,40.3,5,0,4,17,85,2014
-"516","Derek CarrD. Carr",599,348,3270,89.6,21,12,24,149,253,2014
-"517","Drew BreesD. Brees",659,456,4952,122.9,33,17,29,186,401,2014
-"518","Drew StantonD. Stanton",240,132,1711,71,7,5,11,66,163,2014
-"519","Dustin ColquittD. Colquitt",1,1,6,6,0,0,0,0,12,2014
-"520","E.J. ManuelE. Manuel",131,76,838,26.9,5,3,6,44,79,2014
-"521","Eli ManningE. Manning",601,379,4410,118,30,14,28,187,380,2014
-"522","Eric WeddleE. Weddle",1,0,0,0,0,0,0,0,31,2014
-"523","Fred JacksonF. Jackson",1,0,0,0,0,0,0,0,10,2014
-"524","Geno SmithG. Smith",367,219,2525,90.5,13,13,28,175,253,2014
-"525","Jake LockerJ. Locker",146,86,993,47.8,5,7,14,85,110,2014
-"526","Jason CampbellJ. Campbell",19,11,74,12.9,0,0,1,0,74,2014
-"527","Jay CutlerJ. Cutler",561,370,3812,101.1,28,18,38,223,305,2014
-"528","Jeremy KerleyJ. Kerley",1,0,0,0,0,0,0,0,37,2014
-"529","Jermaine KearseJ. Kearse",1,1,17,17,0,0,0,0,26,2014
-"530","Jimmy ClausenJ. Clausen",48,26,223,21.7,2,1,3,20,68,2014
-"531","Jimmy GaroppoloJ. Garoppolo",27,19,182,22.6,1,0,5,36,74,2014
-"532","Joe FlaccoJ. Flacco",554,344,3986,120.5,27,12,19,167,409,2014
-"533","Johnny HekkerJ. Hekker",2,2,37,37,0,0,0,0,52,2014
-"534","Johnny ManzielJ. Manziel",35,18,175,16.3,0,2,3,26,49,2014
-"535","Jordan PalmerJ. Palmer",3,1,7,2.3,0,0,0,0,10,2014
-"536","Josh GordonJ. Gordon",1,0,0,0,0,0,0,0,26,2014
-"537","Josh McCownJ. McCown",327,184,2206,74.3,11,14,36,235,172,2014
-"538","Kellen ClemensK. Clemens",3,1,10,3.3,0,0,1,9,0,2014
-"539","Kirk CousinsK. Cousins",204,126,1710,50.2,10,9,8,70,145,2014
-"540","Kyle OrtonK. Orton",447,287,3018,85.8,18,10,33,198,264,2014
-"541","Logan ThomasL. Thomas",9,1,81,10.1,1,0,2,11,26,2014
-"542","Marion GriceM. Grice",1,0,0,0,0,0,0,0,17,2014
-"543","Mark SanchezM. Sanchez",309,198,2418,70.1,14,11,23,151,271,2014
-"544","Matt BarkleyM. Barkley",1,0,0,0,0,0,0,0,45,2014
-"545","Matt CasselM. Cassel",71,41,425,17.7,3,4,6,39,50,2014
-"546","Matt FlynnM. Flynn",16,8,66,32.2,0,1,2,12,241,2014
-"547","Matt HasselbeckM. Hasselbeck",44,30,301,19.2,2,0,2,7,78,2014
-"548","Matt McGloinM. McGloin",19,12,129,6.8,1,2,1,8,14,2014
-"549","Matt MooreM. Moore",4,2,21,5.2,0,0,0,0,37,2014
-"550","Matt RyanM. Ryan",628,415,4694,122.5,28,14,31,205,381,2014
-"551","Matt SchaubM. Schaub",10,5,57,6.3,0,2,3,24,13,2014
-"552","Matt SimmsM. Simms",8,3,39,4.9,0,0,0,0,10,2014
-"553","Matthew StaffordM. Stafford",602,363,4257,113.8,22,12,45,254,321,2014
-"554","Michael VickM. Vick",121,64,604,25,3,2,19,85,99,2014
-"555","Mike GlennonM. Glennon",203,117,1417,41.1,10,6,16,91,119,2014
-"556","Mike WallaceM. Wallace",1,0,0,0,0,0,0,0,37,2014
-"557","Mohamed SanuM. Sanu",3,3,79,79,1,0,1,6,71,2014
-"558","Nick FolesN. Foles",311,186,2163,58.3,13,10,9,74,234,2014
-"559","Odell Beckham Jr.O. Beckham",1,0,0,0,0,0,0,0,36,2014
-"560","Pat McAfeeP. McAfee",1,0,0,0,0,0,0,0,7,2014
-"561","Peyton ManningP. Manning",597,395,4727,130.9,39,15,17,118,482,2014
-"562","Philip RiversP. Rivers",570,379,4286,121.5,31,18,36,189,348,2014
-"563","Pierre GarconP. Garcon",1,0,0,0,0,0,0,0,13,2014
-"564","Robert GoldenR. Golden",1,1,25,25,0,0,0,0,30,2014
-"565","Robert Griffin IIIR. Griffin",214,147,1694,75.7,4,6,33,227,150,2014
-"566","Russell WilsonR. Wilson",452,285,3475,126,20,7,42,242,394,2014
-"567","Ryan FitzpatrickR. Fitzpatrick",312,197,2483,92.9,17,8,21,83,288,2014
-"568","Ryan LindleyR. Lindley",93,45,562,16,2,4,6,46,35,2014
-"569","Ryan MallettR. Mallett",75,41,400,11.2,2,2,1,5,36,2014
-"570","Ryan NassibR. Nassib",5,4,60,12,0,0,2,11,0,2014
-"571","Ryan QuigleyR. Quigley",1,1,38,38,0,0,0,0,37,2014
-"572","Ryan TannehillR. Tannehill",590,392,4045,111,27,12,46,337,388,2014
-"573","Sam MartinS. Martin",2,2,27,13.5,0,0,0,0,20,2014
-"574","Shane LechlerS. Lechler",1,1,10,10,0,0,0,0,17,2014
-"575","Shaun HillS. Hill",229,145,1657,59.1,8,7,18,116,167,2014
-"576","T.J. YatesT. Yates",4,3,64,16,0,1,0,0,56,2014
-"577","Tarvaris JacksonT. Jackson",1,1,0,0,0,0,0,0,35,2014
-"578","Ted Ginn Jr.T. Ginn",1,1,10,10,0,0,0,0,23,2014
-"579","Teddy BridgewaterT. Bridgewater",402,259,2919,96.7,14,12,39,249,274,2014
-"580","Thomas MorsteadT. Morstead",0,0,0,0,0,0,1,2,17,2014
-"581","Tom BradyT. Brady",582,373,4109,114.1,33,9,21,134,468,2014
-"582","Tom SavageT. Savage",19,10,127,6.7,0,1,1,5,10,2014
-"583","Tony RomoT. Romo",435,304,3705,130.1,34,9,29,215,450,2014
-"584","Zach MettenbergerZ. Mettenberger",179,107,1412,52,8,7,18,138,116,2014
-"585","A.J. McCarronA. McCarron",119,79,854,38.8,6,2,12,63,153,2015
-"586","Aaron RodgersA. Rodgers",572,347,3821,107.6,31,8,46,314,368,2015
-"587","Alex SmithA. Smith",470,307,3486,117.7,20,7,45,235,405,2015
-"588","Alex TanneyA. Tanney",14,10,99,7.1,1,0,3,34,24,2015
-"589","Andrew LuckA. Luck",293,162,1881,46.2,15,12,15,88,157,2015
-"590","Andy DaltonA. Dalton",386,255,3250,116.5,25,7,20,118,354,2015
-"591","Antonio AndrewsA. Andrews",1,1,41,41,1,0,0,0,8,2015
-"592","Antonio BrownA. Brown",0,0,0,0,0,0,1,8,21,2015
-"593","Austin DavisA. Davis",94,56,547,19,1,3,11,96,42,2015
-"594","B.J. DanielsB. Daniels",2,1,7,3.5,0,0,0,0,34,2015
-"595","Ben RoethlisbergerB. Roethlisberger",469,319,3938,103.7,21,16,20,141,341,2015
-"596","Blaine GabbertB. Gabbert",282,178,2031,57.7,10,7,25,164,129,2015
-"597","Blake BortlesB. Bortles",606,355,4428,119.4,35,18,51,320,376,2015
-"598","Brandon WeedenB. Weeden",140,97,1043,47.7,5,2,10,77,124,2015
-"599","Brian HoyerB. Hoyer",369,224,2606,78.3,19,7,25,185,229,2015
-"600","Brock OsweilerB. Osweiler",275,170,1967,59.1,10,6,23,151,163,2015
-"601","Bryan WaltersB. Walters",1,0,0,0,0,0,0,0,19,2015
-"602","Cairo SantosC. Santos",1,1,3,3,0,0,0,0,23,2015
-"603","Cam NewtonC. Newton",495,296,3837,126.4,35,10,33,284,500,2015
-"604","Carson PalmerC. Palmer",537,342,4671,141,35,11,25,151,489,2015
-"605","Case KeenumC. Keenum",125,76,828,35.3,4,1,4,28,104,2015
-"606","Cecil ShortsC. Shorts",1,1,21,21,1,0,0,0,24,2015
-"607","Charlie WhitehurstC. Whitehurst",32,16,150,19.5,0,1,5,28,54,2015
-"608","Chase DanielC. Daniel",2,2,4,2,0,0,0,0,45,2015
-"609","Chris HoganC. Hogan",1,1,4,4,0,0,0,0,14,2015
-"610","Colin KaepernickC. Kaepernick",244,144,1615,52.8,6,5,28,166,126,2015
-"611","Colt McCoyC. McCoy",11,7,128,11.6,1,0,1,13,34,2015
-"612","Dan OrlovskyD. Orlovsky",40,22,201,10,1,1,0,0,27,2015
-"613","Danny AmendolaD. Amendola",1,1,36,36,0,0,0,0,28,2015
-"614","Darren McFaddenD. McFadden",1,0,0,0,0,0,0,0,12,2015
-"615","Derek AndersonD. Anderson",6,4,36,6,0,0,0,0,38,2015
-"616","Derek CarrD. Carr",573,350,3987,110.6,32,13,31,230,359,2015
-"617","Drew BreesD. Brees",627,428,4870,117.2,32,11,31,235,386,2015
-"618","Drew StantonD. Stanton",25,11,104,17.2,0,2,2,8,153,2015
-"619","E.J. ManuelE. Manuel",84,52,561,13.4,3,3,6,45,52,2015
-"620","Eli ManningE. Manning",618,387,4432,115.9,35,14,27,157,420,2015
-"621","Geno SmithG. Smith",42,27,265,6.3,2,1,3,19,20,2015
-"622","Jameis WinstonJ. Winston",535,312,4042,125,22,15,27,190,342,2015
-"623","Jamison CrowderJ. Crowder",1,0,0,0,0,0,0,0,20,2015
-"624","Jarvis LandryJ. Landry",1,1,9,9,0,0,0,0,17,2015
-"625","Jay CutlerJ. Cutler",483,311,3659,120.2,21,11,29,150,335,2015
-"626","Jeremy MaclinJ. Maclin",0,0,0,0,0,0,1,3,24,2015
-"627","Jimmy ClausenJ. Clausen",125,72,739,22,2,4,7,38,43,2015
-"628","Jimmy GaroppoloJ. Garoppolo",4,1,6,1.5,0,0,0,0,10,2015
-"629","Joe FlaccoJ. Flacco",413,266,2791,66.5,14,12,16,124,226,2015
-"630","Johnny HekkerJ. Hekker",4,1,20,20,0,0,0,0,45,2015
-"631","Johnny ManzielJ. Manziel",223,129,1500,57.8,7,5,19,141,133,2015
-"632","Jonathan GrimesJ. Grimes",1,0,0,0,0,0,0,0,30,2015
-"633","Josh FreemanJ. Freeman",28,15,149,5.3,1,1,1,7,30,2015
-"634","Josh McCownJ. McCown",292,186,2109,56.5,12,4,23,137,166,2015
-"635","Kellen ClemensK. Clemens",6,5,63,10.5,1,0,0,0,14,2015
-"636","Kellen MooreK. Moore",104,61,779,21.4,4,6,5,23,45,2015
-"637","Kirk CousinsK. Cousins",543,379,4166,129.3,29,11,26,186,388,2015
-"638","Landry JonesL. Jones",55,32,513,48.7,3,4,2,17,136,2015
-"639","Luke McCownL. McCown",39,32,335,33.2,0,1,1,0,49,2015
-"640","Marc MarianiM. Mariani",0,0,0,0,0,0,1,3,20,2015
-"641","Marcus MariotaM. Mariota",370,230,2818,92.7,19,10,38,258,256,2015
-"642","Mark SanchezM. Sanchez",91,59,616,20.6,4,4,9,54,50,2015
-"643","Matt CasselM. Cassel",204,119,1276,47.7,5,7,14,86,121,2015
-"644","Matt HasselbeckM. Hasselbeck",256,156,1690,52.7,9,5,16,101,146,2015
-"645","Matt McGloinM. McGloin",32,23,142,4.6,2,1,2,20,37,2015
-"646","Matt MooreM. Moore",1,1,14,14,0,0,0,0,44,2015
-"647","Matt RyanM. Ryan",614,407,4591,121.5,21,16,30,206,339,2015
-"648","Matt SchaubM. Schaub",80,52,540,13.5,3,4,3,27,46,2015
-"649","Matthew StaffordM. Stafford",592,398,4262,117.9,32,13,44,251,358,2015
-"650","Michael VickM. Vick",66,40,371,19.7,2,1,10,53,81,2015
-"651","Nick FolesN. Foles",337,190,2052,69.8,7,10,14,98,176,2015
-"652","Peyton ManningP. Manning",331,198,2249,68.3,9,17,16,95,232,2015
-"653","Philip RiversP. Rivers",661,437,4792,116.8,29,13,40,264,320,2015
-"654","Russell WilsonR. Wilson",483,329,4024,135.4,34,8,45,265,423,2015
-"655","Ryan FitzpatrickR. Fitzpatrick",562,335,3905,115.2,31,15,19,94,387,2015
-"656","Ryan LindleyR. Lindley",10,6,58,5.8,1,0,0,0,30,2015
-"657","Ryan MallettR. Mallett",244,136,1336,40,5,6,6,32,133,2015
-"658","Ryan NassibR. Nassib",5,5,68,13.6,1,0,0,0,17,2015
-"659","Ryan TannehillR. Tannehill",586,363,4208,119.5,24,12,45,420,310,2015
-"660","Sam BradfordS. Bradford",532,346,3725,98.8,19,14,28,200,346,2015
-"661","Sam KochS. Koch",1,1,-3,-3,0,0,0,0,23,2015
-"662","Scott TolzienS. Tolzien",1,1,4,4,0,0,1,8,8,2015
-"663","Sean MannionS. Mannion",7,6,31,4.4,0,0,0,0,7,2015
-"664","Sean RenfreeS. Renfree",7,3,11,1.6,0,1,2,17,0,2015
-"665","Shaun HillS. Hill",7,2,15,2.5,0,0,1,11,34,2015
-"666","T.J. YatesT. Yates",57,28,370,21.8,3,1,5,33,56,2015
-"667","Tarvaris JacksonT. Jackson",6,4,37,16,0,0,1,6,109,2015
-"668","Teddy BridgewaterT. Bridgewater",447,292,3231,115,14,9,44,307,365,2015
-"669","Tom BradyT. Brady",624,402,4770,124.1,36,7,38,225,465,2015
-"670","Tony RomoT. Romo",121,83,884,28.2,5,7,6,35,85,2015
-"671","Travaris CadetT. Cadet",1,0,0,0,0,0,0,0,20,2015
-"672","Tyrod TaylorT. Taylor",380,242,3035,118.6,20,6,36,212,327,2015
-"673","Zach MettenbergerZ. Mettenberger",166,101,935,34.8,4,7,13,98,69,2015
-"674","Aaron RodgersA. Rodgers",610,401,4428,118.8,40,7,35,246,432,2016
-"675","Alex SmithA. Smith",489,328,3502,112.4,15,8,28,140,370,2016
-"676","Andrew LuckA. Luck",545,346,4240,118.9,31,13,41,268,404,2016
-"677","Andy DaltonA. Dalton",563,364,4206,122.9,18,8,41,264,325,2016
-"678","Antonio MorrisonA. Morrison",1,0,0,0,0,0,0,0,24,2016
-"679","Ben RoethlisbergerB. Roethlisberger",509,328,3819,107.7,29,13,17,141,356,2016
-"680","Blaine GabbertB. Gabbert",160,91,925,33.7,5,6,11,48,117,2016
-"681","Blake BortlesB. Bortles",625,368,3905,99.2,23,16,34,197,318,2016
-"682","Brett HundleyB. Hundley",10,2,17,5,0,1,0,0,125,2016
-"683","Brian HoyerB. Hoyer",200,134,1445,41.3,6,0,4,18,97,2016
-"684","Brock OsweilerB. Osweiler",510,301,2957,86.4,15,16,27,206,267,2016
-"685","Bryce PettyB. Petty",133,75,809,33.8,3,7,13,79,78,2016
-"686","Cam NewtonC. Newton",477,252,3315,97.6,18,13,33,259,335,2016
-"687","Cameron MeredithC. Meredith",1,1,2,2,1,0,0,0,10,2016
-"688","Cardale JonesC. Jones",11,6,96,8.7,0,1,1,2,10,2016
-"689","Carson PalmerC. Palmer",597,364,4233,108.1,26,14,40,281,385,2016
-"690","Carson WentzC. Wentz",607,379,3782,101.6,16,14,33,213,367,2016
-"691","Case KeenumC. Keenum",322,196,2201,67.6,9,11,23,140,142,2016
-"692","Charlie WhitehurstC. Whitehurst",24,14,182,7.6,1,1,2,14,13,2016
-"693","Chase DanielC. Daniel",1,1,16,16,0,0,0,0,24,2016
-"694","Cody KesslerC. Kessler",195,128,1380,61.9,6,2,21,140,146,2016
-"695","Cole BeasleyC. Beasley",1,0,0,0,0,0,0,0,29,2016
-"696","Colin KaepernickC. Kaepernick",331,196,2241,69.5,16,4,36,207,198,2016
-"697","Connor CookC. Cook",21,14,150,7.1,1,1,2,7,6,2016
-"698","Dak PrescottD. Prescott",459,311,3667,129.5,23,4,25,143,421,2016
-"699","David FalesD. Fales",5,2,22,4.4,0,0,1,5,10,2016
-"700","DeMarco MurrayD. Murray",2,1,10,10,1,0,0,0,60,2016
-"701","Derek AndersonD. Anderson",53,36,453,20.4,2,5,0,0,64,2016
-"702","Derek CarrD. Carr",560,357,3937,105,28,6,16,79,410,2016
-"703","Dez BryantD. Bryant",1,1,10,10,1,0,0,0,42,2016
-"704","Dontari PoeD. Poe",1,1,2,2,1,0,0,0,33,2016
-"705","Doug BaldwinD. Baldwin",1,1,15,15,1,0,0,0,26,2016
-"706","Drew BreesD. Brees",673,471,5208,125,37,15,27,184,469,2016
-"707","Drew StantonD. Stanton",48,19,192,24.6,2,3,1,8,158,2016
-"708","Duke JohnsonD. Johnson",1,0,0,0,0,0,0,0,13,2016
-"709","E.J. ManuelE. Manuel",26,11,131,31.8,0,0,3,20,144,2016
-"710","Eli ManningE. Manning",598,377,4027,108.8,26,16,21,142,310,2016
-"711","Geno SmithG. Smith",14,8,126,17.1,1,1,3,19,27,2016
-"712","Jacoby BrissettJ. Brissett",55,34,400,23.2,0,0,6,46,58,2016
-"713","Jameis WinstonJ. Winston",567,345,4090,117.7,28,18,35,239,354,2016
-"714","Jared GoffJ. Goff",205,112,1089,36.9,5,7,26,222,85,2016
-"715","Jarvis LandryJ. Landry",1,0,0,0,0,0,0,0,27,2016
-"716","Jay CutlerJ. Cutler",137,81,1059,39.2,4,5,17,104,74,2016
-"717","Jeremy MaclinJ. Maclin",1,0,0,0,0,0,0,0,26,2016
-"718","Jerick McKinnonJ. McKinnon",1,0,0,0,0,0,0,0,15,2016
-"719","Jimmy GaroppoloJ. Garoppolo",63,43,502,19.9,4,0,3,15,204,2016
-"720","Joe FlaccoJ. Flacco",672,436,4317,104.1,20,15,33,243,343,2016
-"721","Johnny HekkerJ. Hekker",2,1,4,4,0,0,0,0,9,2016
-"722","Jon RyanJ. Ryan",1,0,0,0,0,0,0,0,20,2016
-"723","Jonathan WilliamsJ. Williams",1,0,0,0,0,0,0,0,25,2016
-"724","Josh HuffJ. Huff",1,0,0,0,0,0,0,0,23,2016
-"725","Josh McCownJ. McCown",165,90,1100,31.3,6,6,18,126,77,2016
-"726","Justin TuckerJ. Tucker",1,0,0,0,0,0,0,0,10,2016
-"727","Kellen ClemensK. Clemens",1,0,0,0,0,0,0,0,38,2016
-"728","Kevin HoganK. Hogan",26,14,104,6.2,0,2,2,10,45,2016
-"729","Kirk CousinsK. Cousins",606,406,4917,132.3,25,12,23,190,396,2016
-"730","Landry JonesL. Jones",86,53,558,13.5,4,2,4,34,86,2016
-"731","Larry FitzgeraldL. Fitzgerald",1,0,0,0,0,0,0,0,34,2016
-"732","Le'Veon BellL. Bell",1,0,0,0,0,0,0,0,24,2016
-"733","Marcus MariotaM. Mariota",451,276,3426,116,26,9,23,156,357,2016
-"734","Mark SanchezM. Sanchez",18,10,93,13,0,2,3,25,48,2016
-"735","Marqise LeeM. Lee",1,1,20,20,1,0,0,0,38,2016
-"736","Matt BarkleyM. Barkley",216,129,1611,54,8,14,6,43,132,2016
-"737","Matt CasselM. Cassel",51,30,284,21,2,2,5,23,77,2016
-"738","Matt McGloinM. McGloin",15,8,50,11.6,0,0,0,0,74,2016
-"739","Matt MooreM. Moore",87,55,721,36.3,8,3,1,0,108,2016
-"740","Matt RyanM. Ryan",534,373,4944,148.8,38,7,37,235,540,2016
-"741","Matt SchaubM. Schaub",3,1,16,16,0,0,0,0,83,2016
-"742","Matthew StaffordM. Stafford",594,388,4327,117.5,24,10,37,216,346,2016
-"743","Mike GlennonM. Glennon",11,10,75,6.8,1,0,0,0,28,2016
-"744","Nick FolesN. Foles",55,36,410,15.8,3,0,4,34,49,2016
-"745","Odell Beckham Jr.O. Beckham",0,0,0,0,0,0,1,6,16,2016
-"746","Pat McAfeeP. McAfee",1,1,35,35,0,0,0,0,7,2016
-"747","Paxton LynchP. Lynch",83,49,497,17.8,2,1,9,42,63,2016
-"748","Pharoh CooperP. Cooper",1,0,0,0,0,1,0,0,6,2016
-"749","Philip RiversP. Rivers",578,349,4386,123.7,33,21,36,188,410,2016
-"750","Riley DixonR. Dixon",1,1,16,16,0,0,0,0,10,2016
-"751","Robert Griffin IIIR. Griffin",147,87,886,30.4,2,3,22,138,77,2016
-"752","Russell WilsonR. Wilson",546,353,4219,126.6,21,11,41,293,354,2016
-"753","Ryan FitzpatrickR. Fitzpatrick",403,228,2710,93.7,12,17,19,81,246,2016
-"754","Ryan MallettR. Mallett",6,3,26,16.7,0,1,0,0,69,2016
-"755","Ryan TannehillR. Tannehill",389,261,2995,102.9,19,12,29,216,281,2016
-"756","Sam BradfordS. Bradford",552,395,3877,106.1,20,5,37,276,302,2016
-"757","Scott TolzienS. Tolzien",37,23,216,16.7,1,2,3,21,48,2016
-"758","Sean MannionS. Mannion",6,3,19,3.2,0,1,0,0,6,2016
-"759","Shaun HillS. Hill",35,19,242,13.2,0,0,1,7,78,2016
-"760","Tanner McEvoyT. McEvoy",1,1,43,43,0,0,0,0,20,2016
-"761","Terrelle PryorT. Pryor",9,5,41,9.7,0,0,1,1,63,2016
-"762","Tom BradyT. Brady",432,291,3554,100.2,28,2,15,87,360,2016
-"763","Tom SavageT. Savage",73,46,461,16.4,0,0,5,36,50,2016
-"764","Tony RomoT. Romo",4,3,29,7.2,1,0,0,0,13,2016
-"765","Travis BenjaminT. Benjamin",1,0,0,0,0,0,0,0,33,2016
-"766","Tress WayT. Way",1,1,31,31,0,0,0,0,29,2016
-"767","Trevone BoykinT. Boykin",18,13,145,26.9,1,1,1,5,102,2016
-"768","Trevor SiemianT. Siemian",460,271,3223,95.2,17,8,29,168,276,2016
-"769","Tyrod TaylorT. Taylor",436,269,3023,104.4,17,6,42,192,389,2016
-"770","Willie SneadW. Snead",1,1,50,50,1,0,0,0,49,2016
+"","qb","att","cmp","yds","ypa","td","int","sack","loss","game_points","year","yearDrafted","experience"
+"1","Aaron Rodgers",475,312,3922,123.3,28,11,31,193,361,2010,2005,5
+"2","Aaron Rodgers",610,401,4428,118.8,40,7,35,246,432,2016,2005,11
+"3","Aaron Rodgers",572,347,3821,107.6,31,8,46,314,368,2015,2005,10
+"4","Aaron Rodgers",541,350,4434,135.1,30,7,50,306,461,2009,2005,4
+"5","Aaron Rodgers",502,343,4643,139.8,45,6,36,219,515,2011,2005,6
+"6","Aaron Rodgers",520,341,4381,138.4,38,5,28,174,486,2014,2005,9
+"7","Aaron Rodgers",290,193,2536,83.7,17,6,21,117,265,2013,2005,8
+"8","Aaron Rodgers",552,371,4295,124.5,39,8,51,293,433,2012,2005,7
+"9","Alex Smith",489,328,3502,112.4,15,8,28,140,370,2016,2005,11
+"10","Alex Smith",508,308,3313,100.5,23,7,39,210,406,2013,2005,8
+"11","Alex Smith",470,307,3486,117.7,20,7,45,235,405,2015,2005,10
+"12","Alex Smith",464,303,3265,106.5,18,6,45,229,334,2014,2005,9
+"13","Alex Smith",372,225,2350,70.8,18,12,22,134,218,2009,2005,4
+"14","Alex Smith",342,204,2370,78.2,14,10,25,140,215,2010,2005,5
+"15","Alex Smith",218,153,1737,80.6,13,5,24,137,240,2012,2005,7
+"16","Alex Smith",445,273,3144,115.2,17,5,44,263,380,2011,2005,6
+"17","Andrew Luck",570,343,3822,107.1,23,9,32,227,391,2013,2012,1
+"18","Andrew Luck",627,339,4374,111.6,23,18,41,246,357,2012,2012,0
+"19","Andrew Luck",545,346,4240,118.9,31,13,41,268,404,2016,2012,4
+"20","Andrew Luck",293,162,1881,46.2,15,12,15,88,157,2015,2012,3
+"21","Andrew Luck",616,380,4761,126.2,40,16,27,161,458,2014,2012,2
+"22","Andy Dalton",516,300,3398,104,20,13,24,160,344,2011,2011,0
+"23","Andy Dalton",586,363,4293,120,33,20,29,182,430,2013,2011,2
+"24","Andy Dalton",528,329,3669,110.9,27,16,46,229,391,2012,2011,1
+"25","Andy Dalton",563,364,4206,122.9,18,8,41,264,325,2016,2011,5
+"26","Andy Dalton",386,255,3250,116.5,25,7,20,118,354,2015,2011,4
+"27","Andy Dalton",481,309,3398,115.8,19,17,21,124,365,2014,2011,3
+"28","Austin Davis",94,56,547,19,1,3,11,96,42,2015,2012,3
+"29","Austin Davis",284,180,2001,63.3,12,9,29,179,163,2014,2012,2
+"30","Ben Roethlisberger",469,319,3938,103.7,21,16,20,141,341,2015,2004,11
+"31","Ben Roethlisberger",584,375,4261,115.7,28,14,42,282,379,2013,2004,9
+"32","Ben Roethlisberger",608,408,4952,130.2,32,9,33,172,436,2014,2004,10
+"33","Ben Roethlisberger",449,284,3265,92.8,26,8,30,182,289,2012,2004,8
+"34","Ben Roethlisberger",506,337,4328,128,26,12,50,348,351,2009,2004,5
+"35","Ben Roethlisberger",513,324,4077,121.9,21,14,40,269,298,2011,2004,7
+"36","Ben Roethlisberger",509,328,3819,107.7,29,13,17,141,356,2016,2004,12
+"37","Ben Roethlisberger",389,240,3200,101.8,17,5,32,220,289,2010,2004,6
+"38","Blaine Gabbert",413,210,2214,83.8,12,11,40,293,227,2011,2011,0
+"39","Blaine Gabbert",7,3,38,5.4,1,0,0,0,17,2014,2011,3
+"40","Blaine Gabbert",278,162,1662,66.6,9,6,22,158,164,2012,2011,1
+"41","Blaine Gabbert",86,42,481,18.6,1,7,12,67,25,2013,2011,2
+"42","Blaine Gabbert",282,178,2031,57.7,10,7,25,164,129,2015,2011,4
+"43","Blaine Gabbert",160,91,925,33.7,5,6,11,48,117,2016,2011,5
+"44","Blake Bortles",475,280,2908,85.5,11,17,55,345,222,2014,2014,0
+"45","Blake Bortles",606,355,4428,119.4,35,18,51,320,376,2015,2014,1
+"46","Blake Bortles",625,368,3905,99.2,23,16,34,197,318,2016,2014,2
+"47","Brady Quinn",256,136,1339,48.2,8,7,19,104,156,2009,2007,2
+"48","Brady Quinn",197,112,1141,63.7,2,8,21,123,97,2012,2007,5
+"49","Brandon Weeden",41,24,303,68,3,2,1,9,107,2014,2012,2
+"50","Brandon Weeden",517,297,3385,98,14,17,28,186,292,2012,2012,0
+"51","Brandon Weeden",267,141,1731,46.1,9,9,27,180,146,2013,2012,1
+"52","Brandon Weeden",140,97,1043,47.7,5,2,10,77,124,2015,2012,3
+"53","Brett Hundley",10,2,17,5,0,1,0,0,125,2016,2015,1
+"54","Brian Brohm",23,10,106,4.6,0,3,3,5,7,2010,2008,2
+"55","Brian Brohm",29,17,146,5,0,2,2,8,3,2009,2008,1
+"56","Brian Hoyer",27,19,142,15.4,0,0,2,18,103,2009,2009,0
+"57","Brian Hoyer",438,242,3326,113.1,12,13,24,160,289,2014,2009,5
+"58","Brian Hoyer",369,224,2606,78.3,19,7,25,185,229,2015,2009,6
+"59","Brian Hoyer",53,30,330,12.1,1,2,4,30,26,2012,2009,3
+"60","Brian Hoyer",15,7,122,9.4,1,1,0,0,52,2010,2009,1
+"61","Brian Hoyer",1,1,22,22,0,0,0,0,49,2011,2009,2
+"62","Brian Hoyer",200,134,1445,41.3,6,0,4,18,97,2016,2009,7
+"63","Brian Hoyer",96,57,615,19.2,5,3,6,48,85,2013,2009,4
+"64","Brock Osweiler",275,170,1967,59.1,10,6,23,151,163,2015,2012,3
+"65","Brock Osweiler",4,2,12,3,0,0,0,0,38,2012,2012,0
+"66","Brock Osweiler",16,11,95,9.8,0,0,2,8,86,2013,2012,1
+"67","Brock Osweiler",10,4,52,22.1,1,0,0,0,152,2014,2012,2
+"68","Brock Osweiler",510,301,2957,86.4,15,16,27,206,267,2016,2012,4
+"69","Brodie Croyle",40,23,230,12.5,2,0,3,18,51,2009,2006,3
+"70","Brodie Croyle",19,8,38,1.4,0,1,4,29,34,2010,2006,4
+"71","Bruce Gradkowski",11,5,65,5.9,0,0,0,0,23,2012,2006,6
+"72","Bruce Gradkowski",157,83,1059,36.3,5,7,10,77,118,2010,2006,4
+"73","Bruce Gradkowski",150,82,1007,47.9,6,3,11,71,97,2009,2006,3
+"74","Bruce Gradkowski",18,8,109,10.5,1,1,1,7,34,2011,2006,5
+"75","Bryce Petty",133,75,809,33.8,3,7,13,79,78,2016,2015,1
+"76","Byron Leftwich",53,25,272,10.3,0,1,3,24,26,2012,2003,9
+"77","Byron Leftwich",107,58,594,14,4,3,2,0,41,2009,2003,6
+"78","Byron Leftwich",7,5,42,6,0,0,2,7,41,2010,2003,7
+"79","Cam Newton",495,296,3837,126.4,35,10,33,284,500,2015,2011,4
+"80","Cam Newton",477,252,3315,97.6,18,13,33,259,335,2016,2011,5
+"81","Cam Newton",485,280,3869,130.5,19,12,36,244,357,2012,2011,1
+"82","Cam Newton",517,310,4051,127,21,17,35,260,406,2011,2011,0
+"83","Cam Newton",473,292,3379,118.8,24,13,43,336,366,2013,2011,2
+"84","Cam Newton",448,262,3127,98.1,18,12,38,300,300,2014,2011,3
+"85","Cardale Jones",11,6,96,8.7,0,1,1,2,10,2016,2016,0
+"86","Carson Palmer",537,342,4671,141,35,11,25,151,489,2015,2003,12
+"87","Carson Palmer",328,199,2753,85.7,13,16,17,119,199,2011,2003,8
+"88","Carson Palmer",572,362,4274,120.1,24,22,41,289,379,2013,2003,10
+"89","Carson Palmer",597,364,4233,108.1,26,14,40,281,385,2016,2003,13
+"90","Carson Palmer",586,362,3970,111.5,26,20,26,201,322,2010,2003,7
+"91","Carson Palmer",466,282,3094,102.9,21,13,26,213,305,2009,2003,6
+"92","Carson Palmer",565,345,4018,110.3,22,14,26,199,269,2012,2003,9
+"93","Carson Palmer",224,141,1626,43.9,11,3,9,59,155,2014,2003,11
+"94","Carson Wentz",607,379,3782,101.6,16,14,33,213,367,2016,2016,0
+"95","Case Keenum",253,137,1760,57.4,9,6,19,201,147,2013,2012,1
+"96","Case Keenum",125,76,828,35.3,4,1,4,28,104,2015,2012,3
+"97","Case Keenum",322,196,2201,67.6,9,11,23,140,142,2016,2012,4
+"98","Case Keenum",77,45,435,11.5,2,2,3,15,48,2014,2012,2
+"99","Chad Henne",112,64,868,29.8,4,4,11,67,69,2011,2008,3
+"100","Chad Henne",490,301,3301,99,15,19,30,178,273,2010,2008,2
+"101","Chad Henne",451,274,2878,88.5,12,14,26,176,330,2009,2008,1
+"102","Chad Henne",78,42,492,17.8,3,1,16,105,44,2014,2008,6
+"103","Chad Henne",503,305,3241,97.1,13,14,38,243,244,2013,2008,5
+"104","Chad Henne",308,166,2084,73,11,11,28,169,168,2012,2008,4
+"105","Chad Pennington",2,1,19,9.5,0,0,0,0,29,2010,2000,10
+"106","Chad Pennington",74,51,413,16.1,1,2,6,32,43,2009,2000,9
+"107","Charlie Frye",87,53,581,18.6,1,4,5,40,42,2009,2005,4
+"108","Charlie Whitehurst",32,16,150,19.5,0,1,5,28,54,2015,2006,9
+"109","Charlie Whitehurst",185,105,1326,50.7,7,2,18,103,112,2014,2006,8
+"110","Charlie Whitehurst",99,57,507,27.9,2,3,5,13,92,2010,2006,4
+"111","Charlie Whitehurst",24,14,182,7.6,1,1,2,14,13,2016,2006,10
+"112","Charlie Whitehurst",56,27,298,18.4,1,1,8,46,51,2011,2006,5
+"113","Chase Daniel",3,2,16,5.3,0,0,1,10,47,2010,2009,1
+"114","Chase Daniel",2,2,4,2,0,0,0,0,45,2015,2009,6
+"115","Chase Daniel",38,25,248,18.6,1,1,2,11,125,2013,2009,4
+"116","Chase Daniel",28,16,157,5.8,0,0,4,17,50,2014,2009,5
+"117","Chase Daniel",1,1,16,16,0,0,0,0,24,2016,2009,7
+"118","Chase Daniel",5,4,29,15.7,0,0,0,0,136,2011,2009,2
+"119","Chase Daniel",1,1,10,10,0,0,0,0,38,2012,2009,3
+"120","Chris Redman",119,69,781,20.1,4,3,8,34,50,2009,2000,9
+"121","Chris Redman",6,4,20,3.3,0,0,0,0,31,2010,2000,10
+"122","Chris Redman",28,18,188,22,0,1,0,0,125,2011,2000,11
+"123","Chris Simms",17,5,23,3.5,0,1,5,39,20,2009,2003,6
+"124","Christian Ponder",239,152,1648,61.7,7,9,27,119,238,2013,2011,2
+"125","Christian Ponder",483,300,2935,95.2,18,12,32,184,379,2012,2011,1
+"126","Christian Ponder",44,22,222,5,0,2,6,34,10,2014,2011,3
+"127","Christian Ponder",291,158,1853,65.9,13,13,30,164,229,2011,2011,0
+"128","Cody Kessler",195,128,1380,61.9,6,2,21,140,146,2016,2016,0
+"129","Colin Kaepernick",244,144,1615,52.8,6,5,28,166,126,2015,2011,4
+"130","Colin Kaepernick",331,196,2241,69.5,16,4,36,207,198,2016,2011,5
+"131","Colin Kaepernick",416,243,3197,123.2,21,8,39,231,406,2013,2011,2
+"132","Colin Kaepernick",5,3,35,11.7,0,0,0,0,74,2011,2011,0
+"133","Colin Kaepernick",478,289,3369,112.9,19,10,52,344,306,2014,2011,3
+"134","Colin Kaepernick",218,136,1814,85.4,10,3,16,112,290,2012,2011,1
+"135","Colt McCoy",1,1,13,13,0,0,0,0,42,2013,2010,3
+"136","Colt McCoy",463,265,2733,78.9,14,11,32,173,178,2011,2010,1
+"137","Colt McCoy",128,91,1057,40.8,4,3,17,117,79,2014,2010,4
+"138","Colt McCoy",222,135,1576,57.4,6,9,23,132,150,2010,2010,0
+"139","Colt McCoy",11,7,128,11.6,1,0,1,13,34,2015,2010,5
+"140","Colt McCoy",17,9,79,4.6,1,0,4,25,12,2012,2010,2
+"141","Connor Cook",21,14,150,7.1,1,1,2,7,6,2016,2016,0
+"142","Connor Shaw",28,14,177,6.3,0,1,4,27,10,2014,2014,0
+"143","Curtis Painter",243,132,1541,56,6,9,16,104,124,2011,2009,2
+"144","Curtis Painter",28,8,83,6.3,0,2,3,16,22,2009,2009,0
+"145","Curtis Painter",16,8,57,12.9,0,2,1,6,20,2013,2009,4
+"146","Dak Prescott",459,311,3667,129.5,23,4,25,143,421,2016,2016,0
+"147","Dan Orlovsky",40,22,201,10,1,1,0,0,27,2015,2005,10
+"148","Dan Orlovsky",7,4,51,7.3,0,0,0,0,0,2012,2005,7
+"149","Dan Orlovsky",193,122,1201,47.6,6,4,14,84,110,2011,2005,6
+"150","David Carr",13,5,67,5.2,0,1,1,5,20,2010,2002,8
+"151","David Carr",33,21,225,36.1,1,0,2,11,174,2009,2002,7
+"152","David Carr",3,2,19,17,0,0,1,6,78,2012,2002,10
+"153","David Fales",5,2,22,4.4,0,0,1,5,10,2016,2014,2
+"154","David Garrard",366,236,2734,104.4,23,15,33,253,316,2010,2002,8
+"155","David Garrard",516,314,3597,111.8,15,10,42,236,290,2009,2002,7
+"156","Dennis Dixon",26,12,145,5.6,1,1,0,0,17,2009,2008,1
+"157","Dennis Dixon",32,22,254,12.1,0,1,5,41,34,2010,2008,2
+"158","Derek Anderson",97,65,701,40.3,5,0,4,17,85,2014,2005,9
+"159","Derek Anderson",327,169,2065,70.9,7,10,25,176,200,2010,2005,5
+"160","Derek Anderson",4,4,58,27.3,0,0,0,0,51,2012,2005,7
+"161","Derek Anderson",53,36,453,20.4,2,5,0,0,64,2016,2005,11
+"162","Derek Anderson",182,81,888,39.7,3,10,11,75,98,2009,2005,4
+"163","Derek Anderson",6,4,36,6,0,0,0,0,38,2015,2005,10
+"164","Derek Carr",560,357,3937,105,28,6,16,79,410,2016,2014,2
+"165","Derek Carr",599,348,3270,89.6,21,12,24,149,253,2014,2014,0
+"166","Derek Carr",573,350,3987,110.6,32,13,31,230,359,2015,2014,1
+"167","Drew Brees",650,446,5162,129.5,39,12,37,244,414,2013,2001,12
+"168","Drew Brees",627,428,4870,117.2,32,11,31,235,386,2015,2001,14
+"169","Drew Brees",673,471,5208,125,37,15,27,184,469,2016,2001,15
+"170","Drew Brees",659,456,4952,122.9,33,17,29,186,401,2014,2001,13
+"171","Drew Brees",670,422,5177,124.9,43,19,26,190,461,2012,2001,11
+"172","Drew Brees",657,468,5476,134.5,46,14,24,158,547,2011,2001,10
+"173","Drew Brees",658,448,4620,114.6,33,22,25,185,384,2010,2001,9
+"174","Drew Brees",514,363,4388,130.9,34,11,20,135,500,2009,2001,8
+"175","Drew Stanton",48,19,192,24.6,2,3,1,8,158,2016,2007,9
+"176","Drew Stanton",51,26,259,15.2,0,6,5,27,30,2009,2007,2
+"177","Drew Stanton",119,69,780,37,4,3,6,42,134,2010,2007,3
+"178","Drew Stanton",240,132,1711,71,7,5,11,66,163,2014,2007,7
+"179","Drew Stanton",25,11,104,17.2,0,2,2,8,153,2015,2007,8
+"180","Eli Manning",471,292,3691,124.7,25,14,30,216,369,2009,2004,5
+"181","Eli Manning",539,339,4002,118.9,31,25,16,117,394,2010,2004,6
+"182","Eli Manning",598,377,4027,108.8,26,16,21,142,310,2016,2004,12
+"183","Eli Manning",601,379,4410,118,30,14,28,187,380,2014,2004,10
+"184","Eli Manning",536,321,3948,117,26,15,19,136,429,2012,2004,8
+"185","Eli Manning",551,317,3818,110.3,18,27,39,281,294,2013,2004,9
+"186","Eli Manning",618,387,4432,115.9,35,14,27,157,420,2015,2004,11
+"187","Eli Manning",589,359,4933,135.2,29,16,28,199,394,2011,2004,7
+"188","Geno Smith",367,219,2525,90.5,13,13,28,175,253,2014,2013,1
+"189","Geno Smith",42,27,265,6.3,2,1,3,19,20,2015,2013,2
+"190","Geno Smith",443,247,3046,107.9,12,21,43,315,290,2013,2013,0
+"191","Geno Smith",14,8,126,17.1,1,1,3,19,27,2016,2013,3
+"192","Graham Harrell",4,2,20,10,0,0,0,0,65,2012,2009,3
+"193","Greg McElroy",31,19,214,11.8,1,1,11,71,24,2012,2011,1
+"194","Jacoby Brissett",55,34,400,23.2,0,0,6,46,58,2016,2016,0
+"195","Jake Locker",146,86,993,47.8,5,7,14,85,110,2014,2011,3
+"196","Jake Locker",314,177,2176,70.3,10,11,25,151,229,2012,2011,1
+"197","Jake Locker",66,34,542,35.9,4,0,5,37,85,2011,2011,0
+"198","Jake Locker",183,111,1256,44.5,8,4,16,105,170,2013,2011,2
+"199","JaMarcus Russell",246,120,1287,63.4,3,11,33,207,134,2009,2007,2
+"200","Jameis Winston",535,312,4042,125,22,15,27,190,342,2015,2015,0
+"201","Jameis Winston",567,345,4090,117.7,28,18,35,239,354,2016,2015,1
+"202","Jared Goff",205,112,1089,36.9,5,7,26,222,85,2016,2016,0
+"203","Jason Campbell",329,194,2387,94.8,13,8,33,208,346,2010,2005,5
+"204","Jason Campbell",19,11,74,12.9,0,0,1,0,74,2014,2005,9
+"205","Jason Campbell",507,327,3618,114.2,20,15,43,285,266,2009,2005,4
+"206","Jason Campbell",165,100,1170,40.4,6,4,5,19,160,2011,2005,6
+"207","Jason Campbell",317,180,2015,53.4,11,8,16,97,155,2013,2005,8
+"208","Jason Campbell",51,32,265,16.9,2,2,6,49,40,2012,2005,7
+"209","Jay Cutler",434,255,3033,103.5,19,14,38,250,368,2012,2006,6
+"210","Jay Cutler",355,224,2621,79,19,12,19,132,309,2013,2006,7
+"211","Jay Cutler",555,336,3666,106.7,27,26,35,204,327,2009,2006,3
+"212","Jay Cutler",314,182,2319,73.9,13,7,23,159,268,2011,2006,5
+"213","Jay Cutler",561,370,3812,101.1,28,18,38,223,305,2014,2006,8
+"214","Jay Cutler",137,81,1059,39.2,4,5,17,104,74,2016,2006,10
+"215","Jay Cutler",432,261,3274,113.5,23,16,52,352,311,2010,2006,4
+"216","Jay Cutler",483,311,3659,120.2,21,11,29,150,335,2015,2006,9
+"217","Jimmy Clausen",48,26,223,21.7,2,1,3,20,68,2014,2010,4
+"218","Jimmy Clausen",299,157,1558,61.7,3,9,33,223,150,2010,2010,0
+"219","Jimmy Clausen",125,72,739,22,2,4,7,38,43,2015,2010,5
+"220","Jimmy Garoppolo",63,43,502,19.9,4,0,3,15,204,2016,2014,2
+"221","Jimmy Garoppolo",27,19,182,22.6,1,0,5,36,74,2014,2014,0
+"222","Jimmy Garoppolo",4,1,6,1.5,0,0,0,0,10,2015,2014,1
+"223","Joe Flacco",576,342,3690,99.4,19,22,47,317,302,2013,2008,5
+"224","Joe Flacco",413,266,2791,66.5,14,12,16,124,226,2015,2008,7
+"225","Joe Flacco",672,436,4317,104.1,20,15,33,243,343,2016,2008,8
+"226","Joe Flacco",499,315,3613,117.5,21,12,36,218,391,2009,2008,1
+"227","Joe Flacco",531,317,3817,114.7,22,10,35,227,398,2012,2008,4
+"228","Joe Flacco",489,306,3622,119.2,25,10,40,294,357,2010,2008,2
+"229","Joe Flacco",554,344,3986,120.5,27,12,19,167,409,2014,2008,6
+"230","Joe Flacco",542,312,3610,108.1,20,12,31,203,378,2011,2008,3
+"231","John Beck",132,80,858,27,2,4,16,84,44,2011,2007,4
+"232","John Skelton",275,151,1913,54.9,11,14,23,162,150,2011,2010,1
+"233","John Skelton",201,109,1132,33.7,2,9,15,98,89,2012,2010,2
+"234","John Skelton",126,60,662,28.3,2,2,9,65,95,2010,2010,0
+"235","Johnny Manziel",35,18,175,16.3,0,2,3,26,49,2014,2014,0
+"236","Johnny Manziel",223,129,1500,57.8,7,5,19,141,133,2015,2014,1
+"237","Jordan Palmer",3,1,7,2.3,0,0,0,0,10,2014,2007,7
+"238","Jordan Palmer",3,3,18,6,0,0,2,20,31,2010,2007,3
+"239","Josh Freeman",290,158,1855,62.2,10,18,20,102,155,2009,2009,0
+"240","Josh Freeman",28,15,149,5.3,1,1,1,7,30,2015,2009,6
+"241","Josh Freeman",474,291,3451,121.7,25,6,28,195,341,2010,2009,1
+"242","Josh Freeman",558,306,4065,119.5,27,17,26,161,389,2012,2009,3
+"243","Josh Freeman",551,346,3592,97.7,16,22,29,164,268,2011,2009,2
+"244","Josh Freeman",147,63,761,21.9,2,4,8,61,41,2013,2009,4
+"245","Josh Johnson",16,14,111,32.9,0,0,2,8,122,2010,2008,2
+"246","Josh Johnson",0,0,0,0,0,0,1,8,10,2012,2008,4
+"247","Josh Johnson",36,19,246,15.8,1,2,3,24,65,2011,2008,3
+"248","Josh Johnson",125,63,685,27.8,4,8,11,59,55,2009,2008,1
+"249","Josh McCown",327,184,2206,74.3,11,14,36,235,172,2014,2002,12
+"250","Josh McCown",188,122,1481,53.1,9,1,10,30,162,2013,2002,11
+"251","Josh McCown",165,90,1100,31.3,6,6,18,126,77,2016,2002,14
+"252","Josh McCown",292,186,2109,56.5,12,4,23,137,166,2015,2002,13
+"253","Josh McCown",55,35,414,21,2,4,7,43,52,2011,2002,9
+"254","Josh McCown",6,1,2,0.3,0,0,1,6,10,2009,2002,7
+"255","Kellen Clemens",1,0,0,0,0,0,0,0,38,2016,2006,10
+"256","Kellen Clemens",26,13,125,11.8,0,0,4,21,62,2009,2006,3
+"257","Kellen Clemens",242,142,1673,72.5,8,7,21,138,207,2013,2006,7
+"258","Kellen Clemens",3,1,10,3.3,0,0,1,9,0,2014,2006,8
+"259","Kellen Clemens",3,1,39,19.5,0,1,0,0,38,2012,2006,6
+"260","Kellen Clemens",91,48,546,17.5,2,1,9,68,40,2011,2006,5
+"261","Kellen Clemens",2,1,6,3,0,0,0,0,38,2010,2006,4
+"262","Kellen Clemens",6,5,63,10.5,1,0,0,0,14,2015,2006,9
+"263","Kellen Moore",104,61,779,21.4,4,6,5,23,45,2015,2012,3
+"264","Kevin Hogan",26,14,104,6.2,0,2,2,10,45,2016,2016,0
+"265","Kevin Kolb",253,146,1955,66,9,8,30,219,183,2011,2007,4
+"266","Kevin Kolb",189,115,1197,36.8,7,7,15,99,122,2010,2007,3
+"267","Kevin Kolb",96,62,741,19.4,4,3,3,27,94,2009,2007,2
+"268","Kevin Kolb",183,109,1169,40.1,8,3,27,159,110,2012,2007,5
+"269","Kirk Cousins",543,379,4166,129.3,29,11,26,186,388,2015,2012,3
+"270","Kirk Cousins",606,406,4917,132.3,25,12,23,190,396,2016,2012,4
+"271","Kirk Cousins",204,126,1710,50.2,10,9,8,70,145,2014,2012,2
+"272","Kirk Cousins",155,81,854,26.4,4,7,5,32,86,2013,2012,1
+"273","Kirk Cousins",48,33,466,34.2,4,3,3,27,86,2012,2012,0
+"274","Kyle Boller",4,2,25,11.7,0,1,1,6,62,2010,2003,7
+"275","Kyle Boller",28,15,161,11.5,0,3,3,19,24,2011,2003,8
+"276","Kyle Boller",176,98,899,28.2,3,6,17,117,69,2009,2003,6
+"277","Kyle Orton",252,150,1758,54,9,9,10,54,154,2011,2005,6
+"278","Kyle Orton",46,30,358,7.8,2,2,0,0,22,2013,2005,8
+"279","Kyle Orton",498,293,3653,94.4,20,9,34,243,269,2010,2005,5
+"280","Kyle Orton",10,9,89,8.9,1,0,0,0,18,2012,2005,7
+"281","Kyle Orton",447,287,3018,85.8,18,10,33,198,264,2014,2005,9
+"282","Kyle Orton",541,336,3802,115.6,21,12,29,159,326,2009,2005,4
+"283","Landry Jones",86,53,558,13.5,4,2,4,34,86,2016,2013,3
+"284","Landry Jones",55,32,513,48.7,3,4,2,17,136,2015,2013,2
+"285","Levi Brown",3,2,24,8,0,1,0,0,7,2010,2010,0
+"286","Logan Thomas",9,1,81,10.1,1,0,2,11,26,2014,2014,0
+"287","Luke McCown",39,32,335,33.2,0,1,1,0,49,2015,2004,11
+"288","Luke McCown",1,0,0,0,0,0,0,0,13,2013,2004,9
+"289","Luke McCown",3,1,2,2,0,0,2,7,13,2009,2004,5
+"290","Luke McCown",19,11,120,6.3,0,0,0,0,13,2010,2004,6
+"291","Luke McCown",56,30,296,16,0,4,4,38,46,2011,2004,7
+"292","Marc Bulger",247,140,1469,58.2,5,6,14,85,113,2009,2000,9
+"293","Marcus Mariota",451,276,3426,116,26,9,23,156,357,2016,2015,1
+"294","Marcus Mariota",370,230,2818,92.7,19,10,38,258,256,2015,2015,0
+"295","Mark Sanchez",91,59,616,20.6,4,4,9,54,50,2015,2009,6
+"296","Mark Sanchez",18,10,93,13,0,2,3,25,48,2016,2009,7
+"297","Mark Sanchez",364,196,2444,101,12,20,26,195,322,2009,2009,0
+"298","Mark Sanchez",507,278,3291,96.9,17,13,27,171,329,2010,2009,1
+"299","Mark Sanchez",453,246,2883,94.5,13,18,34,209,264,2012,2009,3
+"300","Mark Sanchez",309,198,2418,70.1,14,11,23,151,271,2014,2009,5
+"301","Mark Sanchez",543,308,3474,104.5,26,18,39,243,377,2011,2009,2
+"302","Matt Barkley",1,0,0,0,0,0,0,0,45,2014,2013,1
+"303","Matt Barkley",216,129,1611,54,8,14,6,43,132,2016,2013,3
+"304","Matt Barkley",49,30,300,16.9,0,4,3,24,59,2013,2013,0
+"305","Matt Flynn",200,124,1392,51.4,8,5,24,135,161,2013,2008,5
+"306","Matt Flynn",49,33,518,29.9,6,2,5,18,220,2011,2008,3
+"307","Matt Flynn",9,5,68,7.6,0,0,0,0,58,2012,2008,4
+"308","Matt Flynn",12,7,58,17.3,0,1,1,6,138,2009,2008,1
+"309","Matt Flynn",66,40,433,18.6,3,2,7,38,134,2010,2008,2
+"310","Matt Flynn",16,8,66,32.2,0,1,2,12,241,2014,2008,6
+"311","Matt Gutierrez",1,1,3,3,0,0,0,0,7,2009,2007,2
+"312","Matt Leinart",77,51,435,32.2,0,3,2,12,154,2009,2006,3
+"313","Matt Leinart",33,16,115,3.6,0,1,1,9,26,2012,2006,6
+"314","Matt Leinart",13,10,57,4.4,1,0,0,0,20,2011,2006,5
+"315","Matt Ryan",566,347,4177,124.3,29,12,26,173,402,2011,2008,3
+"316","Matt Ryan",614,407,4591,121.5,21,16,30,206,339,2015,2008,7
+"317","Matt Ryan",451,263,2916,90,22,14,19,92,333,2009,2008,1
+"318","Matt Ryan",615,422,4719,125.3,32,14,28,210,419,2012,2008,4
+"319","Matt Ryan",534,373,4944,148.8,38,7,37,235,540,2016,2008,8
+"320","Matt Ryan",628,415,4694,122.5,28,14,31,205,381,2014,2008,6
+"321","Matt Ryan",571,357,3705,104.6,28,9,23,158,414,2010,2008,2
+"322","Matt Ryan",651,439,4515,112.8,26,17,44,298,353,2013,2008,5
+"323","Matt Schaub",544,350,4008,117,22,12,27,216,416,2012,2004,8
+"324","Matt Schaub",583,396,4770,132,29,15,25,149,388,2009,2004,5
+"325","Matt Schaub",292,178,2479,89.1,15,6,16,98,273,2011,2004,7
+"326","Matt Schaub",358,219,2310,64.9,10,14,21,162,172,2013,2004,9
+"327","Matt Schaub",3,1,16,16,0,0,0,0,83,2016,2004,12
+"328","Matt Schaub",574,365,4370,123.8,24,12,32,226,390,2010,2004,6
+"329","Matt Schaub",10,5,57,6.3,0,2,3,24,13,2014,2004,10
+"330","Matt Schaub",80,52,540,13.5,3,4,3,27,46,2015,2004,11
+"331","Matthew Stafford",594,388,4327,117.5,24,10,37,216,346,2016,2009,7
+"332","Matthew Stafford",592,398,4262,117.9,32,13,44,251,358,2015,2009,6
+"333","Matthew Stafford",600,353,4415,109.6,28,16,22,163,379,2013,2009,4
+"334","Matthew Stafford",727,435,4967,109.7,20,17,29,212,372,2012,2009,3
+"335","Matthew Stafford",602,363,4257,113.8,22,12,45,254,321,2014,2009,5
+"336","Matthew Stafford",377,201,2267,60.1,13,20,24,169,186,2009,2009,0
+"337","Matthew Stafford",96,57,535,16.9,6,1,4,36,71,2010,2009,1
+"338","Matthew Stafford",663,421,5038,123.8,41,16,36,257,474,2011,2009,2
+"339","Max Hall",78,39,370,23.5,1,6,14,90,98,2010,2010,0
+"340","Michael Vick",13,6,86,45.3,1,0,0,0,247,2009,2001,8
+"341","Michael Vick",372,233,3018,98.5,21,6,34,210,349,2010,2001,9
+"342","Michael Vick",121,64,604,25,3,2,19,85,99,2014,2001,13
+"343","Michael Vick",141,77,1215,46.7,5,3,15,99,142,2013,2001,12
+"344","Michael Vick",423,253,3303,103.2,18,14,23,126,345,2011,2001,10
+"345","Michael Vick",351,204,2362,69.3,12,10,28,153,163,2012,2001,11
+"346","Michael Vick",66,40,371,19.7,2,1,10,53,81,2015,2001,14
+"347","Mike Glennon",11,10,75,6.8,1,0,0,0,28,2016,2013,3
+"348","Mike Glennon",416,247,2608,86.6,19,9,40,314,254,2013,2013,0
+"349","Mike Glennon",203,117,1417,41.1,10,6,16,91,119,2014,2013,1
+"350","Mike Kafka",16,11,107,13,0,2,1,6,47,2011,2010,1
+"351","Nick Foles",317,203,2891,114.4,27,2,28,173,386,2013,2012,1
+"352","Nick Foles",311,186,2163,58.3,13,10,9,74,234,2014,2012,2
+"353","Nick Foles",55,36,410,15.8,3,0,4,34,49,2016,2012,4
+"354","Nick Foles",265,161,1699,44.5,6,5,20,131,140,2012,2012,0
+"355","Nick Foles",337,190,2052,69.8,7,10,14,98,176,2015,2012,3
+"356","Pat White",5,0,0,0,0,0,1,9,73,2009,2009,0
+"357","Paxton Lynch",83,49,497,17.8,2,1,9,42,63,2016,2016,0
+"358","Philip Rivers",544,378,4478,131.2,32,11,30,150,396,2013,2004,9
+"359","Philip Rivers",541,357,4710,144.9,30,13,38,227,441,2010,2004,6
+"360","Philip Rivers",570,379,4286,121.5,31,18,36,189,348,2014,2004,10
+"361","Philip Rivers",582,366,4624,131.9,27,20,30,198,406,2011,2004,7
+"362","Philip Rivers",578,349,4386,123.7,33,21,36,188,410,2016,2004,12
+"363","Philip Rivers",486,317,4254,141,28,9,25,167,454,2009,2004,5
+"364","Philip Rivers",527,338,3606,113.7,26,15,49,311,350,2012,2004,8
+"365","Philip Rivers",661,437,4792,116.8,29,13,40,264,320,2015,2004,11
+"366","Rex Grossman",458,265,3151,90.4,16,20,25,201,257,2011,2003,8
+"367","Rex Grossman",133,74,884,26.1,7,4,9,77,89,2010,2003,7
+"368","Rex Grossman",9,3,33,3.7,0,1,0,0,18,2009,2003,6
+"369","Russell Wilson",483,329,4024,135.4,34,8,45,265,423,2015,2012,3
+"370","Russell Wilson",407,257,3357,132.5,26,9,44,272,417,2013,2012,1
+"371","Russell Wilson",452,285,3475,126,20,7,42,242,394,2014,2012,2
+"372","Russell Wilson",546,353,4219,126.6,21,11,41,293,354,2016,2012,4
+"373","Russell Wilson",393,252,3118,131.2,26,10,33,203,412,2012,2012,0
+"374","Ryan Fitzpatrick",312,197,2483,92.9,17,8,21,83,288,2014,2005,9
+"375","Ryan Fitzpatrick",403,228,2710,93.7,12,17,19,81,246,2016,2005,11
+"376","Ryan Fitzpatrick",505,306,3400,108.2,24,16,30,161,344,2012,2005,7
+"377","Ryan Fitzpatrick",227,127,1422,57.2,9,10,21,127,178,2009,2005,4
+"378","Ryan Fitzpatrick",441,255,3000,89.4,23,15,24,145,259,2010,2005,5
+"379","Ryan Fitzpatrick",350,217,2454,82.3,14,12,21,109,257,2013,2005,8
+"380","Ryan Fitzpatrick",562,335,3905,115.2,31,15,19,94,387,2015,2005,10
+"381","Ryan Fitzpatrick",569,353,3832,109.3,24,23,22,148,372,2011,2005,6
+"382","Ryan Lindley",93,45,562,16,2,4,6,46,35,2014,2012,2
+"383","Ryan Lindley",171,89,752,24.7,0,7,12,91,93,2012,2012,0
+"384","Ryan Lindley",10,6,58,5.8,1,0,0,0,30,2015,2012,3
+"385","Ryan Mallett",4,1,17,5.7,0,1,0,0,87,2012,2011,1
+"386","Ryan Mallett",75,41,400,11.2,2,2,1,5,36,2014,2011,3
+"387","Ryan Mallett",244,136,1336,40,5,6,6,32,133,2015,2011,4
+"388","Ryan Mallett",6,3,26,16.7,0,1,0,0,69,2016,2011,5
+"389","Ryan Nassib",5,5,68,13.6,1,0,0,0,17,2015,2013,2
+"390","Ryan Nassib",5,4,60,12,0,0,2,11,0,2014,2013,1
+"391","Ryan Tannehill",484,282,3294,105.9,12,13,35,234,288,2012,2012,0
+"392","Ryan Tannehill",588,355,3913,106.2,24,17,58,399,317,2013,2012,1
+"393","Ryan Tannehill",590,392,4045,111,27,12,46,337,388,2014,2012,2
+"394","Ryan Tannehill",586,363,4208,119.5,24,12,45,420,310,2015,2012,3
+"395","Ryan Tannehill",389,261,2995,102.9,19,12,29,216,281,2016,2012,4
+"396","Sam Bradford",590,354,3512,96.5,18,15,34,244,289,2010,2010,0
+"397","Sam Bradford",551,328,3702,112,21,13,35,233,299,2012,2010,2
+"398","Sam Bradford",262,159,1687,46.5,14,4,15,97,156,2013,2010,3
+"399","Sam Bradford",357,191,2164,60.8,6,6,36,248,115,2011,2010,1
+"400","Sam Bradford",532,346,3725,98.8,19,14,28,200,346,2015,2010,5
+"401","Sam Bradford",552,395,3877,106.1,20,5,37,276,302,2016,2010,6
+"402","Scott Tolzien",1,1,4,4,0,0,1,8,8,2015,2011,4
+"403","Scott Tolzien",37,23,216,16.7,1,2,3,21,48,2016,2011,5
+"404","Scott Tolzien",90,55,717,23,1,5,3,26,52,2013,2011,2
+"405","Sean Mannion",7,6,31,4.4,0,0,0,0,7,2015,2015,0
+"406","Sean Mannion",6,3,19,3.2,0,1,0,0,6,2016,2015,1
+"407","Sean Renfree",7,3,11,1.6,0,1,2,17,0,2015,2013,2
+"408","Seneca Wallace",120,78,700,72.1,3,2,9,59,147,2009,2003,6
+"409","Seneca Wallace",101,64,694,29.7,4,2,6,33,73,2010,2003,7
+"410","Seneca Wallace",107,55,567,33.1,2,2,6,30,53,2011,2003,8
+"411","Seneca Wallace",24,16,139,11,0,1,4,25,33,2013,2003,10
+"412","Stephen McGee",44,22,238,11.2,2,0,3,25,40,2010,2009,1
+"413","Stephen McGee",38,24,182,4.8,1,0,3,25,7,2011,2009,2
+"414","Tarvaris Jackson",6,4,37,16,0,0,1,6,109,2015,2006,9
+"415","Tarvaris Jackson",58,34,341,18.4,3,4,6,43,59,2010,2006,4
+"416","Tarvaris Jackson",13,10,151,26.1,1,0,0,0,109,2013,2006,7
+"417","Tarvaris Jackson",450,271,3091,105,14,13,42,293,318,2011,2006,5
+"418","Tarvaris Jackson",21,14,201,53.3,1,0,0,0,205,2009,2006,3
+"419","Tarvaris Jackson",1,1,0,0,0,0,0,0,35,2014,2006,8
+"420","Teddy Bridgewater",447,292,3231,115,14,9,44,307,365,2015,2014,1
+"421","Teddy Bridgewater",402,259,2919,96.7,14,12,39,249,274,2014,2014,0
+"422","Thaddeus Lewis",32,22,204,6.4,1,1,3,14,10,2012,2010,2
+"423","Thaddeus Lewis",157,93,1092,35.3,4,3,18,100,103,2013,2010,3
+"424","Tim Tebow",271,126,1729,83.2,12,6,33,225,228,2011,2010,1
+"425","Tim Tebow",82,41,654,27.9,5,3,6,26,124,2010,2010,0
+"426","Tim Tebow",8,6,39,33.7,0,0,2,7,119,2012,2010,2
+"427","Tom Brady",611,401,5235,137.5,39,12,32,173,513,2011,2000,11
+"428","Tom Brady",565,371,4398,126.4,28,13,16,86,427,2009,2000,9
+"429","Tom Brady",432,291,3554,100.2,28,2,15,87,360,2016,2000,16
+"430","Tom Brady",582,373,4109,114.1,33,9,21,134,468,2014,2000,14
+"431","Tom Brady",628,380,4343,111.1,25,11,40,256,444,2013,2000,13
+"432","Tom Brady",637,401,4827,124.4,34,8,27,182,557,2012,2000,12
+"433","Tom Brady",624,402,4770,124.1,36,7,38,225,465,2015,2000,15
+"434","Tom Brady",492,324,3900,129.6,36,4,25,175,518,2010,2000,10
+"435","Tom Brandstater",2,0,0,0,0,0,0,0,27,2011,2009,2
+"436","Tom Savage",73,46,461,16.4,0,0,5,36,50,2016,2014,2
+"437","Tom Savage",19,10,127,6.7,0,1,1,5,10,2014,2014,0
+"438","Tony Pike",12,6,47,3.9,0,0,1,10,3,2010,2010,0
+"439","Tony Romo",522,346,4184,122,31,10,36,227,369,2011,2003,8
+"440","Tony Romo",121,83,884,28.2,5,7,6,35,85,2015,2003,12
+"441","Tony Romo",648,425,4903,123.9,28,19,36,263,376,2012,2003,9
+"442","Tony Romo",515,331,3724,102.3,28,10,33,258,389,2013,2003,10
+"443","Tony Romo",521,334,4356,128.2,25,6,34,196,330,2009,2003,6
+"444","Tony Romo",4,3,29,7.2,1,0,0,0,13,2016,2003,13
+"445","Tony Romo",213,148,1605,44.1,11,7,7,41,137,2010,2003,7
+"446","Tony Romo",435,304,3705,130.1,34,9,29,215,450,2014,2003,11
+"447","Trent Edwards",183,110,1169,47.4,6,7,23,139,120,2009,2007,2
+"448","Trent Edwards",2,2,14,7,0,0,0,0,7,2012,2007,5
+"449","Trent Edwards",101,55,521,21.2,2,5,11,95,37,2010,2007,3
+"450","Trevone Boykin",18,13,145,26.9,1,1,1,5,102,2016,2016,0
+"451","Troy Smith",145,73,1176,49.3,5,4,18,112,107,2010,2007,3
+"452","Troy Smith",9,5,24,7.8,0,1,0,0,113,2009,2007,2
+"453","Tyler Palko",134,80,796,31.3,2,7,11,83,45,2011,2007,4
+"454","Tyler Palko",6,4,35,11.7,0,0,2,10,10,2010,2007,3
+"455","Tyrod Taylor",5,1,2,0.5,0,1,0,0,26,2013,2011,2
+"456","Tyrod Taylor",436,269,3023,104.4,17,6,42,192,389,2016,2011,5
+"457","Tyrod Taylor",380,242,3035,118.6,20,6,36,212,327,2015,2011,4
+"458","Tyrod Taylor",29,17,179,16,0,1,3,30,116,2012,2011,1
+"459","Tyrod Taylor",1,1,18,18,0,0,2,3,14,2011,2011,0
+"460","Vince Young",114,66,866,22.7,4,9,8,34,116,2011,2006,5
+"461","Vince Young",156,93,1255,75.8,10,3,13,80,220,2010,2006,4
+"462","Vince Young",259,152,1879,79.8,10,7,9,36,279,2009,2006,3
+"463","Zach Mettenberger",166,101,935,34.8,4,7,13,98,69,2015,2014,1
+"464","Zach Mettenberger",179,107,1412,52,8,7,18,138,116,2014,2014,0
