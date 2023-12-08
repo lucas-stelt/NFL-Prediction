@@ -16,16 +16,20 @@ library(rvest)
 
 
 ```{r}
-combine <- read_csv("nfl.combine.csv")
-combine.rnd <- str_split_fixed(combine$Drafted..tm.rnd.yr.,'/',4)
-combine1 <- bind_cols(combine,combine.rnd)
-combine2 <- combine1[,-c(13,16,22)]
+
+# combine <- read_csv("nfl.combine.csv")
+# combine.rnd <- str_split_fixed(combine$Drafted..tm.rnd.yr.,'/',4)
+# combine1 <- bind_cols(combine,combine.rnd)
+# combine2 <- combine1[,-c(13,16,22)]
+# 
+# 
+# names(combine2) <- c("Year Drafted", "Player Name", "Age", "School", "Height", "Weight", "40 Yd Dash", "Vertical Jump", " Bench Press(Reps)", "Broad Jump", "3 Cone Agility", "20 Yd Shuttle", "BMI", "Player Type", "Position", "Drafted", "Team", "Round Drafted","Pick Number")
+# attach(combine2)
+# filter.qb <- combine2 %>% filter(Position == "QB")
+# write.csv(filter.qb,file = "combine.qb")
+#Unused combine data; doesn't have the right years for us to use
 
 
-names(combine2) <- c("Year Drafted", "Player Name", "Age", "School", "Height", "Weight", "40 Yd Dash", "Vertical Jump", " Bench Press(Reps)", "Broad Jump", "3 Cone Agility", "20 Yd Shuttle", "BMI", "Player Type", "Position", "Drafted", "Team", "Round Drafted","Pick Number")
-attach(combine2)
-filter.qb <- combine2 %>% filter(Position == "QB")
-write.csv(filter.qb,file = "combine.qb")
 combine.full <- read.csv("combine.2000.2018.csv")
 combine.qb <- combine.full %>% filter(Pos== "QB")
 write.csv(combine.qb, file = "combine.qb2000.csv")
@@ -35,6 +39,7 @@ write.csv(combine.qb, file = "combine.qb2000.csv")
 #Passing stats by season
 qb.stats <- read.csv("qbStats.csv")
 
+career.combine <- read.csv("totalCombinedQB.csv")
 
 
 ```
@@ -51,6 +56,7 @@ years.pro <- years.pro.raw %>% mutate(YearsPro = To - From)
 years.pro2 <- years.pro[,-3]
 years.pro3 <- years.pro2 %>% filter(From >= 1996)
 years.pro3 <- years.pro3 %>% filter(From <= 2016)
+
 ```
 
 
