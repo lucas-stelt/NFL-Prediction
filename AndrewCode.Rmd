@@ -78,6 +78,7 @@ cor(numeric.qb)
 
 ```{r}
 library(car)
+library(pls)
 season <- read.csv("qbStats.csv")
 season.mlm <- lm(cbind(yds, td, game_points) ~ att+cmp+ypa+int+sack+loss+experience, data=season)
 summary(season.mlm)
@@ -92,5 +93,53 @@ anova(season.mlm, season.mlm2)
 # Test statistics from the linear hypothesis test show that the 'loss' variable can be dropped
 lh.out <- linearHypothesis(season.mlm, hypothesis.matrix = c("loss = 0"))
 lh.out
+season.mlm2
+qqnorm(season.mlm2$residuals[,1]); qqline(season.mlm2$residuals[,1])
+qqnorm(season.mlm2$residuals[,2]); qqline(season.mlm2$residuals[,2])
+qqnorm(season.mlm2$residuals[,3]); qqline(season.mlm2$residuals[,3])
+```
+
+```{r}
+qb.data <- read.csv("career_combinedStats.csv")
+head(qb.data)
+
+qb.mlm <- lm(cbind(yds, td, game_points)~att+cmp+ypa+int+sack+loss+experience, data=qb.data)
+summary(qb.mlm)
+
+Anova(qb.mlm)
+
+qb.mlm2 <- update(qb.mlm, .~.-ypa, data=qb.data)
+Anova(qb.mlm2)
+anova(qb.mlm, qb.mlm2)
+```
+
+```{r}
+library(psych)
+# Grab numerical data
+numerical.qb <- qb.data %>% select(c(att, cmp, yds, int, ypa, td, int, sack, loss, game_points, experience, Ht, Wt, Year))
+
+# Create correlation matrix to test in the cortest-bartlett test
+mat <- cor(numerical.qb)
+
+# Test to see if factor analysis could be used here
+cortest.bartlett(mat, n=length(numerical.qb)) # small p value means EFA may be useful here
+
+KMO(mat)
+
+numerical.qb.2 <- numerical.qb %>% select(-c(Ht, Wt, Year))
+mat2 <- cor(numerical.qb.2)
+
+KMO(mat2)
+
+# Choosing number of factors
+output <- princomp(numerical.qb.2, cor=TRUE)
+plot(output,type="lines") # scree plot 
+abline(h=1,lty=2)  # add horizonal dotted line at 1
+# Based on this, 2 factors should suffice
+
+# Extract factors
+fa.out <- principal(numerical.qb.2 ,nfactors=2, rotate="varimax")
+print.psych(fa.out,cut=.5,sort=TRUE)
+fa.out$scores
 ```
 
