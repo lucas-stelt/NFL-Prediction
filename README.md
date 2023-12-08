@@ -83,7 +83,7 @@ The nfl stats had names formatted as "Firstname Lastname.FirstInitial Lastname" 
 
 * Desired Output: "Aaron Rodgers"
 
-* I was able to use the following code to achieve this:
+I was able to use the following code to achieve this:
 
 ```
 qbCombined$qb = sub("[A-Z]\\..*", "", qbCombined$qb) #nfl players
