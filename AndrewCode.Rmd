@@ -7,6 +7,8 @@ output: html_document
 
 ```{r}
 library(tidyverse)
+library(devtools)
+library(stringr)
 ```
 
 
@@ -15,7 +17,80 @@ library(tidyverse)
 combine <- read.csv("nfl.combine.csv")
 combine <- combine %>% filter(Position=="QB")
 
+combine$PlayerName <- strsplit(combine$Player, '\\\\')
+
+
+combine$PlayerID <- combine$Player %>% strsplit()
+
 career.stats <- read.csv("Career_Stats_Passing.csv")
 
+```
+
+```{r, message=FALSE}
+devtools::install_github(repo = "maksimhorowitz/nflscrapR")
+
+```
+
+```{r}
+season.passing <- read.csv("season_passing_df.csv")
+season.receiving <- read.csv("season_receiving_df.csv")
+season.rushing <- read.csv("season_rushing_df.csv")
+```
+
+```{r}
+combine.2000 <- read.csv("combine.qb2000.csv")
+combine.2000$Player_Name <- str_replace(combine.2000$Player, '[a-z]+ ', '.')
+# QB rushing stats
+season.rushing
+
+
+```
+
+```{r}
+qbs <- read.csv("qbStats.csv")
+combine.qb <- read.csv("combine.qb")
+qbs
+combine.qb
+combine.qb$qbnames <- str_split(combine.qb$Player.Name, "\\\\")
+for(i in 1:nrow(combine.qb)) {
+  combine.qb$qb[i] <- combine.qb$qbnames[[i]][1]
+}
+combine.qb$qbnames <- unlist(combine.qb$qbnames)
+
+qbs$qbnames <- str_split(qbs$qb, ' [A-Z]{1}[a-z]+\\. ')
+
+joined.qbs <- qbs %>% left_join(combine.qb, by="qbnames")
+
+```
+
+```{r}
+total.qb <- read.csv("totalCombinedQB.csv")
+total.qb$ypa <- total.qb$yds / total.qb$att
+total.qb
+
+results <- lm(cbind(td, yds)~cmp+att+int, data=total.qb)
+summary(results)
+
+numeric.qb <- total.qb %>% dplyr::select(c(att, cmp, yds, ypa, td, int, sack, loss, game_points, Ht, Wt, Forty, Vertical, BroadJump, Year, Cone, Shuttle))
+
+cor(numeric.qb)
+```
+
+```{r}
+library(car)
+season <- read.csv("qbStats.csv")
+season.mlm <- lm(cbind(yds, td, game_points) ~ att+cmp+ypa+int+sack+loss+experience, data=season)
+summary(season.mlm)
+
+# Anova for the MLM shows that loss can be dropped from the model
+Anova(season.mlm)
+
+# Large p value from anova table with updated mlm shows that the 'loss' variable can be dropped because the model fits as well
+season.mlm2 <- update(season.mlm, .~.-loss)
+anova(season.mlm, season.mlm2)
+
+# Test statistics from the linear hypothesis test show that the 'loss' variable can be dropped
+lh.out <- linearHypothesis(season.mlm, hypothesis.matrix = c("loss = 0"))
+lh.out
 ```
 
