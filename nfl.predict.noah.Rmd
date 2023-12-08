@@ -39,8 +39,13 @@ write.csv(combine.qb, file = "combine.qb2000.csv")
 #Passing stats by season
 qb.stats <- read.csv("qbStats.csv")
 
-career.combine <- read.csv("totalCombinedQB.csv")
+combine.stats.09.16<- read.csv("totalCombinedQB.csv")
+#combine years pro with this; Total stats from 2009-2016
+qb.total <- read.csv("career_combinedStats.csv")
 
+summary(qb.total)
+cor(qb.total$ypa, qb.total$td)
+cor(qb.total$int, qb.total$experience)
 
 ```
 
@@ -56,6 +61,7 @@ years.pro <- years.pro.raw %>% mutate(YearsPro = To - From)
 years.pro2 <- years.pro[,-3]
 years.pro3 <- years.pro2 %>% filter(From >= 1996)
 years.pro3 <- years.pro3 %>% filter(From <= 2016)
+names(years.pro3) <- c("qb","Position", "From","To","YearsPro")
 
 ```
 
