@@ -12,6 +12,9 @@ library(MASS)
 library(ggplot2)
 library(stringr)
 library(rvest)
+library(devtools)
+library(stringr)
+
 ```
 
 
@@ -61,15 +64,10 @@ qb.stats <- read.csv("qbStats.csv")
 qb.almost <- read.csv("career_combinedStats.csv")
 qb.total <- qb.almost[,-c(1,17,22,23)]
 summary(qb.total)
-cor(qb.total$ypa, qb.total$td)
-cor(qb.total$int, qb.total$experience)
 
 #Label UDFA as round 8
-for(i in 1:length(qb.total)) {
-  if (is.na(qb.total[i,]$Round)) {
-    qb.total[i,]$Round = 8
-  }
-}
+round.nas <- which(is.na(qb.total$Round))
+qb.total$Round[round.nas] <- 8
 #Create more stats that account for number of attempts
 qb.total <- qb.total %>% mutate(tdper = td/att)
 
@@ -79,16 +77,33 @@ qb.total <- qb.total %>% mutate(cmppct = cmp/att)
 #int per attempts
 qb.total <- qb.total %>% mutate(intper = int/att)
 
+qb.total <- qb.total %>% mutate(sackper = sack/att)
+
+qb.total <- qb.total %>% mutate(lossper = loss/sack)
 
 ```
 
 
 ```{r}
+library(psych)
 #Multiple Regression Investigation
-cov(qb.total[,-c(1,20)])
+numerical.qb <- qb.total %>% dplyr::select(c(att, cmp, yds, int, ypa, td, int, sack, loss, game_points, experience, Ht, Wt, Year,tdper, cmppct,intper,sackper,lossper, Round))
 
-mod1 <- lm(cbind(experience,ypa,int,td)~ Ht + Wt + Forty + Round + Vertical, data = qb.total )
+
+mod1 <- lm(cbind(experience,ypa,tdper,cmppct,intper)~ Ht + Wt + Forty + Round + Vertical, data = qb.total )
 summary(mod1)
+#create correlation matrix
+mat <- cor(numerical.qb)
+#Cortest-Bartlett Test
+cortest.bartlett(mat, n=length(numerical.qb))
+mat
+
+#Create dataset with only over 30 attempts, at least 1 full game played
+qb.play <- numerical.qb[numerical.qb$att >29,]
+mat2 <- cor(qb.play)
+cortest.bartlett(mat2, n=length(qb.play))
+mat2
+
 ```
 
 
