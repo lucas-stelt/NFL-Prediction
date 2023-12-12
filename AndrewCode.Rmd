@@ -103,14 +103,15 @@ qqnorm(season.mlm2$residuals[,3]); qqline(season.mlm2$residuals[,3])
 qb.data <- read.csv("career_combinedStats.csv")
 head(qb.data)
 
-qb.mlm <- lm(cbind(yds, td, game_points)~att+cmp+ypa+int+sack+loss+experience, data=qb.data)
+qb.mlm <- lm(cbind(yds, td)~att+cmp+ypa+int+sack+loss+experience, data=qb.data)
 summary(qb.mlm)
 
 Anova(qb.mlm)
 
-qb.mlm2 <- update(qb.mlm, .~.-ypa, data=qb.data)
+qb.mlm2 <- update(qb.mlm, .~.-ypa-sack-experience, data=qb.data)
 Anova(qb.mlm2)
 anova(qb.mlm, qb.mlm2)
+summary(qb.mlm2)
 ```
 
 ```{r}
@@ -134,12 +135,49 @@ KMO(mat2)
 # Choosing number of factors
 output <- princomp(numerical.qb.2, cor=TRUE)
 plot(output,type="lines") # scree plot 
-abline(h=1,lty=2)  # add horizonal dotted line at 1
+abline(h=0.5,lty=2)  # add horizonal dotted line at 1
 # Based on this, 2 factors should suffice
 
 # Extract factors
-fa.out <- principal(numerical.qb.2 ,nfactors=2, rotate="varimax")
+fa.out <- principal(numerical.qb.2 ,nfactors=3, rotate="varimax")
 print.psych(fa.out,cut=.5,sort=TRUE)
 fa.out$scores
+```
+
+```{r}
+qb.data <- read.csv("career_combinedStats.csv")
+summary(qb.data)
+qb.data <- qb.data %>% select(c(-BenchReps))
+round.nas <- which(is.na(qb.data$Round))
+qb.data$Round[round.nas] <- 8
+qb.data.lda <- qb.data[complete.cases(qb.data),] %>% select(c(2, 13:25, -Team, -Pfr_ID, -Pick))
+head(qb.data.lda)
+summary(qb.data.lda)
+qb.lda <- lda()
+```
+
+```{r}
+library(MASS)
+library(mice)
+library(pROC)
+select=dplyr::select
+cleaned.data <- qb.data %>% select(-c(Team, 1, 3:12, Pick, Pfr_ID, AV))
+cleaned.data$Round[which(is.na(cleaned.data$Round))] <- 8 
+cleaned.data <- cleaned.data %>% filter(rowSums(is.na(cleaned.data)==1)<=2)
+imp_data <- mice(cleaned.data)
+clean.complete <- complete(imp_data)
+
+t.sample <- sample(1:nrow(clean.complete), size=70)
+training <- clean.complete[t.sample,] %>% select(-qb)
+testing <- clean.complete[-t.sample,] %>% select(-qb)
+
+qb.lda <- lda(Round~., data=training)
+
+pred <- predict(qb.lda, testing)
+pred$class
+
+correct <- pred$class == testing$Round
+mean(correct)
+
 ```
 
