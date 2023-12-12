@@ -181,3 +181,37 @@ mean(correct)
 
 ```
 
+```{r}
+
+# Maybe modify to test whether they are a early round draft pick or most likely a starter for the team compared to a later pick most likely not a starter
+
+combine.data <- read.csv("career_combineNoNA.csv")
+head(combine.data)
+
+# Setting it to early or late round draft picks, Round 1 and 2 are early, 3 and beyond considered late
+combine.data$Round <- ifelse(combine.data$Round==1 | combine.data$Round==2, 1, 0)
+n <- sample(nrow(combine.data), size=75)
+train.df <- combine.data[n,]
+test.df <- combine.data[-n,]
+
+
+
+lda.2 <- lda(Round~Ht+Wt+Forty+Vertical+BroadJump+Cone+Shuttle+Year+AV, data=combine.data)
+
+pred.2 <- predict(lda.2, test.df)
+pred.2$class
+
+correct.2 <- pred.2$class == test.df$Round
+mean(correct.2)
+
+
+roc.2 <- roc(test.df$Round, as.numeric(pred.2$class))
+roc.2$auc
+plot(roc.2)
+
+roc.2$specificities
+roc.2$sensitivities
+
+
+```
+
