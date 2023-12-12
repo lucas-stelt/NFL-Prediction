@@ -10,6 +10,7 @@ knitr::opts_chunk$set(echo = TRUE)
 library(tidyverse)
 ```
 
+# Data cleaning/creation
 
 ```{r}
 roster09 = read.csv("reg_roster_2009.csv")  %>%
@@ -148,7 +149,40 @@ combineQBCombined = merge(qbTotal, results, by = "qb")
 #write.csv(combineQBCombined, "/Users/jamesspalding/Desktop/totalCombinedQB.csv")
 ```
 
+# joining qbstats and totalcombinedQB
 
+```{r}
+
+
+qbStats = read.csv("qbStats.csv")
+totalCombinedQB = read.csv("totalCombinedQB.csv")
+
+qbStatsSum = qbStats %>%
+  select(-X, -ypa) %>%
+  group_by(qb) %>%
+  summarize(att = sum(att),  cmp = sum(cmp), yds = sum(yds), ypa = sum(yds)/sum(att), td = sum(td), int = sum(as.numeric(int)), sack = sum(sack), loss = sum(loss), game_points = sum(game_points), experience = max(experience)) %>%
+  na.omit()
+
+totalCombinedQB = totalCombinedQB %>%
+  select(-X)
+
+career_combineStats = merge(qbStatsSum, totalCombinedQB, by = "qb") %>%
+  select(-12:-22)
+
+names(career_combineStats)[names(career_combineStats) == "att.x"] = "att"
+names(career_combineStats)[names(career_combineStats) == "cmp.x"] = "cmp"
+names(career_combineStats)[names(career_combineStats) == "yds.x"] = "yds"
+names(career_combineStats)[names(career_combineStats) == "ypa.x"] = "ypa"
+names(career_combineStats)[names(career_combineStats) == "td.x"] = "td"
+names(career_combineStats)[names(career_combineStats) == "int.x"] = "int"
+names(career_combineStats)[names(career_combineStats) == "sack.x"] = "sack"
+names(career_combineStats)[names(career_combineStats) == "loss.x"] = "loss"
+names(career_combineStats)[names(career_combineStats) == "game_points.x"] = "game_points"
+
+
+
+#write.csv(career_combineStats, "/Users/jamesspalding/Desktop/career_combinedStats.csv")
+```
 
 
 
