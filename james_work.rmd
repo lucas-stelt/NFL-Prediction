@@ -183,7 +183,37 @@ names(career_combineStats)[names(career_combineStats) == "game_points.x"] = "gam
 
 #write.csv(career_combineStats, "/Users/jamesspalding/Desktop/career_combinedStats.csv")
 ```
+# Removing NA values
 
+```{r}
+colSums(is.na(career_combineStats))
+
+for(i in 1:126){
+if(is.na(career_combineStats$Round[i]) == T){
+  career_combineStats$Round[i] = 8
+}
+} #undrafted players
+
+career_combineStats =  #removing bench because of large amount of NA
+  career_combineStats %>%
+  select(-BenchReps)
+
+for(i in 1:126){ #removing player if they have more than 2 NA values (besides bench)
+  if(sum(is.na(career_combineStats[i,]))>2){
+    career_combineStats = career_combineStats[-i,]
+  }
+}
+
+noncat = career_combineStats %>% #removing team and pick
+  select(-Team, -Pick, -Pfr_ID)
+
+noncat = noncat %>%
+  mutate_all(~ ifelse(is.na(.), mean(., na.rm = TRUE), .))
+
+colSums(is.na(noncat))
+
+#write.csv(noncat, "/Users/jamesspalding/Desktop/career_combineNoNA.csv") #No NA values
+```
 
 
 
