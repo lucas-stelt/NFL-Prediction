@@ -37,3 +37,6 @@ Shuttle                | Player's combine lateral speed test in seconds
 Year                   | Year in which the player was drafted 
 Av                     | AV (Approximate Value) is a method created by pro-football-reference in an attempt to put a single number on the seasonal value of a player at any position from any year 
 Round                  | The NFL draft round the player was selected Note:(1-7 being round, 8 being undrafted free agent)
+
+
+
