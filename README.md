@@ -125,3 +125,80 @@ career_combineStats = merge(qbStatsSum, totalCombinedQB, by = "qb")
 ```
 
 This resulted in the **career_combine.csv** file which analysis was run on.
+
+## 2. Principal Component/Factor Analysis
+
+Principal component analysis run on the entire data resulted in 61% explained variability. The ggfortify graph is readable, but not ideal.
+
+```
+# Princomp
+library(ggfortify)
+footballPC = princomp(noncat2[,2:21], cor = T)
+summary(footballPC, loadings = T) #.61 with 2 comps
+
+autoplot(footballPC, loadings=T, loadings.label=T, data = noncat2)
+```
+Using varimax and promax rotations resulted in the same groupings. The groups are as follows:
+
+| Group 1     	| Group 2   	|
+|-------------	|-----------	|
+| att         	| Forty     	|
+| yds         	| Vertical  	|
+| cmp         	| BroadJump 	|
+| game_points 	| Shuttle   	|
+| td          	| Cone      	|
+| sack        	|           	|
+| loss        	|           	|
+| int         	|           	|
+| AV          	|           	|
+| Round       	|           	|
+
+Group 1 appears to show professional performance stats, while group 2 seems to show combine results.
+
+```
+# Dimension Rediction
+library(psych)
+cortest.bartlett(cor(noncat2[,2:21]), n=103) #0 pval
+KMO(cor(noncat2[,2:21])) #Overall .82
+
+fa.out = principal(noncat2[,2:21],nfactors=2,rotate="varimax")
+print.psych(fa.out,cut=.5,sort=TRUE) #No cross-loading!
+
+# fa.out = principal(noncat2[,2:21],nfactors=2,rotate="promax")
+# print.psych(fa.out,cut=.5,sort=TRUE) #Both return same groups
+
+# 2 distinct groupings, game stats and physical stats
+```
+
+The group 1 PCA graph turned out really good, with the professional stats being almost exactly on the x-axis and draft pick being the only value on the y-axis. It also accounts for 92% of the variability, which is huge for only 2 components.
+
+```
+#Group 1 pca (game stats)
+  group1 = noncat2 %>%
+    select(att, yds, cmp, game_points, td, sack, loss, int, AV, Round)
+  
+  
+  g1PC = princomp(group1, cor = T)
+  #summary(g1PC, loadings = T) #.92 with 2 comps
+  
+  autoplot(g1PC, loadings=T, loadings.label=T, data = group1)
+```
+
+The group 2 PCA also turned out good, but it is harder to make conclusions. 81% of variability is accounted for, so still quite good.
+
+```
+#Group 2 pca (physical attributes)
+  group2 = noncat2 %>%
+    select(Forty, Vertical, BroadJump, Shuttle, Cone)
+  
+  
+  g2PC = princomp(group2, cor = T)
+  #summary(g2PC, loadings = T) #.81 with 2 comps
+  
+  autoplot(g2PC, loadings=T, loadings.label=T, data = group2) 
+```
+
+
+
+
+
