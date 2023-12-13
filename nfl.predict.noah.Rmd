@@ -82,6 +82,12 @@ qb.total <- qb.total %>% mutate(sackper = sack/att)
 qb.total <- qb.total %>% mutate(lossper = loss/sack)
 
 ```
+```{r}
+espn_raw <- read_csv("nfl_draft_prospects.csv")
+espn.tot <-espn_raw %>% filter(!is.na(espn_raw$grade))
+espn.qb <- espn.tot %>% filter(pos_abbr== "QB")
+write.csv(espn.qb, file = "espn.qb.csv")
+```
 
 
 ```{r}
