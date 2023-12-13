@@ -103,14 +103,15 @@ qqnorm(season.mlm2$residuals[,3]); qqline(season.mlm2$residuals[,3])
 qb.data <- read.csv("career_combinedStats.csv")
 head(qb.data)
 
-qb.mlm <- lm(cbind(yds, td, game_points)~att+cmp+ypa+int+sack+loss+experience, data=qb.data)
+qb.mlm <- lm(cbind(yds, td)~att+cmp+ypa+int+sack+loss+experience, data=qb.data)
 summary(qb.mlm)
 
 Anova(qb.mlm)
 
-qb.mlm2 <- update(qb.mlm, .~.-ypa, data=qb.data)
+qb.mlm2 <- update(qb.mlm, .~.-ypa-sack-experience, data=qb.data)
 Anova(qb.mlm2)
 anova(qb.mlm, qb.mlm2)
+summary(qb.mlm2)
 ```
 
 ```{r}
@@ -134,12 +135,134 @@ KMO(mat2)
 # Choosing number of factors
 output <- princomp(numerical.qb.2, cor=TRUE)
 plot(output,type="lines") # scree plot 
-abline(h=1,lty=2)  # add horizonal dotted line at 1
+abline(h=0.5,lty=2)  # add horizonal dotted line at 1
 # Based on this, 2 factors should suffice
 
 # Extract factors
-fa.out <- principal(numerical.qb.2 ,nfactors=2, rotate="varimax")
+fa.out <- principal(numerical.qb.2 ,nfactors=3, rotate="varimax")
 print.psych(fa.out,cut=.5,sort=TRUE)
 fa.out$scores
+```
+
+```{r}
+qb.data <- read.csv("career_combinedStats.csv")
+summary(qb.data)
+qb.data <- qb.data %>% select(c(-BenchReps))
+round.nas <- which(is.na(qb.data$Round))
+qb.data$Round[round.nas] <- 8
+qb.data.lda <- qb.data[complete.cases(qb.data),] %>% select(c(2, 13:25, -Team, -Pfr_ID, -Pick))
+head(qb.data.lda)
+summary(qb.data.lda)
+qb.lda <- lda()
+```
+
+```{r}
+library(MASS)
+library(mice)
+library(pROC)
+select=dplyr::select
+cleaned.data <- qb.data %>% select(-c(Team, 1, 3:12, Pick, Pfr_ID, AV))
+cleaned.data$Round[which(is.na(cleaned.data$Round))] <- 8 
+cleaned.data <- cleaned.data %>% filter(rowSums(is.na(cleaned.data)==1)<=2)
+imp_data <- mice(cleaned.data)
+clean.complete <- complete(imp_data)
+
+t.sample <- sample(1:nrow(clean.complete), size=70)
+training <- clean.complete[t.sample,] %>% select(-qb)
+testing <- clean.complete[-t.sample,] %>% select(-qb)
+
+qb.lda <- lda(Round~., data=training)
+
+pred <- predict(qb.lda, testing)
+pred$class
+
+correct <- pred$class == testing$Round
+mean(correct)
+
+```
+
+```{r}
+# LDA analysis with combine data to predict if they are an early or late round draft pick
+
+# Maybe modify to test whether they are a early round draft pick or most likely a starter for the team compared to a later pick most likely not a starter
+
+combine.data <- read.csv("career_combineNoNA.csv")
+head(combine.data)
+
+# Setting it to early or late round draft picks, Round 1 and 2 are early, 3 and beyond considered late
+combine.data$Round <- ifelse(combine.data$Round==1 | combine.data$Round==2, 1, 0)
+n <- sample(nrow(combine.data), size=75)
+train.df <- combine.data[n,]
+test.df <- combine.data[-n,]
+
+
+
+lda.2 <- lda(Round~Ht+Wt+Forty+Vertical+BroadJump+Cone+Shuttle+Year+AV, data=combine.data)
+
+pred.2 <- predict(lda.2, test.df)
+pred.2$class
+
+correct.2 <- pred.2$class == test.df$Round
+mean(correct.2)
+
+
+roc.2 <- roc(test.df$Round, as.numeric(pred.2$class))
+roc.2$auc
+plot(roc.2)
+
+roc.2$specificities
+roc.2$sensitivities
+
+
+```
+
+```{r}
+
+library(MVN)
+# Is success in the NFL the same for early round drafted qbs and later round drafted qbs?
+
+# Multivariate T tests to see if the population average for success factors like yards and touchdowns are the same for different round draft picks
+
+combine.data$td.to.int <- combine.data$td / combine.data$int
+cd.qb <- combine.data %>% filter(att >= 150) %>% select(yds, td, td.to.int, Round)
+
+
+# Get two populations from the combine data
+early.round <- cd.qb %>% filter(Round==1) %>% select(-Round)
+later.round <- cd.qb %>% filter(Round==0) %>% select(-Round)
+
+early.means <- round(apply(early.round, 2, mean),2)
+later.means <- round(apply(later.round, 2, mean),2)
+early.means; later.means
+
+# Assess normality in populations
+mvn(early.round, mvnTest = "hz"); mvn(later.round, mvnTest = "hz") 
+# The populations are not normal but the sample sizes are both greater than 30 to compensate for non-normality
+
+# Test using the Hotelling T Test to test for difference in means
+library(Hotelling)
+fit <- hotelling.test(early.round, later.round)
+fit # P value of 0.01461, we conclude that the means for factors of success is different in quarterbacks drafted in early rounds compared to later rounds.
+
+
+
+```
+
+```{r}
+comb.dat <- read.csv("career_combineNoNA.csv")
+
+library(rstatix)
+comb.dat$Round <- ifelse(comb.dat$Round==1 | comb.dat$Round==2, "Early", 
+                         ifelse(comb.dat$Round==3 | comb.dat$Round==4, "Mid", "Late"))
+comb.dat <- comb.dat %>% select(td, yds, int, Round)
+comb.dat$td.int.ratio <- comb.dat$td / comb.dat$int
+comb.dat$td.int.ratio <- ifelse(comb.dat$td.int.ratio == Inf | is.na(comb.dat$td.int.ratio), comb.dat$td, comb.dat$td.int.ratio)
+# Some variables are intercorrelated, especially td and yds.
+cor(comb.dat[which(comb.dat$Round=="Early"),-c(3,4)])
+cor(comb.dat[which(comb.dat$Round=="Mid"),-c(3,4)])
+cor(comb.dat[which(comb.dat$Round=="Late"),-c(3,4)])
+
+# Box M Test for multivariate distributions
+box_m(data=cd.qb[,-4], group=cd.qb[,4]) # population covariances are different for each group
 ```
 
