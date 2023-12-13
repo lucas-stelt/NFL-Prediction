@@ -217,12 +217,11 @@ roc.2$sensitivities
 ```
 
 ```{r}
+
 library(MVN)
 # Is success in the NFL the same for early round drafted qbs and later round drafted qbs?
 
 # Multivariate T tests to see if the population average for success factors like yards and touchdowns are the same for different round draft picks
-n <- length(which(combine.data$Round==1))
-m <- length(which(combine.data$Round!=1))
 
 combine.data$td.to.int <- combine.data$td / combine.data$int
 cd.qb <- combine.data %>% filter(att >= 150) %>% select(yds, td, td.to.int, Round)
@@ -247,5 +246,23 @@ fit # P value of 0.01461, we conclude that the means for factors of success is d
 
 
 
+```
+
+```{r}
+comb.dat <- read.csv("career_combineNoNA.csv")
+
+library(rstatix)
+comb.dat$Round <- ifelse(comb.dat$Round==1 | comb.dat$Round==2, "Early", 
+                         ifelse(comb.dat$Round==3 | comb.dat$Round==4, "Mid", "Late"))
+comb.dat <- comb.dat %>% select(td, yds, int, Round)
+comb.dat$td.int.ratio <- comb.dat$td / comb.dat$int
+comb.dat$td.int.ratio <- ifelse(comb.dat$td.int.ratio == Inf | is.na(comb.dat$td.int.ratio), comb.dat$td, comb.dat$td.int.ratio)
+# Some variables are intercorrelated, especially td and yds.
+cor(comb.dat[which(comb.dat$Round=="Early"),-c(3,4)])
+cor(comb.dat[which(comb.dat$Round=="Mid"),-c(3,4)])
+cor(comb.dat[which(comb.dat$Round=="Late"),-c(3,4)])
+
+# Box M Test for multivariate distributions
+box_m(data=cd.qb[,-4], group=cd.qb[,4]) # population covariances are different for each group
 ```
 
