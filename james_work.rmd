@@ -213,6 +213,76 @@ noncat = noncat %>%
 colSums(is.na(noncat))
 
 #write.csv(noncat, "/Users/jamesspalding/Desktop/career_combineNoNA.csv") #No NA values
+
+#year averages csv
+noncat2 = noncat %>%
+  mutate(experience = experience + 1, #0th year is now 1st year
+         att = att/experience,
+         cmp = cmp/experience,
+         yds = yds/experience,
+         td = td/experience,
+         int = int/experience,
+         sack = sack/experience,
+         loss = loss/experience,
+         game_points = game_points/experience
+         )
+
+for(i in 1:103){
+  if(is.infinite(rowSums(noncat2[,2:21])) == T){
+    noncat2[i,] = noncat[i,]
+  }
+  if(is.nan(rowSums(noncat2[,2:21])) == T){
+    noncat2[i,] = noncat[i,]
+  }
+}
+
+
+#write.csv(noncat2, "/Users/jamesspalding/Desktop/career_combineNoNA_avgs.csv")
+```
+
+
+```{r}
+# Princomp
+library(ggfortify)
+footballPC = princomp(noncat2[,2:21], cor = T)
+summary(footballPC, loadings = T) #.61 with 2 comps
+
+autoplot(footballPC, loadings=T, loadings.label=T, data = noncat2)
+
+# Dimension Rediction
+library(psych)
+cortest.bartlett(cor(noncat2[,2:21]), n=103) #0 pval
+KMO(cor(noncat2[,2:21])) #Overall .82
+
+fa.out = principal(noncat2[,2:21],nfactors=2,rotate="varimax")
+print.psych(fa.out,cut=.5,sort=TRUE) #No cross-loading!
+
+# fa.out = principal(noncat2[,2:21],nfactors=2,rotate="promax")
+# print.psych(fa.out,cut=.5,sort=TRUE) #Both return same groups
+
+# 2 distinct groupings, game stats and physical stats
+
+
+#Group 1 pca (game stats)
+  group1 = noncat2 %>%
+    select(att, yds, cmp, game_points, td, sack, loss, int, AV, Round)
+  
+  
+  g1PC = princomp(group1, cor = T)
+  #summary(g1PC, loadings = T) #.92 with 2 comps
+  
+  autoplot(g1PC, loadings=T, loadings.label=T, data = group1)
+
+
+#Group 2 pca (physical attributes)
+  group2 = noncat2 %>%
+    select(Forty, Vertical, BroadJump, Shuttle, Cone)
+  
+  
+  g2PC = princomp(group2, cor = T)
+  #summary(g2PC, loadings = T) #.81 with 2 comps
+  
+  autoplot(g2PC, loadings=T, loadings.label=T, data = group2) 
 ```
 
 
