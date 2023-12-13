@@ -1,0 +1,39 @@
+---
+title: "Copy Report"
+author: "Lucas Steltenpohl"
+date: "2023-12-13"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+nfl.complete <- read.csv("career_combineNoNA.csv")
+```
+
+# NFL Quarterback Predictive Analysis
+
+This report is a statistical analysis of the performance and combine statistics of the National Football League (NFL) quarterbacks spanning from the seasons 2009-2016. The data set we utilized was compiled of multiple data sets of performance indicators that are critical in assessing a quarterback's effectiveness and impact on the field. Our data set encompasses a detailed examination of 103 quarterbacks and 22 variables, offering a unique insight into the changing dynamics and skill levels within the league during this period. The 22 variable names and descriptions are found in the table below.  
+
+Variables:             |  Definitions:
+---------------------- | ----------------------------
+qb                     | Name of Quarterback
+att                    | Number of passing attempts made throughout their career
+cmp                    | Number of passing completions made throughout their career
+yds                    | Number of total passing yards gained throughout their career
+ypa                    | Average number of yards gained per attempt made 
+td                     | Number of touchdowns thrown 
+int                    | Number of interceptions thrown 
+sack                   | Number of sacks taken 
+loss                   | Number of yards lost when sacked
+game_points            | Number of in game points responsible for
+experience             | Number of years played in the NFL
+Ht                     | Height of player in inches 
+Wt                     | Weight of player in lbs
+Forty                  | Player's combine 40 meter dash time in seconds 
+Vertical               | Player's combine vertical jump in inches 
+BroadJump              | Player's combine broad jump (horizontal) in inches
+Cone                   | Player's combine 3 cone agility drill in seconds 
+Shuttle                | Player's combine lateral speed test in seconds 
+Year                   | Year in which the player was drafted 
+Av                     | AV (Approximate Value) is a method created by pro-football-reference in an attempt to put a single number on the seasonal value of a player at any position from any year 
+Round                  | The NFL draft round the player was selected Note:(1-7 being round, 8 being undrafted free agent)

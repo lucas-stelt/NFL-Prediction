@@ -190,7 +190,7 @@ combine.data <- read.csv("career_combineNoNA.csv")
 head(combine.data)
 
 # Setting it to early or late round draft picks, Round 1 and 2 are early, 3 and beyond considered late
-combine.data$Round <- ifelse(combine.data$Round==1 | combine.data$Round==2, 1, 0)
+combine.data$Round <- ifelse(combine.data$Round==1 | combine.data$Round==2, "Early", "Later")
 n <- sample(nrow(combine.data), size=75)
 train.df <- combine.data[n,]
 test.df <- combine.data[-n,]
@@ -212,6 +212,18 @@ plot(roc.2)
 
 roc.2$specificities
 roc.2$sensitivities
+
+# using LDA to predict draft stock of an NFL drafted quarterback based on their combine data
+
+s.darnold <- data.frame(Ht = 75, Wt = 221, Forty = 4.85, Vertical = 26.5, BroadJump = 105, Cone = 6.96, Shuttle = 4.4, Year = 2018, AV=27)
+# AV = 27
+
+predict(lda.2, s.darnold)
+
+m.rudolf <- data.frame(Ht = 75, Wt = 222, Forty = 4.81, Vertical = 31, BroadJump = 113, Cone = 6.95, Shuttle = 4.07, Year = 2018, AV = 0)
+# Av = 0
+
+predict(lda.2, m.rudolf)
 
 
 ```
