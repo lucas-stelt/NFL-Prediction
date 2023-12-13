@@ -182,6 +182,14 @@ mean(correct)
 ```
 
 ```{r}
+espn.qb <- read.csv("espn.qb.csv")
+espn.qb$qb <- espn.qb$player_name
+total.combined <- combine.data %>% left_join(espn.qb, by = "qb")
+combine.data <- total.combined %>% select(c(1:22, grade))
+```
+
+
+```{r}
 # LDA analysis with combine data to predict if they are an early or late round draft pick
 
 # Maybe modify to test whether they are a early round draft pick or most likely a starter for the team compared to a later pick most likely not a starter
@@ -189,15 +197,24 @@ mean(correct)
 combine.data <- read.csv("career_combineNoNA.csv")
 head(combine.data)
 
+
+espn.qb <- read.csv("espn.qb.csv")
+espn.qb$qb <- espn.qb$player_name
+total.combined <- combine.data %>% left_join(espn.qb, by = "qb")
+combine.data <- total.combined %>% select(c(1:22, grade))
+imp.1 <- mice(combine.data)
+combine.data <- complete(imp.1)
+# combine.data$grade[which(is.na(combine.data$grade))] <- mean(na.omit(combine.data$grade))
+
 # Setting it to early or late round draft picks, Round 1 and 2 are early, 3 and beyond considered late
-combine.data$Round <- ifelse(combine.data$Round==1 | combine.data$Round==2, 1, 0)
+combine.data$Round <- ifelse(combine.data$Round==1 | combine.data$Round==2, "Early", "Late")
 n <- sample(nrow(combine.data), size=75)
 train.df <- combine.data[n,]
 test.df <- combine.data[-n,]
 
 
 
-lda.2 <- lda(Round~Ht+Wt+Forty+Vertical+BroadJump+Cone+Shuttle+Year+AV, data=combine.data)
+lda.2 <- lda(Round~Ht+Wt+Forty+Vertical+BroadJump+Cone+Shuttle+Year+grade, data=combine.data)
 
 pred.2 <- predict(lda.2, test.df)
 pred.2$class
@@ -212,6 +229,12 @@ plot(roc.2)
 
 roc.2$specificities
 roc.2$sensitivities
+
+# Predict quarterback rankings with LDA
+s.darnold <- data.frame(Ht = 75, Wt = 221, Forty = 4.85, Vertical = 26.5, BroadJump = 105, Cone = 6.96, Shuttle = 4.4, Year = 2018, grade = 94)
+
+predict(lda.2, s.darnold)
+
 
 
 ```
