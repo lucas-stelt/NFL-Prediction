@@ -182,6 +182,7 @@ mean(correct)
 ```
 
 ```{r}
+# LDA analysis with combine data to predict if they are an early or late round draft pick
 
 # Maybe modify to test whether they are a early round draft pick or most likely a starter for the team compared to a later pick most likely not a starter
 
@@ -211,6 +212,39 @@ plot(roc.2)
 
 roc.2$specificities
 roc.2$sensitivities
+
+
+```
+
+```{r}
+library(MVN)
+# Is success in the NFL the same for early round drafted qbs and later round drafted qbs?
+
+# Multivariate T tests to see if the population average for success factors like yards and touchdowns are the same for different round draft picks
+n <- length(which(combine.data$Round==1))
+m <- length(which(combine.data$Round!=1))
+
+combine.data$td.to.int <- combine.data$td / combine.data$int
+cd.qb <- combine.data %>% filter(att >= 150) %>% select(yds, td, td.to.int, Round)
+
+
+# Get two populations from the combine data
+early.round <- cd.qb %>% filter(Round==1) %>% select(-Round)
+later.round <- cd.qb %>% filter(Round==0) %>% select(-Round)
+
+early.means <- round(apply(early.round, 2, mean),2)
+later.means <- round(apply(later.round, 2, mean),2)
+early.means; later.means
+
+# Assess normality in populations
+mvn(early.round, mvnTest = "hz"); mvn(later.round, mvnTest = "hz") 
+# The populations are not normal but the sample sizes are both greater than 30 to compensate for non-normality
+
+# Test using the Hotelling T Test to test for difference in means
+library(Hotelling)
+fit <- hotelling.test(early.round, later.round)
+fit # P value of 0.01461, we conclude that the means for factors of success is different in quarterbacks drafted in early rounds compared to later rounds.
+
 
 
 ```
