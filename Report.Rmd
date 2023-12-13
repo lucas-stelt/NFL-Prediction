@@ -1,0 +1,14 @@
+---
+title: "Report"
+author: "Lucas Steltenpohl"
+date: "2023-12-13"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## NFL Predictive Analysis
+
+# Variables:
