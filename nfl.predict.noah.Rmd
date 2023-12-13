@@ -38,6 +38,10 @@ combine.full <- read.csv("combine.2000.2018.csv")
 combine.qb <- combine.full %>% filter(Pos== "QB")
 write.csv(combine.qb, file = "combine.qb2000.csv")
 ```
+```{r}
+qb.data <- read.csv("qbStats.csv")
+
+```
 
 ```{r}
 #Years Pro dataset
