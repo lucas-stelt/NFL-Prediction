@@ -80,7 +80,7 @@ cor(numeric.qb)
 library(car)
 library(pls)
 season <- read.csv("qbStats.csv")
-season.mlm <- lm(cbind(yds, td, game_points) ~ att+cmp+ypa+int+sack+loss+experience, data=season)
+season.mlm <- lm(cbind(yds, td) ~ att+cmp+ypa+int+sack+loss+experience, data=season)
 summary(season.mlm)
 
 # Anova for the MLM shows that loss can be dropped from the model
@@ -96,7 +96,6 @@ lh.out
 season.mlm2
 qqnorm(season.mlm2$residuals[,1]); qqline(season.mlm2$residuals[,1])
 qqnorm(season.mlm2$residuals[,2]); qqline(season.mlm2$residuals[,2])
-qqnorm(season.mlm2$residuals[,3]); qqline(season.mlm2$residuals[,3])
 ```
 
 ```{r}
@@ -288,4 +287,21 @@ cor(comb.dat[which(comb.dat$Round=="Late"),-c(3,4)])
 # Box M Test for multivariate distributions
 box_m(data=cd.qb[,-4], group=cd.qb[,4]) # population covariances are different for each group
 ```
+
+
+```{r}
+library(car)
+car.avg <- read.csv("career_combineNoNA_avgs.csv")
+head(car.avg)
+car.avg$td.int.ratio <- car.avg$td / car.avg$int
+car.avg$td.int.ratio <- ifelse(car.avg$td.int.ratio == Inf | is.na(car.avg$td.int.ratio), car.avg$td, car.avg$td.int.ratio)
+
+mlm.avg <- lm(cbind(td, yds)~att+cmp+int+sack+loss+experience+ypa, data=car.avg)
+Anova(mlm.avg) # Get rid of sack and loss and att
+
+mlm.avg.2 <- lm(cbind(td, yds)~cmp+int, data=car.avg)
+anova(mlm.avg, mlm.avg.2)
+
+```
+
 
