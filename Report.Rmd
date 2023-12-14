@@ -1,6 +1,6 @@
 ---
 title: "Report"
-author: "Lucas Steltenpohl"
+author: "Lucas Steltenpohl, Noah Coleman, Andrew Spika, and James Spalding"
 date: "2023-12-13"
 output: html_document
 ---
@@ -14,6 +14,7 @@ library(mice)
 library(MASS)
 library(pROC)
 library(pls)
+library(car)
 select = dplyr::select
 ```
 
@@ -76,9 +77,11 @@ ggplot(nfl.complete, aes(y = experience)) +
        x = "",
        y = "Experience (Years)")
 ```
+
+
 ## Statistical Methods
 
-=======
+
 * Linear Discriminant Analysis (LDA)
   + Which is a statistical method for finding a linear combination of variables with the goal to classify new data into these categories. This technique is based on dimensionality reduction similar to principal component analysis. LDA allows us to make accurate predictions into multiple classification fields. In our case we applied LDA to determine a players draft round based on various parameters. 
   
@@ -89,12 +92,13 @@ ggplot(nfl.complete, aes(y = experience)) +
   + Factor Analysis is a statistical method aims to uncover the underlying factors in a set of observations. This method groups together highly correlated variables into one factor. In our case we applied factor analysis to discover groupings between highly variables within our data. 
   
 * Multiple Regression
-  + 
+  + Multiple regression is a statistical technique used to model the relationship between two or more independent variables (predictors) and a dependent variable (outcome). Multiple regression can be used to predict the value of the dependent variable based on the values of the independent variables, and to understand the relative influence of each independent variable on the dependent variable. 
   
-  
+## Predictive Analysis
+
 One of the parameters we aimed to be able to accurately predict is whether or not a given quarterback that is entering the draft will be drafted in the early rounds or not. The early rounds of the draft being the first and second as these are where you find most likely starting quarterbacks, and the later rounds being the remaining rounds being the third through seventh. To do this, the combine data for NFL quarterbacks was used to create an Linear Discriminant Analysis to predict whether the quarterbacks would be an early or later round draft picks. The variables used to predict the round drafted are Ht, Wt, Forty, Vertical, BroadJump, Cone, Shuttle, Year, and grade. The total data was split into a training and a testing set. The training set was used to create the LDA and the testing set was used to get estimated measurements for accuracy, specificity, and sensitivity. The training set was a random sample of about three fourths of the total data, and the testing was the remaining fourth. 
 
-```{r}
+```{r, echo = FALSE, warning = FALSE, message = FALSE}
 # LDA analysis with combine data to predict if they are an early or late round draft pick
 
 # Maybe modify to test whether they are a early round draft pick or most likely a starter for the team compared to a later pick most likely not a starter
@@ -140,9 +144,9 @@ predict(lda.2, s.darnold)$class
 After calculating the LDA model and predicting the draft outcome for the testing set, we got an accuracy of about 86.25%, which is very good. The sensitivity, or the ability for the LDA to detect true positives, is about 87.5%. And finally the specificity, or the ability for the LDA to detect true negatives, is about 85%. These measures are what we hoped to see and give us reason to believe this model can be a good and accurate predictor of when during the draft, early or late, that an upcoming prospect will land based on the variables provided. To use a past example that isn't part of our data but does have all the data, we collected the variable measurements for Sam Darnold, an NFL quarter that was drafted in the Early rounds. Sam Darnold has the following data: Ht = 75, Wt = 221, Forty = 4.85, Vertical = 26.5, BroadJump = 105, Cone = 6.96, Shuttle = 4.4, Year = 2018, grade = 94. When we predicted when he would be drafted using our LDA it determined he would be taken in the early rounds. This was the correct prediction. 
 
 
+## Dimensionality Reduction
 
-
-```{r}
+```{r, warning = FALSE, echo = FALSE, message = FALSE}
 # Princomp
 noncat2 = read.csv("career_combineNoNA_avgs.csv") %>%
   select(-1)
@@ -187,7 +191,7 @@ print.psych(fa.out,cut=.5,sort=TRUE) #No cross-loading!
   autoplot(g2PC, loadings=T, loadings.label=T, data = group2) 
 ```
 
-```{r}
+```{r, warning = FALSE, echo = FALSE, message = FALSE}
 season <- read.csv("qbStats.csv")
 season.mlm <- lm(cbind(yds, td) ~ att+cmp+ypa+int+sack+loss+experience, data=season)
 summary(season.mlm)
