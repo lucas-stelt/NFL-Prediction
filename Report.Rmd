@@ -7,6 +7,8 @@ output: html_document
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(ggplot2)
 nfl.complete <- read.csv("career_combineNoNA.csv")
 ```
 
@@ -37,6 +39,36 @@ Shuttle                | Player's combine lateral speed test in seconds
 Year                   | Year in which the player was drafted 
 Av                     | AV (Approximate Value) is a method created by pro-football-reference in an attempt to put a single number on the seasonal value of a player at any position from any year 
 Round                  | The NFL draft round the player was selected Note:(1-7 being round, 8 being undrafted free agent)
+
+```{r, echo = FALSE, warning = FALSE}
+# Create a bar plot showing the number of players per year
+ggplot(nfl.complete, aes(x = as.factor(Year))) + 
+  geom_bar(fill = "blue", color = "black") +
+  theme_minimal() +
+  labs(title = "Number of NFL Quarterbacks per Draft Year(2000-2016)",
+       x = "Year",
+       y = "Number of Quarterbacks") +
+  theme(axis.text.x = element_text(angle = 90, hjust = 1))
+```
+```{r, echo = FALSE, warning = FALSE}
+# Create a bar plot showing the number of players drafted in each round
+ggplot(nfl.complete, aes(x = as.factor(Round))) + 
+  geom_bar(fill = "blue", color = "black") +
+  theme_minimal() +
+  labs(title = "Distribution of NFL Quarterbacks by Draft Round (2009-2016)",
+       x = "Draft Round",
+       y = "Number of Quarterbacks") +
+  theme(axis.text.x = element_text(angle = 0, hjust = 1))
+```
+```{r, echo = FALSE, warning = FALSE}
+# Create a single boxplot showing the overall distribution of experience
+ggplot(nfl.complete, aes(y = experience)) + 
+  geom_boxplot(fill = "lightblue", color = "black") +
+  theme_minimal() +
+  labs(title = "Overall Distribution of NFL Quarterbacks' Years Played",
+       x = "",
+       y = "Experience (Years)")
+```
 
 
 ```{r}
