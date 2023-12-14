@@ -85,6 +85,9 @@ ggplot(nfl.complete, aes(y = experience)) +
   + This is a statistical technique used to reduce the number of variables by transforming the original variables into principal components. PCA allows us to reduce the dimensionality of a large data set. Note:Each subsequent component contains less variation within the data. In our case we applied PCA to reduce the dimensionality to discover variable relationships and importance. 
   
 * Factor Analysis 
+  + Factor Analysis is a statistical method aims to uncover the underlying factors in a set of observations. This method groups together highly correlated variables into one factor. In our case we applied factor analysis to discover groupings between highly variables within our data. 
+  
+* Multiple Regression
   + 
 ```{r}
 # LDA analysis with combine data to predict if they are an early or late round draft pick
