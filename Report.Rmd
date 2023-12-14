@@ -76,8 +76,19 @@ ggplot(nfl.complete, aes(y = experience)) +
        x = "",
        y = "Experience (Years)")
 ```
+## Statistical Methods
 
-
+=======
+* Linear Discriminant Analysis (LDA)
+  + Which is a statistical method for finding a linear combination of variables with the goal to classify new data into these categories. This technique is based on dimensionality reduction similar to principal component analysis. LDA allows us to make accurate predictions into multiple classification fields. In our case we applied LDA to determine a players draft round based on various parameters. 
+  
+* Principal Component Analysis (PCA)
+  + This is a statistical technique used to reduce the number of variables by transforming the original variables into principal components. PCA allows us to reduce the dimensionality of a large data set. Note:Each subsequent component contains less variation within the data. In our case we applied PCA to reduce the dimensionality to discover variable relationships and importance. 
+  
+* Factor Analysis 
+  + 
+  
+  
 One of the parameters we aimed to be able to accurately predict is whether or not a given quarterback that is entering the draft will be drafted in the early rounds or not. The early rounds of the draft being the first and second as these are where you find most likely starting quarterbacks, and the later rounds being the remaining rounds being the third through seventh. To do this, the combine data for NFL quarterbacks was used to create an Linear Discriminant Analysis to predict whether the quarterbacks would be an early or later round draft picks. The variables used to predict the round drafted are Ht, Wt, Forty, Vertical, BroadJump, Cone, Shuttle, Year, and grade. The total data was split into a training and a testing set. The training set was used to create the LDA and the testing set was used to get estimated measurements for accuracy, specificity, and sensitivity. The training set was a random sample of about three fourths of the total data, and the testing was the remaining fourth. 
 
 ```{r}
