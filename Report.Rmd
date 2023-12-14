@@ -78,11 +78,13 @@ ggplot(nfl.complete, aes(y = experience)) +
 ```
 
 
+One of the parameters we aimed to be able to accurately predict is whether or not a given quarterback that is entering the draft will be drafted in the early rounds or not. The early rounds of the draft being the first and second as these are where you find most likely starting quarterbacks, and the later rounds being the remaining rounds being the third through seventh. To do this, the combine data for NFL quarterbacks was used to create an Linear Discriminant Analysis to predict whether the quarterbacks would be an early or later round draft picks. The variables used to predict the round drafted are Ht, Wt, Forty, Vertical, BroadJump, Cone, Shuttle, Year, and grade. The total data was split into a training and a testing set. The training set was used to create the LDA and the testing set was used to get estimated measurements for accuracy, specificity, and sensitivity. The training set was a random sample of about three fourths of the total data, and the testing was the remaining fourth. 
+
 ```{r}
 # LDA analysis with combine data to predict if they are an early or late round draft pick
 
 # Maybe modify to test whether they are a early round draft pick or most likely a starter for the team compared to a later pick most likely not a starter
-
+set.seed(920981982)
 combine.data <- read.csv("career_combineNoNA.csv")
 
 espn.qb <- read.csv("espn.qb.csv")
@@ -108,19 +110,22 @@ pred.2 <- predict(lda.2, test.df)
 correct.2 <- pred.2$class == test.df$Round
 
 roc.2 <- roc(test.df$Round, as.numeric(pred.2$class))
-roc.2$auc
+roc.2$auc ###About 86.25% accuracy
 
-roc.2$specificities
-roc.2$sensitivities
+roc.2$specificities ### Specificity about 87.5%
+roc.2$sensitivities ### Sensitivity about 85%
 
 # Predict quarterback rankings with LDA
 s.darnold <- data.frame(Ht = 75, Wt = 221, Forty = 4.85, Vertical = 26.5, BroadJump = 105, Cone = 6.96, Shuttle = 4.4, Year = 2018, grade = 94)
 
-predict(lda.2, s.darnold)
+predict(lda.2, s.darnold)$class
 
 
 
 ```
+After calculating the LDA model and predicting the draft outcome for the testing set, we got an accuracy of about 86.25%, which is very good. The sensitivity, or the ability for the LDA to detect true positives, is about 87.5%. And finally the specificity, or the ability for the LDA to detect true negatives, is about 85%. These measures are what we hoped to see and give us reason to believe this model can be a good and accurate predictor of when during the draft, early or late, that an upcoming prospect will land based on the variables provided. To use a past example that isn't part of our data but does have all the data, we collected the variable measurements for Sam Darnold, an NFL quarter that was drafted in the Early rounds. Sam Darnold has the following data: Ht = 75, Wt = 221, Forty = 4.85, Vertical = 26.5, BroadJump = 105, Cone = 6.96, Shuttle = 4.4, Year = 2018, grade = 94. When we predicted when he would be drafted using our LDA it determined he would be taken in the early rounds. This was the correct prediction. 
+
+
 
 
 ```{r}
