@@ -214,7 +214,10 @@ colSums(is.na(noncat))
 
 #write.csv(noncat, "/Users/jamesspalding/Desktop/career_combineNoNA.csv") #No NA values
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 1e01a8dd90bd9b939ce35dbe3731d6c8128864a5
 #year averages csv
 noncat2 = noncat %>%
   mutate(experience = experience + 1, #0th year is now 1st year
@@ -241,7 +244,10 @@ for(i in 1:103){
 #write.csv(noncat2, "/Users/jamesspalding/Desktop/career_combineNoNA_avgs.csv")
 ```
 
+<<<<<<< HEAD
 # Principal Component Visualization
+=======
+>>>>>>> 1e01a8dd90bd9b939ce35dbe3731d6c8128864a5
 
 ```{r}
 # Princomp
