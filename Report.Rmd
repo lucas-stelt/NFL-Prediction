@@ -114,3 +114,49 @@ predict(lda.2, s.darnold)
 
 
 ```
+
+
+```{r}
+# Princomp
+noncat2 = read.csv("career_combineNoNA_avgs.csv") %>%
+  select(-1)
+footballPC = princomp(noncat2[,2:21], cor = T)
+
+#summary(footballPC, loadings = T) #.61 with 2 comps
+
+autoplot(footballPC, loadings=T, loadings.label=T, data = noncat2)
+
+# Dimension Rediction
+#cortest.bartlett(cor(noncat2[,2:21]), n=103) #0 pval
+#KMO(cor(noncat2[,2:21])) #Overall .82
+
+fa.out = principal(noncat2[,2:21],nfactors=2,rotate="varimax")
+print.psych(fa.out,cut=.5,sort=TRUE) #No cross-loading!
+
+# fa.out = principal(noncat2[,2:21],nfactors=2,rotate="promax")
+# print.psych(fa.out,cut=.5,sort=TRUE) #Both return same groups
+
+# 2 distinct groupings, game stats and physical stats
+
+
+#Group 1 pca (game stats)
+  group1 = noncat2 %>%
+    select(att, yds, cmp, game_points, td, sack, loss, int, AV, Round)
+  
+  
+  g1PC = princomp(group1, cor = T)
+  #summary(g1PC, loadings = T) #.92 with 2 comps
+  
+  autoplot(g1PC, loadings=T, loadings.label=T, data = group1)
+
+
+#Group 2 pca (physical attributes)
+  group2 = noncat2 %>%
+    select(Forty, Vertical, BroadJump, Shuttle, Cone)
+  
+  
+  g2PC = princomp(group2, cor = T)
+  #summary(g2PC, loadings = T) #.81 with 2 comps
+  
+  autoplot(g2PC, loadings=T, loadings.label=T, data = group2) 
+```
