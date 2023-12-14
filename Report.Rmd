@@ -46,6 +46,8 @@ Round                  | The NFL draft round the player was selected Note:(1-7 b
 
 ```{r, echo = FALSE, warning = FALSE}
 # Create a bar plot showing the number of players per year
+
+nfl.complete = read.csv("career_combineNoNA.csv")
 ggplot(nfl.complete, aes(x = as.factor(Year))) + 
   geom_bar(fill = "blue", color = "black") +
   theme_minimal() +
