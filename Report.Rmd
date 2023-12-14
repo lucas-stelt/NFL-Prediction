@@ -39,4 +39,46 @@ Av                     | AV (Approximate Value) is a method created by pro-footb
 Round                  | The NFL draft round the player was selected Note:(1-7 being round, 8 being undrafted free agent)
 
 
+```{r}
+# LDA analysis with combine data to predict if they are an early or late round draft pick
 
+# Maybe modify to test whether they are a early round draft pick or most likely a starter for the team compared to a later pick most likely not a starter
+
+combine.data <- read.csv("career_combineNoNA.csv")
+
+espn.qb <- read.csv("espn.qb.csv")
+espn.qb$qb <- espn.qb$player_name
+total.combined <- combine.data %>% left_join(espn.qb, by = "qb")
+combine.data <- total.combined %>% select(c(1:22, grade))
+imp.1 <- mice(combine.data)
+combine.data <- complete(imp.1)
+# combine.data$grade[which(is.na(combine.data$grade))] <- mean(na.omit(combine.data$grade))
+
+# Setting it to early or late round draft picks, Round 1 and 2 are early, 3 and beyond considered late
+combine.data$Round <- ifelse(combine.data$Round==1 | combine.data$Round==2, "Early", "Late")
+n <- sample(nrow(combine.data), size=75)
+train.df <- combine.data[n,]
+test.df <- combine.data[-n,]
+
+
+
+lda.2 <- lda(Round~Ht+Wt+Forty+Vertical+BroadJump+Cone+Shuttle+Year+grade, data=combine.data)
+
+pred.2 <- predict(lda.2, test.df)
+
+correct.2 <- pred.2$class == test.df$Round
+
+roc.2 <- roc(test.df$Round, as.numeric(pred.2$class))
+roc.2$auc
+
+roc.2$specificities
+roc.2$sensitivities
+
+# Predict quarterback rankings with LDA
+s.darnold <- data.frame(Ht = 75, Wt = 221, Forty = 4.85, Vertical = 26.5, BroadJump = 105, Cone = 6.96, Shuttle = 4.4, Year = 2018, grade = 94)
+
+predict(lda.2, s.darnold)
+
+
+
+```
