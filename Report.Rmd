@@ -13,6 +13,7 @@ library(psych)
 library(mice)
 library(MASS)
 library(pROC)
+library(pls)
 select = dplyr::select
 ```
 
@@ -166,3 +167,24 @@ print.psych(fa.out,cut=.5,sort=TRUE) #No cross-loading!
   
   autoplot(g2PC, loadings=T, loadings.label=T, data = group2) 
 ```
+
+```{r}
+season <- read.csv("qbStats.csv")
+season.mlm <- lm(cbind(yds, td) ~ att+cmp+ypa+int+sack+loss+experience, data=season)
+summary(season.mlm)
+
+# Anova for the MLM shows that loss can be dropped from the model
+Anova(season.mlm)
+
+# Large p value from anova table with updated mlm shows that the 'loss' variable can be dropped because the model fits as well
+season.mlm2 <- update(season.mlm, .~.-loss)
+anova(season.mlm, season.mlm2)
+
+# Test statistics from the linear hypothesis test show that the 'loss' variable can be dropped
+lh.out <- linearHypothesis(season.mlm, hypothesis.matrix = c("loss = 0"))
+lh.out
+season.mlm2
+qqnorm(season.mlm2$residuals[,1]); qqline(season.mlm2$residuals[,1])
+qqnorm(season.mlm2$residuals[,2]); qqline(season.mlm2$residuals[,2])
+```
+
