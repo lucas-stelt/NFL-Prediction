@@ -109,7 +109,7 @@ ggplot(nfl.complete, aes(y = experience)) +
 
 ## Research Question 
 
-Using draft data, as well as combine performance data, can we accurately predict how long someone will last in the league, as well as some of their statistics while playing in the league? Additionally, can we use pre-draft data to predict where someone will be drafted?
+### Can we use career stats and combine stats to predict the success of a prospective NFL quarterback?
 
 ## Methods Applied
 
@@ -403,7 +403,7 @@ The multivariate regression incorporates mostly same season data to predict the 
 
 ## Conclusion
 
-In conclusion, much of the combine data proved to be ineffective for thorough predictive analysis of Quarterbacks. This is for several reasons; many Quarterbacks opt to skip several combine events pre-draft, Quarterback is one of the most mentally challenging positions, being one of the only positions were a less athletic person can be successful. Despite this, the combine data, along with pre draft grades were able to predict at a high rate whether a quarterback would be an early or late round draft pick. Along with this we were able to use PCA in order to generate graphs with good interpretability, such as quarterback performance in conjunction with the round a quarterback was drafted in. Or another in which combine performance as a whole is laid out. Finally, using multiple regression, we were not able to find an effective model using combine and draft data to predict length of time in the league, or statistics of that player. These ineffective models are a result of how much goes into creating a successful career at the Quarterback position, beyond pre-draft success and physical attributes. Although we were not able to create a model using only draft and combine data to successfully predict quarterback careers, we were able to implement the same data in other ways to create related effective predictions.
+In conclusion, much of the combine data proved to be ineffective for thorough predictive analysis of Quarterbacks. This is for several reasons; many Quarterbacks opt to skip several combine events pre-draft, Quarterback is one of the most mentally challenging positions, being one of the only positions were a less athletic person can be successful. Despite this, the combine data, along with pre draft grades were able to predict at a high rate whether a quarterback would be an early or late round draft pick. Along with this we were able to use PCA in order to generate graphs with good interpretability, such as quarterback performance in conjunction with the round a quarterback was drafted in. Or another in which combine performance as a whole is laid out. Finally, using multivariate regression, we were able to find a decent model to predict yards and touchdowns. These reason these models were somewhat ineffective as a result of how much goes into creating a successful career at the Quarterback position, beyond pre-draft success and physical attributes.
 
 
 
