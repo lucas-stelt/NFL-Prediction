@@ -45,6 +45,7 @@ Shuttle                | Player's combine lateral speed test in seconds
 Year                   | Year in which the player was drafted 
 Av                     | AV (Approximate Value) is a method created by pro-football-reference in an attempt to put a single number on the seasonal value of a player at any position from any year 
 Round                  | The NFL draft round the player was selected Note:(1-7 being round, 8 being undrafted free agent)
+grade                  | ESPN prospect grade, in which analysts evaluate pro days, college performance, and IQ tests to evaluate a player's skill at the Quarterback position, unrelated to physical attributes.
 
 
 This data was obtained from a total of a variety .csv files including individual files for each of the 7 years, combine result data, player career stats (up to 2016), and ESPN quarterback grade stats.
@@ -106,8 +107,11 @@ ggplot(nfl.complete, aes(y = experience)) +
 
 </center>
 
-## Statistical Methods
+## Research Question 
 
+Using draft data, as well as combine performance data, can we accurately predict how long someone will last in the league, as well as some of their statistics while playing in the league? Additionally, can we use pre-draft data to predict where someone will be drafted?
+
+## Methods Applied
 
 * Linear Discriminant Analysis (LDA)
   + Which is a statistical method for finding a linear combination of variables with the goal to classify new data into these categories. This technique is based on dimension reduction similar to principal component analysis. LDA allows us to make accurate predictions into multiple classification fields. In our case we applied LDA to determine a players draft round based on various parameters. 
@@ -121,7 +125,7 @@ ggplot(nfl.complete, aes(y = experience)) +
 * Multivariate Regression
   + Multivariate regression is a statistical technique used to model the relationship between two or more response variables and one or many predictor variables. Multivariate regression is used to predict the value of the response variables based on the values of the predictor variables and to understand the relative influence each predictor has on the responses.
   
-## Predictive Analysis
+## Linear Discriminant Analysis
 
 One of the parameters we aimed to be able to accurately predict is whether or not a given quarterback that is entering the draft will be drafted in the early rounds or not. The early rounds of the draft being the first and second as these are where you find most likely starting quarterbacks, and the later rounds being the remaining rounds being the third through seventh. To do this, the combine data for NFL quarterbacks was used to create an Linear Discriminant Analysis to predict whether the quarterbacks would be an early or later round draft picks. The variables used to predict the round drafted are Ht, Wt, Forty, Vertical, BroadJump, Cone, Shuttle, Year, and grade. The total data was split into a training and a testing set. The training set was used to create the LDA and the testing set was used to get estimated measurements for accuracy, specificity, and sensitivity. The training set was a random sample of about three fourths of the total data, and the testing was the remaining fourth. 
 
@@ -172,6 +176,19 @@ predict(lda.2, s.darnold)$class
 ```
 
 After calculating the LDA model and predicting the draft outcome for the testing set, we got an accuracy of about 86.25%, which is very good. The sensitivity, or the ability for the LDA to detect true positives, is about 87.5%. And finally the specificity, or the ability for the LDA to detect true negatives, is about 85%. These measures are what we hoped to see and give us reason to believe this model can be a good and accurate predictor of when during the draft, early or late, that an upcoming prospect will land based on the variables provided. To use a past example that isn't part of our data but does have all the data, we collected the variable measurements for Sam Darnold, an NFL quarter that was drafted in the Early rounds. Sam Darnold has the following data: Ht = 75, Wt = 221, Forty = 4.85, Vertical = 26.5, BroadJump = 105, Cone = 6.96, Shuttle = 4.4, Year = 2018, grade = 94. When we predicted when he would be drafted using our LDA it determined he would be taken in the early rounds. This was the correct prediction. 
+
+We decided to put Noah's combine stats into the model to see what the model predicts he would be drafted. 
+
+```{r, echo = F}
+# Noah LDA
+cat("Noah Coleman:\n")
+(noah <- data.frame(Ht = 76, Wt = 300, Forty = 5.2, Vertical = 25, BroadJump = 8.4, Cone = 8.2, Shuttle = 5, Year = 2023, grade = 50))
+
+cat("Prediction:\n")
+predict(lda.2, noah)$class
+```
+
+Noah's stats assume that he plays quarterback and can throw like a quarterback with a straight down the middle grade of 50, comparable to Cody Kessler, John Skelton, and Tyler Palko. the model predicts that he would be an early draft. As Noah is not a quarterback, nor in the NFL, we cannot determine whether this was the correct decision.
 
 
 ## Principal Component Analysis
@@ -373,7 +390,7 @@ for(i in randomPlayers){
   
   cat(" Predicted Values: \n",
       "yds = ", round(ydsPred,0),
-      "\n td = ", round(tdPred, 0), "\n")
+      "\n td = ", round(tdPred, 0), "\n\n")
   
   cat(" Actual Values: \n",
       "yds = ", seasonTesting[i,]$yds,
@@ -384,7 +401,9 @@ for(i in randomPlayers){
 The multivariate regression incorporates mostly same season data to predict the yards and touchdowns thrown for the quarterback that year. This isn't the most practical analysis for a predictive model as if we know the measurements of our predictors, we most likely know how many yards and touchdowns go with those. Nonetheless, if we are given just measurements for our predictors, we should be able to accurately predict how many touchdowns and yards that quarterback would have. If we were to redo the multivariate linear regression analysis, we might consider tailoring the model towards predicting success statistics like touchdowns and yards based on data from before the season or other variables to forecast how well a quarterback might play that season. Of course the NFL isn't that simple as almost anything is possible when it comes the the outcome of a game or how well a player does that game or season. What out model does do is help explain a large portion of the variability in quarterback touchdowns and yards during a season. 
 
 
+## Conclusion
 
+In conclusion, much of the combine data proved to be ineffective for thorough predictive analysis of Quarterbacks. This is for several reasons; many Quarterbacks opt to skip several combine events pre-draft, Quarterback is one of the most mentally challenging positions, being one of the only positions were a less athletic person can be successful. Despite this, the combine data, along with pre draft grades were able to predict at a high rate whether a quarterback would be an early or late round draft pick. Along with this we were able to use PCA in order to generate graphs with good interpretability, such as quarterback performance in conjunction with the round a quarterback was drafted in. Or another in which combine performance as a whole is laid out. Finally, using multiple regression, we were not able to find an effective model using combine and draft data to predict length of time in the league, or statistics of that player. These ineffective models are a result of how much goes into creating a successful career at the Quarterback position, beyond pre-draft success and physical attributes. Although we were not able to create a model using only draft and combine data to successfully predict quarterback careers, we were able to implement the same data in other ways to create related effective predictions.
 
 
 
