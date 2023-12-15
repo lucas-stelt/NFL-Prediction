@@ -187,23 +187,31 @@ print.psych(fa.out,cut=.5,sort=TRUE) #No cross-loading!
   autoplot(g2PC, loadings=T, loadings.label=T, data = group2) 
 ```
 
-```{r}
+
+The final analysis we wanted to perform to predict outcomes of NFL quarterbacks was a Multivariate Linear Regression to predict success statistics for a season. NFL quarterbacks season statistics used that we felt were most oriented towards success, are passing yards during the season and touchdowns thrown during the season. The predictors originally tested to predict these were att, cmp, ypa, int, sack, loss, and experience. To test if any of these can be dropped from the model the function Anova from the 'car' package was used to give the MANOVA Pillai test statistics and P values. If the P value was greater than 0.05, we dropped the predictor from the model. This only occurred with the 'loss' variable which had a P value of 0.25937. Therefore the model was updated by removing 'loss' as a predictor and testing for Lack of Fit to see if the updated model fits as well as the original model. The test for this gave an approximate F statistic of 1.3535 and a P value of 0.2594. The P value larger than out significance level of 0.05 means there is no evidence that the updated model doesn't fit as well as the original model. The R squared values for the yds regression and td regression are 0.9919 and 0.9177, respectively, while the adjusted R squared values are 0.9918 and 0.9166, respectively. These models therefore explain the variation in yds and td very well. 
+
+```{r, echo=FALSE, warning=FALSE, message=FALSE}
 season <- read.csv("qbStats.csv")
+
 season.mlm <- lm(cbind(yds, td) ~ att+cmp+ypa+int+sack+loss+experience, data=season)
-summary(season.mlm)
+# summary(season.mlm)
 
 # Anova for the MLM shows that loss can be dropped from the model
-Anova(season.mlm)
+# Anova(season.mlm)
 
 # Large p value from anova table with updated mlm shows that the 'loss' variable can be dropped because the model fits as well
 season.mlm2 <- update(season.mlm, .~.-loss)
-anova(season.mlm, season.mlm2)
+# anova(season.mlm, season.mlm2)
+# summary(season.mlm2)
+
 
 # Test statistics from the linear hypothesis test show that the 'loss' variable can be dropped
 lh.out <- linearHypothesis(season.mlm, hypothesis.matrix = c("loss = 0"))
-lh.out
-season.mlm2
-qqnorm(season.mlm2$residuals[,1]); qqline(season.mlm2$residuals[,1])
-qqnorm(season.mlm2$residuals[,2]); qqline(season.mlm2$residuals[,2])
+# lh.out
+# season.mlm2
+#qqnorm(season.mlm2$residuals[,1]); qqline(season.mlm2$residuals[,1])
+#qqnorm(season.mlm2$residuals[,2]); qqline(season.mlm2$residuals[,2])
+
+
 ```
 

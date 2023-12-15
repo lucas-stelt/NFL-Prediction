@@ -80,6 +80,7 @@ cor(numeric.qb)
 library(car)
 library(pls)
 season <- read.csv("qbStats.csv")
+
 season.mlm <- lm(cbind(yds, td) ~ att+cmp+ypa+int+sack+loss+experience, data=season)
 summary(season.mlm)
 
@@ -89,7 +90,6 @@ Anova(season.mlm)
 # Large p value from anova table with updated mlm shows that the 'loss' variable can be dropped because the model fits as well
 season.mlm2 <- update(season.mlm, .~.-loss)
 anova(season.mlm, season.mlm2)
-
 # Test statistics from the linear hypothesis test show that the 'loss' variable can be dropped
 lh.out <- linearHypothesis(season.mlm, hypothesis.matrix = c("loss = 0"))
 lh.out
