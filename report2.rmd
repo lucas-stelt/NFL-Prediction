@@ -1,0 +1,390 @@
+---
+title: "NFL Quarterback Predictive Analysis"
+author: "Lucas Steltenpohl, Noah Coleman, Andrew Spika, and James Spalding"
+date: "2023-12-15"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(ggfortify)
+library(psych)
+library(mice)
+library(MASS)
+library(pROC)
+library(pls)
+library(car)
+select = dplyr::select
+```
+
+### Introduction
+
+This report is a statistical analysis of the performance and combine statistics of the National Football League (NFL) quarterbacks spanning from the seasons 2009-2016. The data set we utilized was compiled of multiple data sets of performance indicators that are critical in assessing a quarterback's effectiveness and impact on the field. Our data set encompasses a detailed examination of 103 quarterbacks and 22 variables, offering a unique insight into the changing dynamics and skill levels within the league during this period. The 22 variable names and descriptions are found in the table below.  
+
+Variables:             |  Definitions:
+---------------------- | ----------------------------
+qb                     | Name of Quarterback
+att                    | Number of passing attempts made throughout their career
+cmp                    | Number of passing completions made throughout their career
+yds                    | Number of total passing yards gained throughout their career
+ypa                    | Average number of yards gained per attempt made 
+td                     | Number of touchdowns thrown 
+int                    | Number of interceptions thrown 
+sack                   | Number of sacks taken 
+loss                   | Number of yards lost when sacked
+game_points            | Number of in game points responsible for
+experience             | Number of years played in the NFL
+Ht                     | Height of player in inches 
+Wt                     | Weight of player in lbs
+Forty                  | Player's combine 40 meter dash time in seconds 
+Vertical               | Player's combine vertical jump in inches 
+BroadJump              | Player's combine broad jump (horizontal) in inches
+Cone                   | Player's combine 3 cone agility drill in seconds 
+Shuttle                | Player's combine lateral speed test in seconds 
+Year                   | Year in which the player was drafted 
+Av                     | AV (Approximate Value) is a method created by pro-football-reference in an attempt to put a single number on the seasonal value of a player at any position from any year 
+Round                  | The NFL draft round the player was selected Note:(1-7 being round, 8 being undrafted free agent)
+
+
+This data was obtained from a total of a variety .csv files including individual files for each of the 7 years, combine result data, player career stats (up to 2016), and ESPN quarterback grade stats.
+
+We then used regular expressions to make the player names match through different formatting. After having a field that matched on all the tables, we were able to join the tables and filter out non-quarterback players. The 4 main files we created to use for analysis are: 
+
+* **qbStats.csv:** Professional data with each season played as a separate row. 
+* **career_combineNoNA.csv:** Total professional data for all seasons played up to 2016, along with all combine data. This data was manipulated as to not have any NA values for easier analysis.
+* **career_combineNoNA_avg.csv:** The same as the last file but with all career stats averaged by the years pro value.
+* **espn.qb.csv:** ESPN quarterback data; used for the grade value.
+
+#### Below are some visualizations of the data.
+
+<center>
+```{r, echo = FALSE, warning = FALSE}
+# Create a bar plot showing the number of players per year
+
+nfl.complete = read.csv("career_combineNoNA.csv")
+ggplot(nfl.complete, aes(x = as.factor(Year))) + 
+  geom_bar(fill = "blue", color = "black") +
+  theme_minimal() +
+  labs(title = "Number of NFL Quarterbacks per Draft Year(2000-2016)",
+       x = "Year",
+       y = "Number of Quarterbacks") +
+  theme(axis.text.x = element_text(angle = 90, hjust = 1))
+```
+
+*There appears to be an every-other year fluctuation between amount of quarterbacks drafted.*
+
+```{r, echo = FALSE, warning = FALSE}
+# Create a bar plot showing the number of players drafted in each round
+ggplot(nfl.complete, aes(x = as.factor(Round))) + 
+  geom_bar(fill = "blue", color = "black") +
+  theme_minimal() +
+  labs(title = "Distribution of NFL Quarterbacks by Draft Round (2009-2016)",
+       x = "Draft Round",
+       y = "Number of Quarterbacks") +
+  theme(axis.text.x = element_text(angle = 0, hjust = 1))
+```
+
+*Quarterbacks have a high chance of being drafted in round 1.*
+
+```{r, echo = FALSE, warning = FALSE}
+# Create a single boxplot showing the overall distribution of experience
+ggplot(nfl.complete, aes(y = experience)) + 
+  geom_boxplot(fill = "lightblue", color = "black") +
+  theme_minimal() +
+  labs(title = "Overall Distribution of NFL Quarterbacks' Years Played",
+       x = "",
+       y = "Experience (Years)")
+
+# mean(nfl.complete$experience)
+# max(nfl.complete$experience)
+```
+
+*The amount of years played ranges from players' first year on the field (0 years experience) to players with 16 years of experience.*
+
+*The mean years played in our data was 4.864 years.*
+
+</center>
+
+## Statistical Methods
+
+
+* Linear Discriminant Analysis (LDA)
+  + Which is a statistical method for finding a linear combination of variables with the goal to classify new data into these categories. This technique is based on dimension reduction similar to principal component analysis. LDA allows us to make accurate predictions into multiple classification fields. In our case we applied LDA to determine a players draft round based on various parameters. 
+  
+* Principal Component Analysis (PCA)
+  + This is a statistical technique used to reduce the number of variables by transforming the original variables into principal components. PCA allows us to reduce the dimension of a large data set. Note:Each subsequent component contains less variation within the data. In our case we applied PCA to reduce the dimension and discover variable relationships and importance. 
+  
+* Factor Analysis 
+  + Factor Analysis is a statistical method aims to uncover the underlying factors in a set of observations. This method groups together highly correlated variables into one factor. In our case we applied factor analysis to discover groupings of variables within our data. 
+  
+* Multivariate Regression
+  + Multivariate regression is a statistical technique used to model the relationship between two or more response variables and one or many predictor variables. Multivariate regression is used to predict the value of the response variables based on the values of the predictor variables and to understand the relative influence each predictor has on the responses.
+  
+## Predictive Analysis
+
+One of the parameters we aimed to be able to accurately predict is whether or not a given quarterback that is entering the draft will be drafted in the early rounds or not. The early rounds of the draft being the first and second as these are where you find most likely starting quarterbacks, and the later rounds being the remaining rounds being the third through seventh. To do this, the combine data for NFL quarterbacks was used to create an Linear Discriminant Analysis to predict whether the quarterbacks would be an early or later round draft picks. The variables used to predict the round drafted are Ht, Wt, Forty, Vertical, BroadJump, Cone, Shuttle, Year, and grade. The total data was split into a training and a testing set. The training set was used to create the LDA and the testing set was used to get estimated measurements for accuracy, specificity, and sensitivity. The training set was a random sample of about three fourths of the total data, and the testing was the remaining fourth. 
+
+```{r, include=FALSE}
+# LDA analysis with combine data to predict if they are an early or late round draft pick
+
+# Maybe modify to test whether they are a early round draft pick or most likely a starter for the team compared to a later pick most likely not a starter
+set.seed(920981982)
+combine.data <- read.csv("career_combineNoNA.csv")
+
+espn.qb <- read.csv("espn.qb.csv")
+espn.qb$qb <- espn.qb$player_name
+total.combined <- combine.data %>% left_join(espn.qb, by = "qb")
+combine.data <- total.combined %>% select(c(1:22, grade))
+imp.1 <- mice(combine.data)
+combine.data <- complete(imp.1)
+# combine.data$grade[which(is.na(combine.data$grade))] <- mean(na.omit(combine.data$grade))
+
+# Setting it to early or late round draft picks, Round 1 and 2 are early, 3 and beyond considered late
+combine.data$Round <- ifelse(combine.data$Round==1 | combine.data$Round==2, "Early", "Late")
+n <- sample(nrow(combine.data), size=75)
+train.df <- combine.data[n,]
+test.df <- combine.data[-n,]
+
+
+
+lda.2 <- lda(Round~Ht+Wt+Forty+Vertical+BroadJump+Cone+Shuttle+Year+grade, data=combine.data)
+
+pred.2 <- predict(lda.2, test.df)
+
+correct.2 <- pred.2$class == test.df$Round
+
+roc.2 <- roc(test.df$Round, as.numeric(pred.2$class))
+roc.2$auc ###About 86.25% accuracy
+
+roc.2$specificities ### Specificity about 87.5%
+roc.2$sensitivities ### Sensitivity about 85%
+```
+
+
+```{r, echo = F}
+# Predict quarterback rankings with LDA
+cat("Sam Darnold:\n")
+(s.darnold <- data.frame(Ht = 75, Wt = 221, Forty = 4.85, Vertical = 26.5, BroadJump = 105, Cone = 6.96, Shuttle = 4.4, Year = 2018, grade = 94))
+
+cat("Prediction:\n")
+predict(lda.2, s.darnold)$class
+```
+
+After calculating the LDA model and predicting the draft outcome for the testing set, we got an accuracy of about 86.25%, which is very good. The sensitivity, or the ability for the LDA to detect true positives, is about 87.5%. And finally the specificity, or the ability for the LDA to detect true negatives, is about 85%. These measures are what we hoped to see and give us reason to believe this model can be a good and accurate predictor of when during the draft, early or late, that an upcoming prospect will land based on the variables provided. To use a past example that isn't part of our data but does have all the data, we collected the variable measurements for Sam Darnold, an NFL quarter that was drafted in the Early rounds. Sam Darnold has the following data: Ht = 75, Wt = 221, Forty = 4.85, Vertical = 26.5, BroadJump = 105, Cone = 6.96, Shuttle = 4.4, Year = 2018, grade = 94. When we predicted when he would be drafted using our LDA it determined he would be taken in the early rounds. This was the correct prediction. 
+
+
+## Principal Component Analysis
+
+We used PCA to reduce our data from 22 dimensions all the way down to 2. 
+
+```{r, echo = F}
+# Princomp
+noncat2 = read.csv("career_combineNoNA_avgs.csv") %>%
+  select(-1)
+footballPC = princomp(noncat2[,2:21], cor = T)
+
+#summary(footballPC, loadings = T) #.6115 with 2 comps
+
+autoplot(footballPC, loadings=T, loadings.label=T, data = noncat2)
+```
+
+The principal component graph resulted in some pretty clear groupings. It appears that game stats and round drafted are along the x-axis, while combine results are on they y-axis. On the y-axis, Cone, Shuttle, and Forty are all time values that are better when they are smaller, so it makes sense that it goes the opposite direction as the other combine data, which are based off distance. Also note that this graph is not incredibly accurate, with only 61.15% of the variance explained.
+
+```{r, include = F}
+# rotations
+cortest.bartlett(cor(noncat2[,2:21]), n=103) #0 pval
+KMO(cor(noncat2[,2:21])) #Overall .82
+
+fa.out = principal(noncat2[,2:21],nfactors=2,rotate="varimax")
+print.psych(fa.out,cut=.5,sort=TRUE) #No cross-loading
+
+# fa.out = principal(noncat2[,2:21],nfactors=2,rotate="promax")
+# print.psych(fa.out,cut=.5,sort=TRUE) #Both return same groups
+
+# 2 distinct groupings, game stats and physical stats
+```
+
+#### Grouping
+
+In order to explain more of the variance, we determined a rotation would work well on our data. 
+
+To confirm this, we ran the Cortest-Bartlett test on it, which resulted in $\chi^2 = 377.57$ and a p-value of $0$, meaning that our data is a great fit for rotation.
+
+We performed both varimax and promax rotations, both resulting in the same following groups:
+
+| Group 1     	| Group 2   	|
+|-------------	|-----------	|
+| att         	| -Forty     	|
+| yds         	| Vertical  	|
+| cmp         	| BroadJump 	|
+| game_points 	| -Shuttle   	|
+| td          	| -Cone      	|
+| -sack        	|           	|
+| -loss        	|           	|
+| -int         	|           	|
+| AV          	|           	|
+| Round       	|           	|
+
+For easier visualization we made the sack, loss, int, Forty, Shuttle, and Cone variables negative, as smaller values are considered better in these variables.
+
+#### Group 1
+
+```{r, echo = F}
+#Group 1 pca (game stats)
+  group1 = noncat2 %>%
+    select(att, yds, cmp, game_points, td, sack, loss, int, AV, Round) %>%
+    mutate(sack = -1 * sack, loss = -1 * loss, int = -1 * int)
+
+    g1names = noncat2 %>%
+    select(qb, att, yds, cmp, game_points, td, sack, loss, int, AV, Round) %>%
+    mutate(sack = -1 * sack, loss = -1 * loss, int = -1 * int)
+  
+for(i in 1:103){ #Only selecting names of a few players in the "ideal" location on the PCA graph
+  if(g1names$qb[i] %in% c("Carson Palmer", "Jay Cutler", "Sam Bradford", "Colin Kaepernik", "Aaron Rodgers")){
+    g1names$qb[i] = g1names$qb[i]
+  }
+  else{
+    g1names$qb[i] = " "
+  }
+}
+    
+  g1PC = princomp(group1, cor = T)
+  #summary(g1PC, loadings = T) #.92 with 2 comps
+  
+  #autoplot(g1PC, loadings=T, loadings.label=T, data = group1)
+#try to show player names?
+  
+    autoplot(g1PC, loadings=T, loadings.label=T, data = g1names, 
+    label = TRUE, label.label = "qb")
+    
+    #Carson Palmer, Jay cutler, Sam Bradford, Colin Kaepernik, Aaron Rodgers
+```
+
+The above graph shows that the positive values get larger to the right, and the negative values get larger to the right. This shows that players with more positive attributes are on the right side of the graph, while the less desirable players are on the left. The Y axis shows the round drafted, with higher values meaning they were picked later in the draft. Therefore, an ideal player should be as close to the bottom right quadrant as possible. This graph is extremely accurate for a PCA graph, as it accounts for 92.23% of variability.
+
+#### Group 2
+
+```{r, echo=F}
+
+#Group 2 pca (physical attributes)
+  group2 = noncat2 %>%
+    select(Forty, Vertical, BroadJump, Shuttle, Cone) %>%
+    mutate(Forty = -1 * Forty, Shuttle = -1 * Shuttle, Cone = -1 * Cone)
+  g2names = noncat2 %>%
+    select(qb, Forty, Vertical, BroadJump, Shuttle, Cone) %>%
+    mutate(Forty = -1 * Forty, Shuttle = -1 * Shuttle, Cone = -1 * Cone)
+  
+for(i in 1:103){ #Only selecting names of a few players in the "ideal" location on the PCA graph
+  if(g2names$qb[i] %in% c("Aaron Rodgers", "Matt Ryan", "Stephen McGee", "Pat White")){
+    g2names$qb[i] = g2names$qb[i]
+  }
+  else{
+    g2names$qb[i] = " "
+  }
+}
+  
+
+  
+  g2PC = princomp(group2, cor = T)
+  #summary(g2PC, loadings = T) #.81 with 2 comps
+  
+#without names
+ # autoplot(g2PC, loadings=T, loadings.label=T, data = group2) 
+  
+#With names
+  autoplot(g2PC, loadings=T, loadings.label=T, data = g2names, 
+    label = TRUE, label.label = "qb")
+```
+
+This graph represents combine results. Forty, Shuttle, and Cone are best at low values, so an ideal player should be somewhere in the top middle of the graph. While less conclusions are able to be drawn from this graph, it still accounts for a high percentage (80.54%) of variability, so this conclusion can be said with confidence.
+
+## Multivariate Regression
+
+The final analysis we wanted to perform to predict outcomes of NFL quarterbacks was a Multivariate Linear Regression to predict success statistics for a season. NFL quarterbacks season statistics used that we felt were most oriented towards success are passing yards during the season and touchdowns thrown during the season. The predictors originally tested to predict these were att, cmp, ypa, int, sack, loss, and experience. 
+
+Our for this section of the analysis was to use multivariate regression to predict the amount of passing yards gained ($yds$) and amount of touchdowns scored ($td$) in a season by using the players' other attributes.
+
+```{r, include = F}
+season <- read.csv("qbStats.csv")
+season.mlm <- lm(cbind(yds, td) ~ att+cmp+ypa+int+sack+loss+experience, data=season)
+summary(season.mlm)
+
+# Anova for the MLM shows that loss can be dropped from the model
+Anova(season.mlm)
+
+# Large p value from anova table with updated mlm shows that the 'loss' variable can be dropped because the model fits as well
+season.mlm2 <- update(season.mlm, .~.-loss)
+anova(season.mlm, season.mlm2)
+
+# Test statistics from the linear hypothesis test show that the 'loss' variable can be dropped
+lh.out <- linearHypothesis(season.mlm, hypothesis.matrix = c("loss = 0"))
+lh.out
+season.mlm2
+qqnorm(season.mlm2$residuals[,1]); qqline(season.mlm2$residuals[,1])
+qqnorm(season.mlm2$residuals[,2]); qqline(season.mlm2$residuals[,2])
+```
+
+```{r, echo = F}
+season = read.csv("qbStats.csv") %>%
+  select(-X, -qb, -experience,-year)
+
+season.mlm <- lm(cbind(yds, td) ~ ., data=season)
+Anova(season.mlm)
+```
+
+The ANOVA shows that $loss$ and $int$ are not significant in predicting $yds$ or $td$. However, we need to test that we can drop these variables without losing important information.
+
+```{r, echo = F}
+linearHypothesis(season.mlm, hypothesis.matrix = c("loss = 0", "int = 0"))
+#All tests show we can drop the variables.
+
+#remove loss and int
+season.mlm2 <- lm(cbind(yds, td) ~ .-loss-int, data=season)
+#anova(season.mlm, season.mlm2) #p-val = .43
+#summary(season.mlm2)
+#season.mlm
+
+#All are now significant.
+
+```
+
+As shown above, all the tests point to the fact that we can drop both $loss$ and $int$. The ANOVA between the equation with $loss$ and $int$ and without them has a p-value of .43, so there is no evidence that the reduced model fits differently than the full model. This model has $R^2$ values of .9918 and .9298 for $yds$ and $td$, respectively, meaning it explains the variation very well.
+
+We can write the resulting multivariate regression equation as follows:
+
+$$\begin{bmatrix} yds \\ td \end{bmatrix} = \begin{bmatrix} 9037 \\ 141.7 \end{bmatrix} + \begin{bmatrix} .874 & 7.49 & 8.87 & -3.76 & .384 & -4.56 \\ -.035 & .099 & -.003 & -.036 & .038 & -.071\end{bmatrix} \begin{bmatrix} att \\ cmp \\ ypa\\sack\\points\\draftyear \end{bmatrix}$$
+
+With this equation, we can predict a player's yards gained and touchdowns given the other variables. Let's plug in the stats of 3 randomly selected players to test the effectiveness of this model.
+
+
+```{r, echo = F}
+seasonTesting = read.csv("qbStats.csv") %>% select(-X, -loss, -int)
+set.seed(1234)
+randomPlayers = sample(1:103, 3)
+
+for(i in randomPlayers){
+  cat("Player:\n")
+  print(seasonTesting[i,] %>% select(-td,-yds))
+
+  ydsPred = 9037 + .874 * seasonTesting$att[i] + 7.49 * seasonTesting$cmp[i] + 8.87 * seasonTesting$ypa[i] - 3.76 * seasonTesting$sack[i] + .384 * seasonTesting$game_points[i] - 4.56 * seasonTesting$yearDrafted[i]
+  
+  tdPred = 141.7 - .035 * seasonTesting$att[i] + .099 * seasonTesting$cmp[i] -.003 * seasonTesting$ypa[i] - .036 * seasonTesting$sack[i] + .038 * seasonTesting$game_points[i] - .071 * seasonTesting$yearDrafted[i]
+  
+  cat(" Predicted Values: \n",
+      "yds = ", round(ydsPred,0),
+      "\n td = ", round(tdPred, 0), "\n")
+  
+  cat(" Actual Values: \n",
+      "yds = ", seasonTesting[i,]$yds,
+      "\n td = ", seasonTesting[i,]$td, "\n\n\n")
+}
+```
+
+The multivariate regression incorporates mostly same season data to predict the yards and touchdowns thrown for the quarterback that year. This isn't the most practical analysis for a predictive model as if we know the measurements of our predictors, we most likely know how many yards and touchdowns go with those. Nonetheless, if we are given just measurements for our predictors, we should be able to accurately predict how many touchdowns and yards that quarterback would have. If we were to redo the multivariate linear regression analysis, we might consider tailoring the model towards predicting success statistics like touchdowns and yards based on data from before the season or other variables to forecast how well a quarterback might play that season. Of course the NFL isn't that simple as almost anything is possible when it comes the the outcome of a game or how well a player does that game or season. What out model does do is help explain a large portion of the variability in quarterback touchdowns and yards during a season. 
+
+
+
+
+
+
